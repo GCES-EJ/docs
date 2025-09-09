@@ -21,17 +21,17 @@ O **Empurrando Juntas (EJ)** utiliza **gamificação** e **aprendizado de máqui
 
 <div style="margin: 0 auto; width: fit-content;">
 
-| Matrícula | Nome                          | Usuário GitHub | Usuário GitLab |
-|:---------:|-------------------------------|:--------------:|:--------------:|
-| 221008150 | João Antonio Ginuino Carvalho | i-JSS          | i-JSS          |
-|           |                               |                |                |
-|           |                               |                |                |
-|           |                               |                |                |
-|           |                               |                |                |
-|           |                               |                |                |
-|           |                               |                |                |
-|           |                               |                |                |
-|           |                               |                |                |
+| Matrícula | Nome                                 | Usuário GitHub | Usuário GitLab |
+|:---------:|--------------------------------------|:--------------:|:--------------:|
+| 221008150 | João Antonio Ginuino Carvalho        | i-JSS          | i-JSS          |
+| 211029601 | Victor Pontual Guedes Arruda Nóbrega | VictorPontual  | VictorPontual  |
+|           |                                      |                |                |
+|           |                                      |                |                |
+|           |                                      |                |                |
+|           |                                      |                |                |
+|           |                                      |                |                |
+|           |                                      |                |                |
+|           |                                      |                |                |
 
 </div>
 
