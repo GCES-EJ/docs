@@ -1,7 +1,7 @@
 
 <center>
 
-<a href="/" target="_blank">
+<a href="https://gces-ej.github.io/docs/#/" target="_blank">
   <img src="assets/ej-logo.png" alt="Logo" style="width: 50%; height: auto;">
 </a>
 
