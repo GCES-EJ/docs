@@ -9,11 +9,10 @@
 
 - **Relatórios**
     - **Sprint 0**
-        - [João Carvalho](../relatorios/sprint-0/joao-carvalho.md)
+        - [João Carvalho](relatorios/sprint_0/joao-carvalho.md)
 
 - **Diários de Bordo**
-    - **Sprint 0**
 
 - **Templates**
-    - [Template Diário de Bordo](../templates/template-diario-bordo.md)
-    - [Template Relatório](../templates/template-relatorio.md)
+    - [Template Diário de Bordo](templates/template-diario-bordo.md)
+    - [Template Relatório](templates/template-relatorio.md)
