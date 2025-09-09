@@ -1,12 +1,12 @@
 # 📝 Relatório de Contribuição – Sprint 0
 
-*Disciplina:* Gestão de Configuração e Evolução de Software
+*Disciplina:* GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE
 
-*Equipe:* \[Empurrando Juntas]
+*Equipe:* Empurrando Juntas
 
-*Comunidade/Projeto de Software Livre:* \[Empurrando Juntas]
+*Comunidade/Projeto de Software Livre:* Empurrando Juntas
 
-*Período da Sprint:* \[25/08 – 10/09]
+*Período da Sprint:* 25/08 – 10/09
 
 ---
 
@@ -20,18 +20,18 @@
 
 ## 2. Entregas Coletivas
 
-| Entrega                         | Status (Concluído/Parcial/Pendente) | Link/Referência       | Observações           |
-|---------------------------------|-------------------------------------|-----------------------|-----------------------|
-| \[Repositório de documentação ] | Pendente                            | \[link para PR/issue] | Organização da Equipe |
+| Entrega                         | Status (Concluído/Parcial/Pendente) | Link/Referência                   | Observações           |
+|---------------------------------|-------------------------------------|-----------------------------------|-----------------------|
+| \[Repositório de documentação ] | Concluído                           | https://gces-ej.github.io/docs/#/ | Organização da Equipe |
 
-Repositório de documentação 	Concluído 	Link 	Organização da Equipe
+
 ---
 
 ## 3. Contribuições Individuais
 
-| Integrante                    | Contribuições                             | Links (PRs, Issues, Docs) | Observações |
-|-------------------------------| ----------------------------------------- | ------------------------- | ----------- |
-| João Antonio Ginuino Carvalho | Implementou \[feature], abriu \[X issues] | \[link PR] \[link issue]  |             |
+| Integrante                    | Contribuições             | Links (PRs, Issues, Docs)         | Observações                                       |
+|-------------------------------|---------------------------|-----------------------------------|---------------------------------------------------|
+| João Antonio Ginuino Carvalho | Implementação do gitpages | https://gces-ej.github.io/docs/#/ | Criação da Organização e repositório do gitpages. |
 
 ---
 
