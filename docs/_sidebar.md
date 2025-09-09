@@ -8,10 +8,11 @@
 </center>
 
 - **Relatórios**
-    - **Sprint 0**
-        - [João Carvalho](relatorios/sprint_0/joao-carvalho.md)
+    - [Sprint 0](relatorios/sprint_0.md)
 
 - **Diários de Bordo**
+    - **Sprint 0**
+        - [João Carvalho](diarioBordo/sprint_0/joao_carvalho.md)
 
 - **Templates**
     - [Template Diário de Bordo](templates/template-diario-bordo.md)
