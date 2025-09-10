@@ -38,32 +38,25 @@
 
 ## 4. Maiores Avanços
 
-✨ *Destaques da Sprint:*
-
-* \[Exemplo] Integração bem-sucedida de novo módulo no projeto principal.
-* \[Exemplo] Equipe estabeleceu fluxo de contribuição alinhado às práticas da comunidade.
+* Leitura e entendimento do guia de contribuição, com execução bem-sucedida da aplicação em ambiente local.
+* Criação da organização e do repositório para hospedagem via GitHub Pages.
+* Mapeamento da documentação das políticas de contribuição da comunidade.
 
 ---
 
 ## 5. Maiores Dificuldades
 
-*Principais desafios enfrentados:*
-
-* \[Exemplo] Barreiras de comunicação com mantenedores da comunidade.
-* \[Exemplo] Dificuldade técnica em compreender dependência \[X].
-* \[Exemplo] Problemas de coordenação de tempo entre membros.
+- Alinhamento das responsabilidades da equipe na organização do GitHub Pages.
 
 ---
 
 ## 6. Lições Aprendidas
 
-* \[Exemplo] Importância de abrir issues detalhadas para facilitar revisão.
-* \[Exemplo] Planejamento coletivo ajudou a reduzir retrabalho.
+* O planejamento coletivo foi essencial para reduzir retrabalho e melhorar a comunicação entre os membros da equipe.
 
 ---
 
 ## 7. Planejamento para a Próxima Sprint
 
-* [ ] Implementar \[funcionalidade]
-* [ ] Ampliar cobertura de testes
-* [ ] Melhorar documentação do processo de contribuição
+* [ ] Solicitar aprovação do fork do repositório principal.
+* [ ] Ampliar a documentação, incluindo os procedimentos adotados e os aprendizados obtidos nesta sprint.
