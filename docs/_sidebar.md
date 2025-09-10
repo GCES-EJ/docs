@@ -16,6 +16,8 @@
 - **Diários de Bordo**
     - **Sprint 0**
         - [João Carvalho](diarioBordo/sprint_0/joao_carvalho.md)
+        - [Victor Pontual](diarioBordo/sprint_0/victor_pontual.md)
+        - [Leticia Arisa](diarioBordo/sprint_0/leticia_arisa.md)
 
 - **Templates**
     - [Template Diário de Bordo](templates/template-diario-bordo.md)
