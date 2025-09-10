@@ -29,7 +29,7 @@ O **Empurrando Juntas (EJ)** utiliza **gamificação** e **aprendizado de máqui
 | 231035141 | João Filipe de Oliveira Souz         | [Joao151104](https://github.com/Joao151104)                     |                                   |
 | 221008310 | Marco Tulio Soares de Deus           | [MarcoTulioSoares](https://github.com/MarcoTulioSoares)                                  |                                   |
 | 221031130 | Caio Antônio Araújo Garcia de Almeida | [Caio-Antonio](https://github.com/Caio-Antonio) | [Caio-Antonio](https://gitlab.com/Caio-Antonio) |
-|           |                                      |                                   |                                   |
+| 221031238 | Víctor Augusto de Sousa Câmara       |    [victorcamaraa](https://github.com/victorcamaraa)                               | [victorcamaraa](https://github.com/victorcamaraa)                                    |
 |           |                                      |                                   |                                   |
 |           |                                      |                                   |                                   |
 
