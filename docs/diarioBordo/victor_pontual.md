@@ -44,7 +44,3 @@ docker compose -f docker/docker-compose.yml up
 
 * [ ] Aprofundar a análise do código-fonte.
 * [ ] Estudar a documentação de arquitetura do sistema.
-
----
-
-Quer que eu prepare também uma versão em **tom acadêmico mais formal** (adequada para entrega em disciplina), ou prefere manter esse registro em estilo **diário reflexivo**?
