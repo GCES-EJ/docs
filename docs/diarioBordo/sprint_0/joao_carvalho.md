@@ -29,12 +29,13 @@ Sprint dedicada à ambientação no projeto, com foco nos primeiros passos, leit
 
 ### Maiores Dificuldades
 
-- Utilização do inv, solucionei esse problema dando o comando puro do docker:
+- Utilização do inv. Solucionei esse problema dando o comando puro do Docker:
+
 ````bash
 docker compose -f docker/docker-compose.yml build
 docker compose -f docker/docker-compose.yml up
-
 ````
+
 
 ### Aprendizados
 
