@@ -1,4 +1,4 @@
-# Diário de Bordo – Leticia Arisa Kobayashi Higa
+# Diário de Bordo – Marco Tulio Soares
 
 
 *Disciplina:* GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE
