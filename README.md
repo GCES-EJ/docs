@@ -26,7 +26,7 @@ O **Empurrando Juntas (EJ)** utiliza **gamificação** e **aprendizado de máqui
 | 221008150 | João Antonio Ginuino Carvalho        | [i-JSS](https://github.com/i-JSS) | [i-JSS](https://gitlab.com/i-JSS) |
 | 211029601 | Victor Pontual Guedes Arruda Nóbrega |           VictorPontual           |           VictorPontual           |
 | 231012272 | Leticia Arisa Kobayashi Higa         | [Letica-Arisa-K-Higa](https://github.com/Leticia-Arisa-K-Higa)  |    [Letica-Arisa-K-Higa](https://github.com/Leticia-Arisa-K-Higa)    |
-|           |                                      |                                   |                                   |
+| 231035141 | João Filipe de Oliveira Souz         | [Joao151104](https://github.com/Joao151104)                     |                                   |
 |           |                                      |                                   |                                   |
 |           |                                      |                                   |                                   |
 |           |                                      |                                   |                                   |
