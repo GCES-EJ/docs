@@ -17,6 +17,7 @@
     - [João Carvalho](diarioBordo/joao_carvalho.md)
     - [Victor Pontual](diarioBordo/victor_pontual.md)
     - [Leticia Arisa](diarioBordo/leticia_arisa.md)
+    - [Marco Soares](diarioBordo/marco_soares.md)
 
 - **Templates**
     - [Template Diário de Bordo](templates/template-diario-bordo.md)
