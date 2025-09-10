@@ -19,6 +19,9 @@
     - [Leticia Arisa](diarioBordo/leticia_arisa.md)
     - [Marco Soares](diarioBordo/marco_soares.md)
     - [Caio Antonio](diarioBordo/caio_antonio.md)
+    - [João Filipe](diarioBordo/Joao_Filipe.md)
+    - [Víctor Augusto](diarioBordo/victor_augusto.md)
+    - [Ana Joyce](diarioBordo/ana_joyce.md)
 
 - **Templates**
     - [Template Diário de Bordo](templates/template-diario-bordo.md)

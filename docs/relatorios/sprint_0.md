@@ -33,6 +33,7 @@
 |-------------------------------|---------------------------|-----------------------------------|---------------------------------------------------|
 | João Antonio Ginuino Carvalho | Implementação do gitpages | https://gces-ej.github.io/docs/#/ | Criação da Organização e repositório do gitpages. |
 | Leticia Arisa Kobayashi Higa  | Documento Políticas de Contribuição | https://gces-ej.github.io/docs/#/politicasGCES/politicasGCES | Criação do documento Políticas de Contribuição. |
+| Ana Joyce Guedes Amorim da Silva | Contato com monitor e professora para alinhamento | – | Discussão sobre as demandas da sprint e agendamento de reunião. |
 
 ---
 

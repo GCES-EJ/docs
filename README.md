@@ -24,13 +24,11 @@ O **Empurrando Juntas (EJ)** utiliza **gamificação** e **aprendizado de máqui
 | Matrícula | Nome                                 |          Usuário GitHub           |          Usuário GitLab           |
 |:---------:|--------------------------------------|:---------------------------------:|:---------------------------------:|
 | 221008150 | João Antonio Ginuino Carvalho        | [i-JSS](https://github.com/i-JSS) | [i-JSS](https://gitlab.com/i-JSS) |
-| 211029601 | Victor Pontual Guedes Arruda Nóbrega |           VictorPontual           |           VictorPontual           |
-| 231012272 | Leticia Arisa Kobayashi Higa         | [Letica-Arisa-K-Higa](https://github.com/Leticia-Arisa-K-Higa)  |    [Letica-Arisa-K-Higa](https://github.com/Leticia-Arisa-K-Higa)    |
-| 231035141 | João Filipe de Oliveira Souz         | [Joao151104](https://github.com/Joao151104)                     |                                   |
-| 221008310 | Marco Tulio Soares de Deus           | [MarcoTulioSoares](https://github.com/MarcoTulioSoares)                                  |                                   |
+| 211029601 | Victor Pontual Guedes Arruda Nóbrega | [VictorPontual](https://github.com/VictorPontual) | [VictorPontual](https://gitlab.com/VictorPontual) |
+| 231012272 | Leticia Arisa Kobayashi Higa         | [Letica-Arisa-K-Higa](https://github.com/Leticia-Arisa-K-Higa) | [Leticia-Arisa-K-Higa](https://gitlab.com/Leticia-Arisa-K-Higa) |
+| 231035141 | João Filipe de Oliveira Souza        | [Joao151104](https://github.com/Joao151104) | [Joao151104](https://gitlab.com/Joao151104) |
+| 221008310 | Marco Tulio Soares de Deus           | [MarcoTulioSoares](https://github.com/MarcoTulioSoares) | [MarcoTulioSoares](https://gitlab.com/MarcoTulioSoares) |
 | 221031130 | Caio Antônio Araújo Garcia de Almeida | [Caio-Antonio](https://github.com/Caio-Antonio) | [Caio-Antonio](https://gitlab.com/Caio-Antonio) |
-| 221031238 | Víctor Augusto de Sousa Câmara       |    [victorcamaraa](https://github.com/victorcamaraa)                               | [victorcamaraa](https://github.com/victorcamaraa)                                    |
-|           |                                      |                                   |                                   |
-|           |                                      |                                   |                                   |
-
+| 221031238 | Víctor Augusto de Sousa Câmara       | [victorcamaraa](https://github.com/victorcamaraa) | [victorcamaraa](https://gitlab.com/victorcamaraa) |
+| 2111031566 | Ana Joyce Guedes Amorim da Silva    | [anajoyceamorim](https://github.com/anajoyceamorim) | [anajoyceamorim](https://gitlab.com/anajoyceamorim) |
 </div>
