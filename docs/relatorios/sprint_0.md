@@ -32,6 +32,7 @@
 | Integrante                    | Contribuições             | Links (PRs, Issues, Docs)         | Observações                                       |
 |-------------------------------|---------------------------|-----------------------------------|---------------------------------------------------|
 | João Antonio Ginuino Carvalho | Implementação do gitpages | https://gces-ej.github.io/docs/#/ | Criação da Organização e repositório do gitpages. |
+| Leticia Arisa Kobayashi Higa  | Documento Políticas de Contribuição | https://gces-ej.github.io/docs//politicasGCES/politicasGCES | Criação do documento Políticas de Contribuição. |
 
 ---
 

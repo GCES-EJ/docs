@@ -7,6 +7,9 @@
 
 </center>
 
+- **Mapeamento das politicas GCES**
+    - [Políticas de Contribuição](politicasGCES/politicasGCES.md)
+
 - **Relatórios**
     - [Sprint 0](relatorios/sprint_0.md)
 
