@@ -23,7 +23,7 @@
     - [Víctor Augusto](diarioBordo/victor_augusto.md)
     - [Ana Joyce](diarioBordo/ana_joyce.md)
     - [Yan Guimarães](diarioBordo/yan_guimaraes.md)
-    - [Uires_carlos](diarioBordo/uires_carlos.md)
+    - [uires carlos](diarioBordo/uires_carlos.md)
 
 - **Templates**
     - [Template Diário de Bordo](templates/template-diario-bordo.md)
