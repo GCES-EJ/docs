@@ -47,3 +47,41 @@ docker compose -f docker/docker-compose.yml up
 - [ ] Estudar o código-fonte em mais detalhes.
 - [ ] Ler a documentação referente à arquitetura do projeto.  
 - [ ] Estudar o inv. 
+
+---
+
+## Sprint 1 – \[11/09 – 25/09]
+
+### Resumo da Sprint
+
+O Empurrando Juntas está em processo de transformação para se tornar uma API independente do frontend. Para isso, é necessário mapear todas as rotas do projeto e documentá-las adequadamente. O grupo GCES anterior já mapeou algumas rotas, mas ainda falta documentar as realizadas e as pendentes. O objetivo desta sprint é finalizar esse mapeamento.
+
+### Atividades Realizadas
+
+| Data  | Atividade                                                          | Tipo    | Link/Referência                                      | Status    |
+|-------|--------------------------------------------------------------------|---------|------------------------------------------------------|-----------|
+| 19/09 | Mapeamento de rotas do projeto                                     | Revisão | -                                                    | Concluído |
+| 20/09 | Atualização da documentação no GitPage com o relatório da Sprint 1 | Doc     | https://gces-ej.github.io/docs/#/relatorios/sprint_1 | Concluído |
+| 21/09 | Documentação das rotas mapeadas                                    | Doc     | \[link PR]                                           | Parcial   |
+
+### Maiores Avanços
+
+- [x] Estudar o código-fonte em mais detalhes.
+- [x] Ler a documentação referente à arquitetura do projeto.
+- [x] Estudar o inv.
+
+* Primeira issue criada na comunidade.
+
+### Maiores Dificuldades
+
+* Dificuldades com as ferramentas para mapear as rotas.
+
+### Aprendizados
+
+* Aprofundamento no entendimento do código-fonte.
+* Noções de boas práticas na documentação de rotas.
+
+### Plano Pessoal para a Próxima Sprint
+
+* [ ] Finalizar a documentação das rotas mapeadas.
+* [ ] Iniciar a implementação das rotas pendentes.
