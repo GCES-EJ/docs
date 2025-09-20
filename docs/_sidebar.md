@@ -12,18 +12,20 @@
 
 - **Relatórios**
     - [Sprint 0](relatorios/sprint_0.md)
+    - [Sprint 1](relatorios/sprint_1.md)
 
 - **Diários de Bordo**
+    - [Ana Joyce](diarioBordo/ana_joyce.md)
+    - [Caio Antonio](diarioBordo/caio_antonio.md)
+    - [Felipe Lopes](diarioBordo/felipe_m.md)
     - [João Carvalho](diarioBordo/joao_carvalho.md)
-    - [Victor Pontual](diarioBordo/victor_pontual.md)
+    - [João Filipe](diarioBordo/joao_filipe.md)
     - [Leticia Arisa](diarioBordo/leticia_arisa.md)
     - [Marco Soares](diarioBordo/marco_soares.md)
-    - [Caio Antonio](diarioBordo/caio_antonio.md)
-    - [João Filipe](diarioBordo/Joao_Filipe.md)
-    - [Víctor Augusto](diarioBordo/victor_augusto.md)
-    - [Ana Joyce](diarioBordo/ana_joyce.md)
+    - [Uires Carlos](diarioBordo/uires_carlos.md)
+    - [Víctor Augusto](diarioBordo/victor_camara.md)
+    - [Victor Pontual](diarioBordo/victor_pontual.md)
     - [Yan Guimarães](diarioBordo/yan_guimaraes.md)
-    - [uires carlos](diarioBordo/uires_carlos.md)
 
 - **Templates**
     - [Template Diário de Bordo](templates/template-diario-bordo.md)
