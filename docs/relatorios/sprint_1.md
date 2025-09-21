@@ -29,19 +29,19 @@
 
 ## 3. Contribuições Individuais
 
-| Integrante                        | Contribuições             | Links (PRs, Issues, Docs)         | Observações                                       |
-|-----------------------------------|---------------------------|-----------------------------------|---------------------------------------------------|
-| Ana Joyce Guedes Amorim da Silva  | -                         | –                                 | -                                                 |
-| Caio Antonio de Oliveira          | –                         | –                                 | –                                                 |
-| Felipe Martins Lopes              | –                         | –                                 | –                                                 |
-| João Antonio Ginuino Carvalho     | Implementação do gitpages | https://gces-ej.github.io/docs/#/ | Criação da Organização e repositório do gitpages. |
-| João Filipe de Oliveira Silva     | –                         | –                                 | –                                                 |
-| Leticia Arisa Kobayashi Higa      | -                         | -                                 | -                                                 |
-| Marco Soares de Oliveira          | –                         | –                                 | –                                                 |
-| Uires Carlos de Oliveira          | –                         | –                                 | –                                                 |
-| Victor Augusto Câmara de Oliveira | –                         | –                                 | –                                                 |
-| Victor Pontual de Oliveira        | –                         | –                                 | –                                                 |
-| Yan Guimarães de Oliveira         | –                         | –                                 | –                                                 |
+| Integrante                        | Contribuições                                                                                                        | Links (PRs, Issues, Docs)                                                                             | Observações                                                           |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Ana Joyce Guedes Amorim da Silva  | -                                                                                                                    | –                                                                                                     | -                                                                     |
+| Caio Antonio de Oliveira          | –                                                                                                                    | –                                                                                                     | –                                                                     |
+| Felipe Martins Lopes              | –                                                                                                                    | –                                                                                                     | –                                                                     |
+| João Antonio Ginuino Carvalho     | Documentação das rotas do `ej_users`, documentação inicial do relatório 1 e mapeamento inicial das rotas do projeto. | https://gces-ej.github.io/docs/#/, [Issue #45](https://gitlab.com/gces-ej/ej-application/-/issues/45) | Estudo e aplicação das boas práticas seguindo o guia de contribuição. |
+| João Filipe de Oliveira Silva     | –                                                                                                                    | –                                                                                                     | –                                                                     |
+| Leticia Arisa Kobayashi Higa      | -                                                                                                                    | -                                                                                                     | -                                                                     |
+| Marco Soares de Oliveira          | –                                                                                                                    | –                                                                                                     | –                                                                     |
+| Uires Carlos de Oliveira          | –                                                                                                                    | –                                                                                                     | –                                                                     |
+| Victor Augusto Câmara de Oliveira | –                                                                                                                    | –                                                                                                     | –                                                                     |
+| Victor Pontual de Oliveira        | –                                                                                                                    | –                                                                                                     | –                                                                     |
+| Yan Guimarães de Oliveira         | –                                                                                                                    | –                                                                                                     | –                                                                     |
 
 ---
 
@@ -57,13 +57,14 @@
 
 ## 5. Maiores Dificuldades
 
-- Utilização de ferramentas para mapear rotas da API, fluxo de dados e endpoints.
+- Mapear rotas da API, fluxo de dados e endpoints.
+- Documentação utilizando o rst.
 
 ---
 
 ## 6. Lições Aprendidas
 
-* Utilização de ferramentas para mapear rotas da API.
+* Criação de issues e merge requests na comunidade.
 * Importância do planejamento coletivo para reduzir retrabalho e melhorar a comunicação entre os membros da equipe
 
 ---

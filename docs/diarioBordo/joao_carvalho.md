@@ -58,11 +58,12 @@ O Empurrando Juntas está em processo de transformação para se tornar uma API 
 
 ### Atividades Realizadas
 
-| Data  | Atividade                                                          | Tipo    | Link/Referência                                      | Status    |
-|-------|--------------------------------------------------------------------|---------|------------------------------------------------------|-----------|
-| 19/09 | Mapeamento de rotas do projeto                                     | Revisão | -                                                    | Concluído |
-| 20/09 | Atualização da documentação no GitPage com o relatório da Sprint 1 | Doc     | https://gces-ej.github.io/docs/#/relatorios/sprint_1 | Concluído |
-| 21/09 | Documentação das rotas mapeadas                                    | Doc     | \[link PR]                                           | Parcial   |
+| Data  | Atividade                                                          | Tipo    | Link/Referência                                                    | Status    |
+|-------|--------------------------------------------------------------------|---------|--------------------------------------------------------------------|-----------|
+| 19/09 | Mapeamento de rotas do projeto                                     | Revisão | -                                                                  | Concluído |
+| 20/09 | Atualização da documentação no GitPage com o relatório da Sprint 1 | Doc     | https://gces-ej.github.io/docs/#/relatorios/sprint_1               | Concluído |
+| 20/09 | Criação da issue e análise do guia de contribuição                 | Estudo  | https://gitlab.com/gces-ej/ej-application/-/issues/45              | Concluído |
+| 21/09 | Documentação das rotas do `ej_users`                               | Doc     | [Issue #45](https://gitlab.com/gces-ej/ej-application/-/issues/45) | Parcial   |
 
 ### Maiores Avanços
 
@@ -74,11 +75,12 @@ O Empurrando Juntas está em processo de transformação para se tornar uma API 
 
 ### Maiores Dificuldades
 
-* Dificuldades com as ferramentas para mapear as rotas.
+* Dificuldades com a ferramenta de documentação do EJ (rst).
 
 ### Aprendizados
 
 * Aprofundamento no entendimento do código-fonte.
+* Aprofundamento no guia de contribuição.
 * Noções de boas práticas na documentação de rotas.
 
 ### Plano Pessoal para a Próxima Sprint
