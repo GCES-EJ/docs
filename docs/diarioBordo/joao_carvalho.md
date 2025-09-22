@@ -62,8 +62,9 @@ O Empurrando Juntas está em processo de transformação para se tornar uma API 
 |-------|--------------------------------------------------------------------|---------|--------------------------------------------------------------------|-----------|
 | 19/09 | Mapeamento de rotas do projeto                                     | Revisão | -                                                                  | Concluído |
 | 20/09 | Atualização da documentação no GitPage com o relatório da Sprint 1 | Doc     | https://gces-ej.github.io/docs/#/relatorios/sprint_1               | Concluído |
-| 20/09 | Criação da issue e análise do guia de contribuição                 | Estudo  | https://gitlab.com/gces-ej/ej-application/-/issues/45              | Concluído |
-| 21/09 | Documentação das rotas do `ej_users`                               | Doc     | [Issue #45](https://gitlab.com/gces-ej/ej-application/-/issues/45) | Parcial   |
+| 20/09 | Criação da issue e análise do guia de contribuição                 | Estudo  | [Issue #45](https://gitlab.com/gces-ej/ej-application/-/issues/45)             | Concluído |
+| 21/09 | Documentação das rotas do `ej_users`                               | Doc     | [docs/api-ej-users-45](https://gitlab.com/gces-ej/ej-application/-/tree/docs/api-ej-users-45) | Concluído   |
+| 22/09 | MR (Develop com pipeline quebrada, meu MR não será aceito pois minha branch é um fork da develop)                               | MR     | - | Pendente   |
 
 ### Maiores Avanços
 
@@ -76,6 +77,7 @@ O Empurrando Juntas está em processo de transformação para se tornar uma API 
 ### Maiores Dificuldades
 
 * Dificuldades com a ferramenta de documentação do EJ (rst).
+* Pipeline quebrado dificuldade de realizar o MR.
 
 ### Aprendizados
 
@@ -87,3 +89,4 @@ O Empurrando Juntas está em processo de transformação para se tornar uma API 
 
 * [ ] Finalizar a documentação das rotas mapeadas.
 * [ ] Iniciar a implementação das rotas pendentes.
+* [ ] Corrigir o pipeline quebrado na develop.
