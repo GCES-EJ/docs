@@ -52,7 +52,7 @@ Nesse início, concentrei meus esforços em compreender a proposta e os objetivo
 
 ### Resumo da Sprint
 
-Esta sprint foi dedicada à análise do pipeline de CI/CD do projeto. Fui capaz de identificar uma falha crítica em um teste de API e, em resposta, documentei o problema de forma detalhada, criando uma issue para rastreamento e planejamento da correção. O trabalho envolveu a leitura de logs de pipeline e a compreensão do fluxo de autenticação da aplicação.
+Esta sprint foi dedicada à análise do pipeline de CI/CD do projeto. Fui capaz de identificar uma falha crítica em um teste de API e, em resposta, documentei o problema de forma detalhada, criando uma issue para rastreamento e planejamento da correção. O trabalho envolveu a leitura de logs de pipeline e a compreensão do fluxo de autenticação da aplicação. Este trabalho foi realizado em parceria com o **Felipe Matheus**.
 
 ### Atividades Executadas
 
