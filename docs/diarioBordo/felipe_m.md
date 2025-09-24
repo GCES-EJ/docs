@@ -41,6 +41,41 @@ O foco inicial desta sprint foi a imersão no projeto "Empurrando Juntas", busca
 
 ### Plano Pessoal para a Próxima Sprint
 
-- [ ] Aprofundar o estudo na estrutura de diretórios e no código-fonte.
-- [ ] Selecionar uma *issue* de baixa complexidade para tentar uma primeira contribuição.
-- [ ] Participar das discussões da comunidade para entender as prioridades atuais.
+- [x] Aprofundar o estudo na estrutura de diretórios e no código-fonte.
+- [x] Selecionar uma *issue* de baixa complexidade para tentar uma primeira contribuição.
+- [x] Participar das discussões da comunidade para entender as prioridades atuais.
+
+## Sprint 1 – [11/09 a 23/09]
+
+### Resumo da Sprint
+
+Nesta sprint, o foco foi a saúde do projeto, especificamente o pipeline de CI/CD que apresentava falhas recorrentes. Em uma sessão de pair programming com o **Yan Lucas**, investigamos os logs e o código dos testes. Conseguimos diagnosticar com precisão a causa raiz do problema, que estava relacionada a uma verificação incorreta de status codes de autenticação/autorização. O trabalho culminou na criação de uma issue detalhada para guiar a correção.
+
+### Atividades Executadas
+
+| Data | Atividade | Tipo (Código/Doc/Discussão/Outro) | Link/Referência | Status |
+|---|---|---|---|---|
+| 15/09 | Análise em par do pipeline de CI/CD para diagnóstico da falha | Análise/Diagnóstico | [Issue #50](https://gitlab.com/gces-ej/ej-application/-/issues/50) | Concluído |
+| 21/09 | Discussão e revisão da issue criada pelo Yan | Discussão/Doc | [Issue #50](https://gitlab.com/gces-ej/ej-application/-/issues/50) | Concluído |
+
+### Principais Conquistas
+
+* **Diagnóstico preciso da falha**: Juntos, identificamos que um teste esperava o status `403 Forbidden` (acesso negado por falta de permissão) quando a API corretamente retornava `401 Unauthorized` (acesso negado por falta de credenciais de autenticação válidas).
+* **Fortalecimento da colaboração em equipe**: O trabalho em par com o Yan foi eficaz, permitindo que combinássemos nossas observações para chegar à solução.
+
+### Obstáculos Encontrados
+
+* A dificuldade inicial foi interpretar os logs do GitLab CI, que eram verbosos. Foi preciso paciência e um olhar atento para isolar o teste exato que estava falhando e, a partir daí, analisar o código-fonte correspondente.
+
+### Lições Aprendidas
+
+* **O valor do Pair Programming**: Depurar problemas complexos em dupla é muito mais eficiente. Uma segunda perspectiva ajuda a identificar detalhes que poderiam passar despercebidos.
+* **Diferença prática entre `401 Unauthorized` e `403 Forbidden`**: Embora já conhecesse a teoria, ver o impacto direto dessa diferença em um teste automatizado solidificou o conceito.
+* Como documentar um bug de forma colaborativa, garantindo que todo o time tenha o mesmo entendimento do problema.
+
+### Metas Pessoais para a Próxima Sprint
+
+* [ ] Colaborar com o Yan na implementação da correção para a issue `Falha no teste de permissão da API`.
+* [ ] Fazer o code review do Merge Request para garantir a qualidade e a eficácia da solução.
+* [ ] Pesquisar e propor melhorias em outros testes de API para evitar inconsistências semelhantes.
+
