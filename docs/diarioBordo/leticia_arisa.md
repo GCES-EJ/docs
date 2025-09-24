@@ -60,7 +60,7 @@ Esta sprint foi dedicada à análise das APIs, identificando aquelas que ainda n
 | 21/09 | Criação de issue para adicionar o passo a passo de execução do projeto no Windows windows | Issue | https://gitlab.com/gces-ej/ej-application/-/issues/46   | Concluído |
 | 21/09 | Abertura de PR para incluir o passo a passo de execução do projeto no Windows | PRs | https://gitlab.com/gces-ej/ej-application/-/merge_requests/26              | Concluído |
 | 23/09 | Estudo das APIs do projeto | Estudo  |      -        | Concluído |
-| 23/09 | Criação de documento de anotações listando endpoints ainda não documentados  | Documento | - | Concluído |
+| 23/09 | Criação de documento de anotações listando endpoints ainda não documentados  | Documento | https://gces-ej.github.io/docs/#/notes/APIs | Concluído |
 
 ### Maiores Avanços
 
