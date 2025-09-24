@@ -10,6 +10,9 @@
 - **Mapeamento das politicas GCES**
     - [Políticas de Contribuição](politicasGCES/politicasGCES.md)
 
+- **Anotações**
+    - [APIs](notes/APIs.md)
+
 - **Relatórios**
     - [Sprint 0](relatorios/sprint_0.md)
     - [Sprint 1](relatorios/sprint_1.md)

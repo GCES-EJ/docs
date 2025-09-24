@@ -45,3 +45,42 @@ Sprint dedicada à ambientação no projeto, com foco nos primeiros passos, leit
 - [ ] Estudar detalhadamente a estrutura de pastas do projeto.
 - [ ] Aprofundar o conhecimento sobre a arquitetura do projeto.
 - [ ] Analisar e acompanhar as Issues abertas no repositório.
+
+
+## Sprint 1 – \[11/09 – 25/09]
+
+### Resumo da Sprint
+
+Esta sprint foi dedicada à análise das APIs, identificando aquelas que ainda não estavam documentadas no documento oficial. Como atividade extra, foi adicionado ao README o passo a passo para executar o projeto no Windows.
+
+### Atividades Realizadas
+
+| Data  | Atividade                                                          | Tipo    | Link/Referência                                                    | Status    |
+|-------|--------------------------------------------------------------------|---------|--------------------------------------------------------------------|-----------|
+| 21/09 | Criação de issue para adicionar o passo a passo de execução do projeto no Windows windows | Issue | https://gitlab.com/gces-ej/ej-application/-/issues/46   | Concluído |
+| 21/09 | Abertura de PR para incluir o passo a passo de execução do projeto no Windows | PRs | https://gitlab.com/gces-ej/ej-application/-/merge_requests/26              | Concluído |
+| 23/09 | Estudo das APIs do projeto | Estudo  |      -        | Concluído |
+| 23/09 | Criação de documento de anotações listando endpoints ainda não documentados  | Documento | - | Concluído |
+
+### Maiores Avanços
+
+- [x] Estudar o código das APIs.
+- [x] Ler a documentação de APIs.
+
+
+### Maiores Dificuldades
+
+* Dificuldades com a ferramenta de documentação do EJ (rst).
+* Pipeline quebrado dificuldade de realizar o PR.
+* Entender o código.
+
+### Aprendizados
+
+* Aprofundamento no entendimento das APIs.
+* Melhor entendimento em como funciona o guia de contribuição.
+
+### Plano Pessoal para a Próxima Sprint
+
+* [ ] Ajudar na documentação das rotas mapeadas.
+* [ ] Abrir nova issue.
+* [ ] Entender melhor outras partes do código-fonte.
