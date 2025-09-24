@@ -1,4 +1,4 @@
-# 📝 Relatório de Contribuição – Sprint 0
+# 📝 Relatório de Contribuição – Sprint 1
 
 *Disciplina:* GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE
 
@@ -6,7 +6,7 @@
 
 *Comunidade/Projeto de Software Livre:* Empurrando Juntas
 
-*Período da Sprint:* 11/09 – 25/09
+*Período da Sprint:* 11/09 – 24/09
 
 ---
 
