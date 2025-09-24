@@ -42,7 +42,44 @@ Nesse início, concentrei meus esforços em compreender a proposta e os objetivo
 
 ### Plano Pessoal para a Próxima Sprint
 
-- [ ] Estudar detalhadamente a estrutura do projeto.
-- [ ] Observar e acompanhar as Issues abertas no repositório.
+- [x] Estudar detalhadamente a estrutura do projeto.
+- [x] Observar e acompanhar as Issues abertas no repositório.
+- [x] Identificar novas melhorias para criação de issue.
 
 ---
+
+## Sprint 1 – *11/09 a 23/09*
+
+### Resumo da Sprint
+
+Esta sprint foi dedicada à análise do pipeline de CI/CD do projeto. Fui capaz de identificar uma falha crítica em um teste de API e, em resposta, documentei o problema de forma detalhada, criando uma issue para rastreamento e planejamento da correção. O trabalho envolveu a leitura de logs de pipeline e a compreensão do fluxo de autenticação da aplicação.
+
+### Atividades Executadas
+
+| Data | Atividade | Tipo (Código/Doc/Discussão/Outro) | Link/Referência | Status |
+|---|---|---|---|---|
+| 15/09 | Análise da falha no pipeline de CI/CD | Análise/Diagnóstico | Imagem | Concluído |
+| 21/09 | Criação de issue para correção de teste | Planejamento/Doc | [Issue sobre falha no teste de permissão da API](https://gitlab.com/gces-ej/ej-application/-/issues/50) | Concluído |
+
+<img width="1514" height="204" alt="image" src="https://github.com/user-attachments/assets/61486406-4daf-4592-8ad7-293abbce855f" />
+
+### Principais Conquistas
+
+* **Identificação da causa raiz da falha**: O problema no pipeline foi diagnosticado como um teste esperando um status de autenticação diferente do retornado pela API.
+* **Criação de uma issue detalhada**: Foi criado um item de trabalho completo, com contexto, objetivo, escopo e critérios de aceitação, demonstrando uma abordagem profissional para o gerenciamento de bugs.
+
+### Obstáculos Encontrados
+
+* A principal dificuldade foi a inconsistência entre o comportamento esperado pelo teste (status **`403 Forbidden`**) e o comportamento real da API (status **`401 Unauthorized`**). Essa diferença sutil exigiu uma análise cuidadosa para ser identificada.
+
+### Lições Aprendidas
+
+* A importância de uma análise minuciosa dos logs do pipeline para identificar a origem exata de uma falha.
+* Noções sobre o fluxo de autenticação e autorização em APIs, e a diferença entre os status codes **`401`** e **`403`**.
+* Aprender a documentar bugs de maneira eficaz, com informações claras e acionáveis para facilitar o trabalho de correção.
+
+### Metas Pessoais para a Próxima Sprint
+
+* [ ] Realizar a correção da issue `Falha no teste de permissão da API`.
+* [ ] Submeter um Merge Request com a correção e garantir que o pipeline seja aprovado.
+* [ ] Explorar e refatorar outros testes de autenticação e permissão para garantir consistência.
