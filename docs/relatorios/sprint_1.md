@@ -13,7 +13,7 @@
 ## 1. Objetivos da Sprint
 
 - [x] Mapear rotas da API.
-- [x] Configurar a pipeline inicial.
+- [x] Reconfigurar a pipeline atual.
 
 ---
 
@@ -23,7 +23,7 @@
 |------------------------------------|-------------------------------------|-------------------------------------------|-----------------------|
 | Atualização do Gitpages            | Concluído                           | https://gces-ej.github.io/docs/#/         | Organização da Equipe |
 | Issues e PR em atividades iniciais | Concluído                           | https://gitlab.com/gces-ej/ej-application | -                     |
-
+| Nova Pipeline definidade com etapa de black, ruff e pytest | Concluído   | Em produção | aguardando a refatoração de alguns códigos da branch principal |
 
 ---
 
@@ -31,7 +31,7 @@
 
 | Integrante                        | Contribuições                                                                                                        | Links (PRs, Issues, Docs)                                                                             | Observações                                                           |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Ana Joyce Guedes Amorim da Silva  | -                                                                                                                    | –                                                                                                     | -                                                                     |
+| Ana Joyce Guedes Amorim da Silva  | Estudo da pipeline antiga, entender como os testes antigos funcionavam e motivo dela não estar mais funcionando, identificação do erro, entrar em contato com o monitor para a discussão de possibilidades, definição do novo fluxo da pipeline   | Em produção | Aguardando a refatoração de arquivos da branch principal |
 | Caio Antonio de Oliveira          | –                                                                                                                    | –                                                                                                     | –                                                                     |
 | Felipe Matheus Ribeiro Lopes              | Em colaboração com Yan Lucas, realizamos uma análise da falha no pipeline de CI/CD e criação de issue para a correção.| [Issue #50](https://gitlab.com/gces-ej/ej-application/-/issues/50) |Contribuição focada em QA e documentação de erros na pipeline |
 | João Antonio Ginuino Carvalho     | Documentação das rotas do `ej_users`, documentação inicial do relatório 1 e mapeamento inicial das rotas do projeto. | https://gces-ej.github.io/docs/#/, [Issue #45](https://gitlab.com/gces-ej/ej-application/-/issues/45) | Estudo e aplicação das boas práticas seguindo o guia de contribuição. |
@@ -47,11 +47,11 @@
 
 ## 4. Maiores Avanços
 
-* [x] Solicitar aprovação do fork do repositório principal.
+* [x] Inclusão dos contribuintes ao fork mais atualizado do projeto.
 * [x] Ampliar a documentação, incluindo os procedimentos adotados e os aprendizados obtidos nesta sprint.
-
-- Mapeamento das rotas da API.
-- Configuração inicial da pipeline de CI/CD.
+* [x] Refatoração da pipeline.
+* [x] Mapeamento das rotas da API.
+* [x] Configuração inicial da pipeline de CI/CD.
 
 ---
 
@@ -59,6 +59,11 @@
 
 - Mapear rotas da API, fluxo de dados e endpoints.
 - Documentação utilizando o rst.
+- Pipeline em desuso
+- Servidor utilizado na pipeline em desuso
+- Códigos antigos com muito erros de sintaxe e lint
+- Teste com erro (pytest)
+- Sem a pipeline o repositório não estava aceitando push
 
 ---
 
@@ -66,6 +71,8 @@
 
 * Criação de issues e merge requests na comunidade.
 * Importância do planejamento coletivo para reduzir retrabalho e melhorar a comunicação entre os membros da equipe
+* Importãncia de uma pipeline manutenível
+* Garantir a qualidade dos códigos que chegam a branch principal
 
 ---
 
@@ -73,3 +80,5 @@
 
 * [ ] Criação de novas issues para documentação.
 * [ ] Analise de rotas pendentes na API.
+* [ ] Correção dos testes unitários.
+* [ ] Criação de issues para revisão de qualidade do código.

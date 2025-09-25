@@ -42,3 +42,48 @@ Esta sprint inicial foi focada na ambientação com o projeto. As principais ati
 - [ ] Aprofundar o estudo sobre a arquitetura do projeto.
 - [ ] Analisar as issues que serão abertas para identificar uma primeira contribuição.
 - [ ] Reunião com o monitor para alinhamento.
+
+----
+
+## Sprint 1 – [11/09 – 23/09]
+
+### Resumo da Sprint
+
+
+Durante a Sprint 1, nosso objetivo principal foi dar início às contribuições no projeto. Após duas reuniões com o monitor Giovanni, a equipe foi dividida em duas frentes de trabalho: documentação e pipeline.
+
+A frente de documentação assumiu a responsabilidade de mapear todos os endpoints da aplicação. Essa tarefa é crucial para identificarmos as rotas ausentes e garantirmos que o backend opere de maneira autônoma, visto que o projeto se destina a ser um Software as a Service (SaaS). Eu optei por integrar a frente de pipeline, que teve como meta refatorar a pipeline existente, pois a anterior estava desativada, o que tornava inviável a integração de novas contribuições ao código.
+
+### Atividades Realizadas
+
+| Data  | Atividade                                   | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                              | Status    |
+|-------|---------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------|-----------|
+| 20/09 | Estudo da pipeline anterior | Estudo    | –  | Concluído |
+| 21/09 | Identificação dos erros | Estudo    |  –  | Concluído |
+| 22/09 | Contato com o monitor para verificar se era possível retirar os testes que dependiam do servidro da Pencil ou se migravamos para um servidor do Lappis  | Discussão  | – | Concluído |
+| 23/09 | Refatoração da Pipeline | Código | –   | Concluído |
+
+### Maiores Avanços
+
+- Definição de teste para a pipeline, correção de testes unitários do pytest.
+- Reestrutação da branch principal.
+- Repositório contribuível novamente.
+
+### Maiores Dificuldades
+
+- A pipeline antiga contava com teste E2E que operavam em um servidor da Pencil, que já não está mais disponível, então nenhum push estava sendo aceito no projeto, decidir se a gente manteria estes testes, e o grupo anterior que contribuiu com o projeto subiu bastante código com erros de lint e sintaxe, foi bem difícil refatorar tantos arquivos para passaremk no Black no Ruff e no Pytest.
+
+### Aprendizados
+
+- Black
+- Ruff
+- teste E2E
+- configuração de pipeline
+- lint
+
+### Plano Pessoal para a Próxima Sprint
+
+- [ ] Divisão de tarefas.
+- [ ] Terminar de refatorar os testes unitários.
+- [ ] Abertura de novas issues.
+- [ ] Aumentar a qualidade do código.
