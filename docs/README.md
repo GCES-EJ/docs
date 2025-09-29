@@ -32,4 +32,5 @@ O **Empurrando Juntas (EJ)** utiliza **gamificação** e **aprendizado de máqui
 | 221031238 | Víctor Augusto de Sousa Câmara       | [victorcamaraa](https://github.com/victorcamaraa) | [victorcamaraa](https://gitlab.com/victorcamaraa) |
 | 2111031566 | Ana Joyce Guedes Amorim da Silva    | [anajoyceamorim](https://github.com/anajoyceamorim) | [anajoyceamorim](https://gitlab.com/anajoyceamorim) |
 | 222006220 | Yan Lucas Souza Guimarães    | [yanzin00](https://github.com/yanzin00) | [yanzin00](https://gitlab.com/yanzin00) |
+| 202043307 | Uires Carlos de Oliveira	    | uires2023](https://github.com/uires2023) | [uires2024](https://gitlab.com/uires2024) |  
 </div>
