@@ -90,3 +90,38 @@ O Empurrando Juntas está em processo de transformação para se tornar uma API 
 * [ ] Finalizar a documentação das rotas mapeadas.
 * [ ] Iniciar a implementação das rotas pendentes.
 * [ ] Corrigir o pipeline quebrado na develop.
+
+---
+
+## Sprint 2 – \[26/09 – 08/10]
+
+### Resumo da Sprint
+
+Seguindo a sugestão da professora Carla, abandonamos a ideia de documentar as rotas manualmente em um arquivo de documentação. Em vez disso, decidimos utilizar o Swagger, para facilitar a documentação das rotas de forma automática, melhorando a comunicação e a visualização das APIs.
+### Atividades Realizadas
+
+
+| Data  | Atividade                                | Tipo    | Link/Referência | Status    |
+|-------|------------------------------------------|---------|-----------------|-----------|
+| 04/10 | Estudo sobre Swagger                     | Estudo  | -               | Concluído |
+| 05/10 | Análise da documentação do Swagger da ej | Revisão | -               | Concluído |
+
+
+### Maiores Avanços
+
+* Realização de um estudo sobre o Swagger.
+* Análise da documentação Swagger já implementada no projeto.
+
+### Maiores Dificuldades
+
+* Nunca havia trabalhado com Swagger antes, o que exigiu um aprendizado inicial sobre a ferramenta e suas funcionalidades.
+
+### Aprendizados
+
+* Criação de documentação automática de rotas com Swagger.
+* Noções de boas práticas na documentação de rotas.
+
+### Plano Pessoal para a Próxima Sprint
+
+* [ ] Finalizar a documentação das rotas mapeadas.
+* [ ] Iniciar a implementação das rotas pendentes.
