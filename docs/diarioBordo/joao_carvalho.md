@@ -101,16 +101,19 @@ Seguindo a sugestão da professora Carla, abandonamos a ideia de documentar as r
 ### Atividades Realizadas
 
 
-| Data  | Atividade                                | Tipo    | Link/Referência | Status    |
-|-------|------------------------------------------|---------|-----------------|-----------|
-| 04/10 | Estudo sobre Swagger                     | Estudo  | -               | Concluído |
-| 05/10 | Análise da documentação do Swagger da ej | Revisão | -               | Concluído |
+| Data  | Atividade                                                       | Tipo    | Link/Referência | Status    |
+|-------|-----------------------------------------------------------------|---------|-----------------|-----------|
+| 04/10 | Estudo sobre Swagger                                            | Estudo  | -               | Concluído |
+| 05/10 | Análise da documentação do Swagger da ej                        | Revisão | -               | Concluído |
+| 06/10 | Fechamento da issue e branch relacionadas a documentação de API | Revisão | -               | Concluído |
+| 06/10 | Documentação de Swagger e como mapear rotas                     | Doc     | -               | Concluído |
 
 
 ### Maiores Avanços
 
 * Realização de um estudo sobre o Swagger.
 * Análise da documentação Swagger já implementada no projeto.
+* Documentação de como utilizar o Swagger para mapear rotas.
 
 ### Maiores Dificuldades
 

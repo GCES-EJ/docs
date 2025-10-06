@@ -26,3 +26,4 @@
 
 * **Anotações**
   * [Endpoints da API](notes/APIs.md)
+  * [Swagger](notes/Swagger.md)
