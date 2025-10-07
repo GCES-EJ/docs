@@ -33,7 +33,7 @@
 | Felipe Matheus Ribeiro Lopes         |                                                                                                  |                                                                        |                                                                                                                                                                                                                                                                                                                                                                       |
 | João Antonio Ginuino Carvalho        | Estudo do Swagger, documentação inicial do relatório 2, documentação de como utilziar o Swagger. | [Documentação Swagger](https://gces-ej.github.io/docs/#/notes/Swagger) | Estudei o Swagger para entender como ele pode ser usado para documentar as rotas automaticamente. Como nunca tinha trabalhado com essa ferramenta antes, foi um desafio inicial, mas consegui aprender seus recursos e como aplicá-los no projeto. Isso vai facilitar a documentação das rotas nas próximas sprints e melhorar a comunicação da equipe sobre as APIs. |
 | João Filipe de Oliveira Silva        |                                                                                                  |                                                                        |                                                                                                                                                                                                                                                                                                                                                                       |
-| Leticia Arisa Kobayashi Higa         |                                                                                                  |                                                                        |                                                                                                                                                                                                                                                                                                                                                                       |
+| Leticia Arisa Kobayashi Higa         | Análise, estudo e correção da documentação da API (Swagger), registrando ViewSets que estavam ausentes. Criação da issue e MR da tarefa. |  [Issue](https://gitlab.com/gces-ej/ej-application/-/issues/53), [MR](https://gitlab.com/gces-ej/ej-application/-/merge_requests/30)   | Analisei a documentação da API e identifiquei que ViewSets (ClusterViewSet, StereotypeRootViewSet) estavam ausentes por não serem registrados no urls.py. Corrigi o router principal para expor as rotas faltantes e formalizei a tarefa criando a issue e o commit correspondentes. |
 | Marco Soares de Oliveira             |                                                                                                  |                                                                        |                                                                                                                                                                                                                                                                                                                                                                       |
 | Uires Carlos de Oliveira             |                                                                                                  |                                                                        |                                                                                                                                                                                                                                                                                                                                                                       |
 | Victor Augusto Câmara de Oliveira    |                                                                                                  |                                                                        |                                                                                                                                                                                                                                                                                                                                                                       |
@@ -50,13 +50,14 @@
 
 ## 5. Maiores Dificuldades
 
-- tanana
+- Navegar na estrutura de URLs do projeto (API vs. Django tradicional).
 
 ---
 
 ## 6. Lições Aprendidas
 
 * Criação de documentação automática de rotas com Swagger.
+* A necessidade de registrar ViewSets no router para que sejam expostos na API e na documentação.
 
 ---
 

@@ -84,3 +84,39 @@ Esta sprint foi dedicada à análise das APIs, identificando aquelas que ainda n
 * [ ] Ajudar na documentação das rotas mapeadas.
 * [ ] Abrir nova issue.
 * [ ] Entender melhor outras partes do código-fonte.
+
+---
+
+## Sprint 2 – \[26/09 – 08/10]
+
+### Resumo da Sprint
+
+Nesta sprint, o meu foco foi a validação e correção da documentação automática da API gerada pelo Swagger. O objetivo era garantir que a documentação refletisse de forma completa o código-fonte. Foi realizada uma análise que resultou na identificação e correção de ViewSets inteiros que não estavam sendo expostos na API por falta de registro no router principal.
+
+### Atividades Realizadas
+
+
+| Data  | Atividade                                                       | Tipo    | Link/Referência                                                        | Status    |
+|-------|-----------------------------------------------------------------|---------|------------------------------------------------------------------------|-----------|
+| 05/10 | Análise da documentação Swagger e comparação com os ViewSets do código.   | Estudo  | - | Concluído |
+| 06/10 | Correção do api_router para registrar os ViewSets ClusterViewSet e StereotypeRootViewSet.   | Código | - | Concluído |
+| 07/10 | Criação da issue para formalizar a tarefa de registrar os endpoints faltantes. | Issue | [Issue](https://gitlab.com/gces-ej/ej-application/-/issues/53)| Concluído |
+| 07/10 | Criação da MR para registrar os endpoints faltantes.   | MR | [MR](https://gitlab.com/gces-ej/ej-application/-/merge_requests/30) | Concluído |
+
+
+### Maiores Avanços
+
+* Aprofundamento técnico no sistema de roteamento do Django REST Framework e sua integração com a ferramenta drf-spectacular (Swagger).
+* Contribuição direta no código-fonte para garantir a completude da API.
+
+### Maiores Dificuldades
+
+* A principal dificuldade foi entender por que alguns endpoints não apareciam na documentação, o que exigiu uma depuração na complexa estrutura de URLs do projeto para diferenciar as rotas da API REST das rotas do Django tradicional.
+
+### Aprendizados
+
+* Um ViewSet só é exposto na API se for explicitamente registrado no router do urls.py; sua simples existência no código não é suficiente.
+
+### Plano Pessoal para a Próxima Sprint
+
+* [ ] Ajudar na implementação das rotas pendentes.
