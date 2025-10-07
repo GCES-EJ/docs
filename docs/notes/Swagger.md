@@ -24,7 +24,7 @@ http://localhost:8000/api/v1/swagger/
 **Código relacionado à configuração do Swagger:**  
 
 ````txt
-[ej/urls.py](https://gitlab.com/gces-ej/ej-application/-/blob/develop/src/ej/urls.py?ref_type=heads)
+https://gitlab.com/gces-ej/ej-application/-/blob/develop/src/ej/urls.py?ref_type=heads
 ````
 
 > Alterações nele modificam automaticamente o swagger.
