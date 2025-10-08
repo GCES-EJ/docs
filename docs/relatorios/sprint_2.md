@@ -75,5 +75,4 @@ Nesta sprint, o foco da equipe foi consolidar a documentação automática da AP
 
 ## 7. Planejamento para a Próxima Sprint
 
-* [ ] tanana
 * [ ] Abertura das issues para implementação da nova arquitetura de autenticação
