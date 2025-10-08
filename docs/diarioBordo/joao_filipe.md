@@ -83,4 +83,39 @@ Nesta sprint, avancei da fase de exploração para a prática efetiva no projeto
 - [ ] Trabalhar na solução definitiva do problema da pipeline.
 - [ ] Aprofundar o entendimento da arquitetura do projeto.
 
-      
+
+## Sprint 2 – [26/09 – 08/10]
+
+### Resumo da Sprint
+
+Na Sprint 2, o monitor Giovanni apresentou um novo desafio à equipe: aprimorar o sistema de autenticação do projeto. Ele registrou uma issue com diferentes sugestões e orientações, destacando como primeiro passo o estudo detalhado da documentação do modelo de autenticação atual.
+### Atividades Realizadas
+
+| Data  | Atividade                                                                 | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                              | Status       |
+|-------|---------------------------------------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------|--------------|
+| 30/09 | Giovanni apresenta a necessidade de melhorias na autenticação             | Estudo                            | –                                                                                            | Concluído    |
+| 02/10 | Criação da issue com detalhes da proposta                                 | Doc                               | https://gitlab.com/gces-ej/ej-application/-/issues/52                                        | Concluído    |
+| 03/10 | Análise do fluxo atual de login e tokens de acesso                        | Estudo                            | –                                                                                            | Concluído    |
+| 05/10 | Reunião da equipe para definir o novo modelo de autenticação              | Discussão                         | –                                                                                            | Concluído    |
+| 08/10 | Documentação das decisões e próximos passos para implementação            | Doc                               | –                                                                                            | Em andamento |
+
+
+### Maiores Avanços
+
+- Análise do funcionamento atual do processo de autenticação
+- Pesquisa sobre padrões e boas práticas de autenticação
+- Planejamento e definição da nova arquitetura de autenticação
+
+### Maiores Dificuldades
+
+- Analisar o código existente e o modelo atual de autenticação, explorando diferentes padrões disponíveis e compreendendo em detalhe a proposta apresentada pelo monitor.
+
+### Aprendizados
+
+- Auth 2.0
+- Federação de Identidades com Mapeamento e Chaves de API
+
+### Plano Pessoal para a Próxima Sprint
+
+- [ ] Enviar a proposta ao Giovanni para validação.
+- [ ] Criar as issues relacionadas à implementação do novo modelo de autenticação.
