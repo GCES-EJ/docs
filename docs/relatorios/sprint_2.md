@@ -12,7 +12,7 @@
 
 ## 1. Objetivos da Sprint
 
-- [x] tanana
+Nesta sprint, o foco da equipe foi consolidar a documentação automática da API utilizando o Swagger, corrigir e validar a documentação existente para garantir completude e precisão. Além disso, foram implementadas melhorias significativas na experiência do usuário, com correção de funcionalidades essenciais como upload e remoção de fotos de perfil. A sprint também priorizou a correção de falhas em testes automatizados que estavam impactando o pipeline de CI/CD, garantindo maior estabilidade no processo de integração contínua. Por fim, foi realizado um estudo aprofundado sobre unificação de usuários com APIs externas, visando resolver o problema de gestão complexa de contas e senhas quando outras aplicações utilizam o EJ como API, propondo soluções com API Key e middleware customizado para facilitar essa integração.
 
 ---
 
@@ -20,7 +20,9 @@
 
 | Entrega | Status (Concluído/Parcial/Pendente) | Link/Referência | Observações |
 | ------- | ----------------------------------- | --------------- | ----------- |
-|         |                                     |                 |             |
+| Documentação do Swagger | Concluído | [Documentação Swagger](https://gces-ej.github.io/docs/#/notes/Swagger) | Guia completo de uso da ferramenta |
+| Estudo para Unificação de Usuários com APIs Externas | Concluído | [Arquivo do Estudo e Arquitetura](https://docs.google.com/document/d/1hSZnsbmtp1tcPWlt86P06GGv0V_nu3yQ3xxwJTOXjZ0/edit?tab=t.0) | Estudo de boas práticas para comunicação entre APIs externas e EJ, incluindo proposta de solução com API Key e middleware customizado |
+
 
 ---
 
@@ -40,29 +42,42 @@
 | Uires Carlos de Oliveira         |                                                                                                                                          |                                                                                                                                     |                                                                                                                                                                                                                                                                                                                   |
 | Victor Augusto Câmara de Oliveira |                                                                                                                                          |                                                                                                                                     |                                                                                                                                                                                                                                                                                                                   |
 | Victor Pontual Guedes Arruda Nóbrega |                                                                                                                                          |                                                                                                                                     |                                                                                                                                                                                                                                                                                                                   |
-| Yan Guimarães                    |                                                                                                                                          |                                                                                                                                     |                                                                                                                                                                                                                                                                                                                   |
+| Yan Guimarães                    | Correção de testes de API de conversas e ajustes de permissões. Fechamento da issue sobre falha no teste de permissão da API. | [Issue #50](https://gitlab.com/gces-ej/ej-application/-/issues/50), [Commit](https://gitlab.com/gces-ej/ej-application/-/commit/3e9f1558d4a049700a47c224878bc7fde8ec3340) | Corrigiu múltiplos testes de API que falhavam, incluindo permissões, autenticação e validações. Trabalho técnico detalhado com foco em estabilizar o pipeline CI/CD. |
 
 ---
 
 ## 4. Maiores Avanços
 
-- Estudo e entendimento do Swagger.
+  * Swagger implementado e documentado: Equipe dominou a ferramenta e criou documentação completa de uso.
+  * API mais completa: ViewSets ausentes foram identificados e registrados, tornando a API mais consistente.
+  * Melhoria na experiência do usuário : Funcionalidades como upload/remoção de foto de perfil foram corrigidas.
+  * Estabilização dos testes : Correção de múltiplos testes de API que estavam causando falhas no pipeline.
+  * Estudos de arquitetura avançados: Proposta detalhada para modernização do sistema de autenticação com API Keys e federação de identidades.
 
 ---
 
 ## 5. Maiores Dificuldades
 
-- Navegar na estrutura de URLs do projeto (API vs. Django tradicional).
+  * Complexidade da estrutura de URLs: Navegar na estrutura de URLs do projeto (API vs. Django tradicional) para identificar rotas faltantes.
+  * Depuração de testes complexos: Entender falhas sutis em testes de permissão e autorização que exigiam análise detalhada do código.
+  * Aprendizado de novas ferramentas: Membros que nunca trabalharam com Swagger precisaram de tempo para dominar a ferramenta.
+  * Consistência entre frontend e backend: Garantir comportamento correto em funcionalidades como upload de fotos, especialmente relacionado a cache do navegador.
+
 
 ---
 
 ## 6. Lições Aprendidas
 
-* Criação de documentação automática de rotas com Swagger.
-* A necessidade de registrar ViewSets no router para que sejam expostos na API e na documentação.
+* Swagger como ferramenta de documentação: Criação e manutenção de documentação automática de rotas, eliminando a necessidade de documentação manual.
+* Importância do registro correto de ViewSets: Um ViewSet só é exposto na API se for explicitamente registrado no router do urls.py.
+* Diferenças entre códigos HTTP 401 e 403: Compreensão prática da diferença entre "Unauthorized" (sem credenciais) e "Forbidden" (sem permissão).
+* Testes de API requerem configuração precisa: Fixtures, permissões e estado dos objetos devem estar alinhados para validar corretamente as funcionalidades.
+* Segurança em integrações externas: Importância de usar API Keys em vez de credenciais de usuário para integrações service-to-service.
+* Arquitetura de autenticação: Separação entre autenticação (quem você é) e autorização (o que você pode fazer).
 
 ---
 
 ## 7. Planejamento para a Próxima Sprint
 
-* [ ] tanana
+* [ ] Implementar a proposta de arquitetura de autenticação via API Key e federação de identidades
+
