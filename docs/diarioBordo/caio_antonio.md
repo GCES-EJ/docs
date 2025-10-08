@@ -76,3 +76,37 @@ Evolução prática no projeto com foco na criação de issue e implementação 
 - [ ] Criar testes adicionais para casos-limite de validação de senha.
 - [ ] Documentar os critérios de senha no guia do usuário.
 - [ ] Analisar feedback da equipe e ajustar a regra se necessário.
+
+## Sprint 2 – [26/09 – 08/10]
+
+### Resumo da Sprint
+
+Foco na melhoria da qualidade da documentação através de correções de typos e ortografia.
+
+### Atividades Realizadas
+
+| Data  | Atividade                                 | Tipo (Código/Doc/Discussão/Outro) | Link/Referência | Status    |
+|-------|-------------------------------------------|-----------------------------------|-----------------|-----------|
+| 07/10 | Correção de typos e erros ortográficos na documentação | Doc                               | –               | Concluído |
+| 07/10 | Revisão e padronização de textos da documentação | Doc                               | –               | Concluído |
+
+### Maiores Avanços
+
+- Melhoria significativa na qualidade e legibilidade da documentação.
+- Padronização da linguagem e correção de inconsistências textuais.
+
+### Maiores Dificuldades
+
+- Identificar e corrigir todos os erros de forma consistente em diferentes seções.
+- Manter a coerência terminológica ao longo de toda a documentação.
+
+### Aprendizados
+
+- Importância da revisão textual para a qualidade da documentação.
+- Impacto positivo das correções na experiência do usuário ao consultar a documentação.
+
+### Plano Pessoal para a Próxima Sprint
+
+- [ ] Continuar monitorando a qualidade textual da documentação.
+- [ ] Estabelecer processo de revisão para futuras adições à documentação.
+- [ ] Contribuir com outras melhorias na documentação do projeto.
