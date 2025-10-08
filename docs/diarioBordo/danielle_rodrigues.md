@@ -99,7 +99,7 @@ Nesta sprint, meu foco foi estudar como é feita atualmente a comunicação e au
 | 04/10  | Estudo do fluxo atual de autenticação do EJ (JWT, SimpleJWT, riscos e estrutura atual).       | Estudo   | [Issue #51](https://gitlab.com/gces-ej/ej-application/-/issues/51)              | Concluído  |
 | 05/10  | Estudo de boas práticas para integrações via API Key, UUIDv7 e federação de identidades.      | Estudo   | [Issue #51](https://gitlab.com/gces-ej/ej-application/-/issues/51)              | Concluído  |
 | 07/10  | Construção do documento de arquitetura com definição das camadas de dados e lógica.           | Documento| [Issue #51](https://gitlab.com/gces-ej/ej-application/-/issues/51)  [Arquivo do Estudo](https://docs.google.com/document/d/1hSZnsbmtp1tcPWlt86P06GGv0V_nu3yQ3xxwJTOXjZ0/edit?tab=t.0)            | Concluído  |
-| 08/10  | Elaboração e entrega dos diagramas (ASCII e .drawio) explicando a arquitetura proposta.       | Documento | [Arquivo do Estudo](https://docs.google.com/document/d/1hSZnsbmtp1tcPWlt86P06GGv0V_nu3yQ3xxwJTOXjZ0/edit?tab=t.0) | Concluído  |
+| 08/10  | Elaboração e entrega dos diagramas (Drawio) explicando a arquitetura proposta.       | Documento | [Arquivo do Estudo](https://docs.google.com/document/d/1hSZnsbmtp1tcPWlt86P06GGv0V_nu3yQ3xxwJTOXjZ0/edit?tab=t.0) | Concluído  |
 
 
 ### Maiores Avanços
@@ -113,7 +113,6 @@ Nesta sprint, meu foco foi estudar como é feita atualmente a comunicação e au
 * A principal dificuldade foi encontrar um modelo que mantivesse a solução simples, sem recorrer a OAuth, mas que ainda garantisse segurança, rastreabilidade e controle de permissões por cliente.
 
 
-### Aprendizados
 
 ### Aprendizados
 
