@@ -87,3 +87,38 @@ A frente de documentação assumiu a responsabilidade de mapear todos os endpoin
 - [ ] Terminar de refatorar os testes unitários.
 - [ ] Abertura de novas issues.
 - [ ] Aumentar a qualidade do código.
+
+## Sprint 2 – [26/09 – 08/10]
+
+### Resumo da Sprint
+
+Durante a Sprint 2, o monitor Giovanni nos apresentou um novo desafio: refatorar a autenticação do projeto. Ele abriu uma issue com propostas para a equipe, focando inicialmente no estudo da documentação do modelo de autenticação atual.
+
+### Atividades Realizadas
+
+| Data  | Atividade                                   | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                              | Status    |
+|-------|---------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------|-----------|
+| 29/09 | Monitor entra com a proposta | Estudo    |  –  | Concluído |
+| 06/10 | Abertura da Issue | Estudo    | https://gitlab.com/gces-ej/ej-application/-/issues/51  | Concluído |
+| 06/10 | Início dos estudos da autenticação  | Estudo  | – | Concluído |
+| 07/10 | Reunião com os envolvidos na sprint para fechamento do novo padrão | Discussão | –   | Concluído |
+
+### Maiores Avanços
+
+- Estudo de como a comunicação da autemticação é feita hoje
+- Estudo dos padrões e boas prática da autenticação
+- Definição da arquitetura nova
+
+### Maiores Dificuldades
+
+- Entender o código antigo e o padrão utilizado, entender os diferentes padrões de autenticação disponíveis e o proposto pelo o monitor
+
+### Aprendizados
+
+- Auth 2.0
+- Federação de Identidades com Mapeamento e Chaves de API
+
+### Plano Pessoal para a Próxima Sprint
+
+- [ ] Mandar a proposta para aprovação do Giovanni.
+- [ ] Abrir as issue para o novo padrão de autenticação.
