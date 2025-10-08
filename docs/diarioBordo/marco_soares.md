@@ -81,3 +81,38 @@ Nesta sprint foi implementada a funcionalidade de visualização da senha na tel
 
 * [ ] Criar mensagens de erro claras para senhas inválidas.  
 * [ ] Estudar alternativas de segurança para formulários de autenticação.  
+
+## Sprint 2 - [26/09 - 08/10]
+
+### Resumo da Sprint
+
+Correcoes na funcionalidade de foto de usuario no perfil. Antes, ao adicionar uma foto de usuario, nao era possivel exclui-la nem altera-la; agora o usuario pode substituir e remover a imagem corretamente.
+
+### Atividades Realizadas
+
+| Data  | Atividade                                                                 | Tipo    | Link/Referencia                                                                 | Status    |
+|-------|---------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------|-----------|
+| 02/10 | Criacao da issue para permitir excluir/alterar foto de usuario            | Issue   | https://gitlab.com/gces-ej/ej-application/-/issues/56                            | Concluido |
+| 07/10 | Implementacao do fluxo de upload/atualizacao/remocao de foto de perfil    | Codigo  | -                                                                                | Concluido |
+| 07/10 | Ajustes no frontend para substituir e remover a foto                      | Codigo  | -                                                                                | Concluido |
+| 08/10 | Testes manuais e validacao do comportamento                               | Teste   | -                                                                                | Concluido |
+
+### Maiores Avancos
+
+- Suporte completo para atualizar e excluir a foto de usuario.
+- Melhorias de UX na tela de perfil com estados claros (com/sem foto).
+
+### Maiores Dificuldades
+
+- Garantir consistencia entre frontend e backend para o estado sem foto.
+- Tratar cache do navegador ao substituir a imagem enviada.
+
+### Aprendizados
+
+- Manipulacao de upload/atualizacao de arquivos e tratamento de storage.
+- Padronizacao de endpoints e regras de autorizacao relacionadas ao perfil.
+
+### Plano Pessoal para a Proxima Sprint
+
+- [ ] Documentar os endpoints/fluxos no Swagger.
+- [ ] Revisar limpeza de arquivos antigos no storage.
