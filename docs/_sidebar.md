@@ -5,6 +5,7 @@
 * **Diários de Bordo**
   * [Ana Joyce](diarioBordo/ana_joyce.md)
   * [Caio Antonio](diarioBordo/caio_antonio.md)
+  * [Danielle Rodrigues](diarioBordo/danielle_rodrigues.md)
   * [Felipe Matheus](diarioBordo/felipe_m.md)
   * [João Carvalho](diarioBordo/joao_carvalho.md)
   * [João Filipe](diarioBordo/joao_filipe.md)

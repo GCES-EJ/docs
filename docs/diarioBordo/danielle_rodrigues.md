@@ -25,27 +25,27 @@ Durante a Sprint 0, foquei na configuração inicial do ambiente de desenvolvime
 
 ### Maiores Avanços
 
-- Ambiente de desenvolvimento configurado e aplicação rodando localmente usando WSL.
-- Compreensão inicial do processo para contribuir com o projeto através da documentação oficial.
-- Familiarização com Docker e containers.
+* Ambiente de desenvolvimento configurado e aplicação rodando localmente usando WSL.
+* Compreensão inicial do processo para contribuir com o projeto através da documentação oficial.
+* Familiarização com Docker e containers.
 
 ### Maiores Dificuldades
 
-- Rodar a aplicação no computador Windows sem familiaridade com WSL.
-- A configuração do ambiente com Docker demorou aproximadamente 1 hora para ser concluída.
-
-### Lições Aprendidas
-
-- Noções sobre Docker e containers.
-- Familiarização com WSL e sua integração com Windows.
-- Compreensão da arquitetura do projeto EJ Application.
-- Entendimento do fluxo de contribuição da comunidade.
+* Rodar a aplicação no computador Windows sem familiaridade com WSL.
+* A configuração do ambiente com Docker demorou aproximadamente 1 hora para ser concluída.
 
 ### Aprendizados
 
-- [ ] Contribuir com pelo menos 1 PR.
-- [ ] Aprofundar o estudo sobre a arquitetura do projeto.
-- [ ] Analisar as issues disponíveis para identificar uma primeira contribuição.
+* Noções sobre Docker e containers.
+* Familiarização com WSL e sua integração com Windows.
+* Compreensão da arquitetura do projeto EJ Application.
+* Entendimento do fluxo de contribuição da comunidade.
+
+### Plano Pessoal para a Próxima Sprint
+
+- [x] Contribuir com pelo menos 1 PR.
+- [x] Aprofundar o estudo sobre a arquitetura do projeto.
+- [x] Analisar as issues disponíveis para identificar uma primeira contribuição.
 
 ---
 
