@@ -80,6 +80,52 @@ Esta sprint foi dedicada à análise do pipeline de CI/CD do projeto. Fui capaz 
 
 ### Metas Pessoais para a Próxima Sprint
 
-* [ ] Realizar a correção da issue `Falha no teste de permissão da API`.
-* [ ] Submeter um Merge Request com a correção e garantir que o pipeline seja aprovado.
-* [ ] Explorar e refatorar outros testes de autenticação e permissão para garantir consistência.
+* [x] Realizar a correção da issue `Falha no teste de permissão da API`.
+* [x] Explorar e refatorar outros testes de autenticação e permissão para garantir consistência.
+
+## Sprint 2 – *24/09 a 08/10*
+
+### Resumo da Sprint
+
+Nesta sprint, o foco foi a análise e correção de falhas em testes automatizados da API de conversas do projeto, além de ajustes na camada de permissões da API. Foram realizados diagnósticos para identificar causas raiz das falhas, correções nos testes para usar os fixtures adequados, inclusão de campos obrigatórios em payloads e atualização das permissões para métodos restritos. Essas ações resultaram em estabilidade das validações no pipeline CI/CD e consistência no comportamento da API.
+
+### Atividades Executada
+
+| Data   | Atividade                                                                  | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                                                    | Status    |
+|--------|----------------------------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------|
+| 26/09  | Correção do teste `test_update_conversation` para uso de usuário não autor | Código                            | [Fix conversation API tests](https://gitlab.com/gces-ej/ej-application/-/commit/3e9f1558d4a049700a47c224878bc7fde8ec3340) | Concluído |
+| 27/09  | Ajuste em `test_patch_conversation_unauthenticated` com cliente correto    | Código                            | [Fix conversation API tests](https://gitlab.com/gces-ej/ej-application/-/commit/3e9f1558d4a049700a47c224878bc7fde8ec3340) | Concluído |
+| 29/09  | Inclusão do campo obrigatório `board` no teste de PUT                      | Código                            | [Fix conversation API tests](https://gitlab.com/gces-ej/ej-application/-/commit/3e9f1558d4a049700a47c224878bc7fde8ec3340) | Concluído |
+| 01/10  | Adição da permissão `IsOwnerOrSuperUser` para ação `destroy` na API       | Código                            | [Fix conversation API tests](https://gitlab.com/gces-ej/ej-application/-/commit/3e9f1558d4a049700a47c224878bc7fde8ec3340)  | Concluído |
+| 03/10  | Garantia da autoria correta em teste de exclusão                           | Código                            | [Fix conversation API tests](https://gitlab.com/gces-ej/ej-application/-/commit/3e9f1558d4a049700a47c224878bc7fde8ec3340) | Concluído |
+| 07/10  | Fechamento da issue sobre falha no teste de permissão da API criada na Sprint 1 | Planejamento/Doc | [Issue #50](https://gitlab.com/gces-ej/ej-application/-/issues/50)                                                                                      | Concluído   |
+
+### Principais Conquistas
+
+- Ajuste preciso do teste `test_update_conversation` para refletir a lógica de autorização real: uso do fixture `other_user` como não autor para validar retorno 403, alinhando com a permissão `IsOwnerOrSuperUser`.
+- Correção do cliente utilizado no teste `test_patch_conversation_unauthenticated`, substituindo `api` (sem método PATCH) pelo cliente DRF `api_client`, garantindo resposta 401 para requisições não autenticadas.
+- Inclusão do campo obrigatório `board` no payload do teste `test_put_conversation_full_update`, obedecendo validação do modelo `Conversation` com relação FK para `Board`.
+- Atualização do método `ConversationViewSet.get_permissions()` para reconhecer explicitamente a ação `destroy`, atribuindo a permissão `IsOwnerOrSuperUser` para permitir exclusão apenas a autores ou superusuários.
+- Garantia da autoria correta no teste `test_delete_conversation_by_author_succeeds`, atribuindo explicitamente `conversation.author = user` para satisfazer a verificação de permissão durante a deleção.
+
+### Obstáculos Encontrados
+
+- O método `ConversationViewSet.get_permissions()` originalmente não processava a ação `destroy`, aplicando permissões padrão (`IsAuthenticatedOnlyGetView`) que permitem apenas requisições GET. Isso fazia com que requisições DELETE retornassem erro 403, bloqueando a exclusão mesmo para usuários autorizados.
+
+- No teste de exclusão `test_delete_conversation_by_author_succeeds`, mesmo após ajustar a permissão no ViewSet, o teste falhava porque o objeto `conversation` não tinha o `user` como autor. A permissão `IsOwnerOrSuperUser` exige que `request.user` seja exatamente o autor do objeto para permitir a ação, o que não estava assegurado no fixture de teste. Foi necessário atribuir explicitamente `conversation.author = user` para que o teste validasse corretamente a autorização e aprovasse a exclusão.
+
+### Lições Aprendidas
+
+- É fundamental que `get_permissions()` do ViewSet trate explicitamente todas as ações REST, principalmente `destroy`, para garantir segurança e evitar gaps de autorização.
+- Fixtures devem ser cuidadosamente escolhidos e configurados; clientes de teste sem a implementação necessária podem gerar falhas difíceis de detectar.
+- Compreender a diferença semântica entre códigos HTTP 401 e 403 é essencial para implementar respostas API corretas e evitar ambiguidades nos testes.
+- Testes de atualização completas via PUT precisam respeitar todas as restrições de modelo, incluindo campos obrigatórios e relações de banco de dados.
+- Testes de autorização demandam que o estado do objeto testado (exemplo: autoria) esteja alinhado para validar corretamente as permissões de acesso.
+
+  ### Metas Pessoais para a Próxima Sprint
+
+- [ ] Expandir a cobertura dos testes automatizados para outras rotas da API, garantindo casos completos de autenticação e autorização.
+- [ ] Documentar detalhadamente todas as alterações na API e testes para facilitar futuras manutenções.
+- [ ] Propor melhorias no pipeline CI/CD para automação e monitoramento de testes relacionados a permissões e segurança.
+
+
