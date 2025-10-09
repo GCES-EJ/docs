@@ -96,3 +96,43 @@ Esta sprint foi dedicada à implementação de verificação de cobertura de tes
 * [ ] Contribuir com melhorias na documentação do pipeline de CI/CD
 * [ ] Investigar oportunidades de otimização nos testes existentes
 * [ ] Estudar possíveis implementações de features relacionadas à área de cobertura
+
+---
+
+## Sprint 2 – *26/09 a 08/10*
+
+### Resumo da Sprint
+
+Nesta sprint concentrei meus esforços em estabilizar a base de testes automatizados e corrigir problemas estruturais que vinham causando falhas no pipeline de integração contínua. Trabalhei em ajustes de permissões, integração de rotas que precisavam ser expostas corretamente e manutenção/refatoração de testes para refletir o comportamento atual da aplicação.
+
+### Atividades Executadas
+
+| Data  | Atividade                                                      | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                 | Status    |
+| ----- | -------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------- | --------- |
+| 07/09 | Correção e refatoração de testes que causavam quebras no CI     | Código                            | [Issue #54](https://gitlab.com/gces-ej/ej-application/-/issues/54)               | Concluído |
+| 07/09 | Ajustes de permissões e integração de novas rotas na API       | Código                            | [Issue #54](https://gitlab.com/gces-ej/ej-application/-/issues/54)               | Concluído |
+| 07/10 | Manutenção contínua dos testes automatizados e estabilidade CI | Código                            | -                                                                               | Concluído |
+
+### Principais Conquistas
+
+* Estabilização de testes que estavam provocando falhas recorrentes no pipeline.
+* Correções estruturais e de permissões que permitiram a integração de novas rotas na API.
+* Manutenção preventiva da suíte de testes para reduzir falsos positivos e melhorar a confiança no CI.
+
+### Obstáculos Encontrados
+
+* A necessidade de refatorar testes legados para refletir mudanças no comportamento das funções testadas — isso demandou análise cuidadosa e tempo.
+* Dependências entre testes e mudanças de estado compartilhado causaram intermitência em alguns casos, exigindo isolamento e ajustes nos fixtures.
+
+### Lições Aprendidas
+
+* Testes precisam acompanhar a evolução do código; refatorações pequenas no código frequentemente exigem ajustes correspondentes nos testes.
+* Ajustes de permissão e exposição de rotas têm impacto direto na cobertura e estabilidade dos testes de integração.
+* Melhor comunicação entre quem altera rotas/permissions e quem mantém os testes reduz retrabalho.
+
+### Metas Pessoais para a Próxima Sprint
+
+* [ ] Continuar a refatoração dos testes restantes para eliminar flakiness.
+* [ ] Documentar padrões de testes e fixtures usados no projeto.
+* [ ] Apoiar a implementação das mudanças de autenticação propostas (quando aprovadas) para garantir compatibilidade dos testes.
+
