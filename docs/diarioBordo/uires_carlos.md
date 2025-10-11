@@ -80,3 +80,49 @@ Cada conjuto de equipe esta responsável uma para mapear os endpoints, sendo ess
 
 - [ ] Divisão de tarefas.
 - [ ] Abertura de nova issue.
+
+## Sprint 2 - [26/09 - 08/10]
+
+### Resumo da Sprint
+
+Melhorias no formulário de perfil de usuário
+Correções e aprimoramentos nos campos do perfil:
+Data de nascimento: agora o campo reconhece automaticamente o formato numérico (01011981) e aplica a máscara padrão dd/mm/aaaa, facilitando o preenchimento e evitando erros de digitação.
+
+Cidade, País e Etnia: antes eram campos de texto livre, sem padronização. Agora possuem listas e autocomplete, permitindo seleção padronizada e acessível, garantindo consistência e melhor experiência de usuário.
+
+Essas melhorias aumentam a usabilidade do formulário, padronizam os dados e seguem boas práticas de acessibilidade (WCAG e ABNT NBR 17225)..
+
+### Atividades Realizadas
+
+| Data  | Atividade                                                                 | Tipo    | Link/Referencia                                                                 | Status    |
+|-------|---------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------|-----------|
+| 09/10 | Criação da issue para padronização dos campos Cidade, País e Etnia no perfil           | Issue   | https://gitlab.com/gces-ej/ej-application/-/issues/58                            | Concluido |
+| 09/10 | Criação da issue para máscara e validação automática da Data de Nascimento no perfil           | Issue   | https://gitlab.com/gces-ej/ej-application/-/work_items/57                            | Concluido |
+| 09/10 | Documentação das melhorias no formulário de perfil (máscara de data, listas padronizadas e acessibilidade)                      | Codigo  | -                                                                                | Concluido |
+
+### Maiores Avancos
+
+- SImplementação de máscara automática e validação no campo Data de Nascimento (dd/mm/aaaa).
+- Adição de listas padronizadas e autocomplete para os campos Cidade, País e Etnia, garantindo consistência e melhor experiência de usuário.
+- Melhorias de UX e acessibilidade no formulário de perfil, com campos mais claros, padronizados e compatíveis com as diretrizes WCAG e ABNT NBR 17225.
+
+### Maiores Dificuldades
+
+- Tratar corretamente a validação da data de nascimento em diferentes formatos (01011981, 01/01/1981, etc.).
+- Criar listas padronizadas de Cidade, País e Etnia sem afetar dados antigos dos usuários.
+- Garantir que o frontend e backend permaneçam sincronizados após as mudanças nos campos do perfil.
+
+### Aprendizados
+
+- Manipulação e validação de formulários complexos no Django com foco em acessibilidade e usabilidade.
+- Uso de máscaras automáticas e normalização de dados para campos sensíveis como datas.
+- Padronização de dados de perfil com listas e autocomplete, melhorando a coerência das informações.
+- Importância da internacionalização e acessibilidade digital nos sistemas de cadastro de usuário.
+
+### Plano Pessoal para a Proxima Sprint
+
+- [ ] Documentar os novos campos e fluxos de perfil no Swagger / API Docs.
+- [ ] Implementar testes automatizados para as validações de data, cidade, país e etnia.
+- [ ] Revisar e refatorar componentes de formulário para melhorar a acessibilidade (WCAG 2.2).
+- [ ] Propor melhorias adicionais na interface de edição de perfil com foco em UX.
