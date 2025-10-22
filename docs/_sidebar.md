@@ -21,6 +21,7 @@
   * [Sprint 0](relatorios/sprint_0.md)
   * [Sprint 1](relatorios/sprint_1.md)
   * [Sprint 2](relatorios/sprint_2.md)
+  * [Sprint 3](relatorios/sprint_3.md)
 
 * **Políticas**
   * [Políticas de Contribuição](politicasGCES/politicasGCES.md)

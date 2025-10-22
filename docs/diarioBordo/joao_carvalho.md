@@ -128,3 +128,50 @@ Seguindo a sugestão da professora Carla, abandonamos a ideia de documentar as r
 
 * [ ] Finalizar a documentação das rotas mapeadas.
 * [ ] Iniciar a implementação das rotas pendentes.
+
+---
+
+## Sprint 3 – \[09/10 – 22/10]
+
+### Resumo da Sprint
+
+Esta sprint foi dedicada à análise do Swagger e à verificação das rotas da aplicação. Foram revisados os seguintes conjuntos de rotas:
+
+* Profiles: 11 rotas verificadas
+* Conversation: 15 rotas verificadas
+* Admin: 10 rotas verificadas
+
+Durante a análise, foram identificados erros e duplicações em 6 das 10 rotas do módulo admin.
+
+> As demais rotas analisadas (profiles e conversation) não apresentaram problemas.
+
+### Atividades Realizadas
+
+
+| Data  | Atividade                                               | Tipo    | Link/Referência                                                                                                                                                           | Status    |
+|-------|---------------------------------------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 20/10 | Análise das rotas de profiles                           | Revisão | -                                                                                                                                                                         | Concluído |
+| 20/10 | Análise das rotas de conversation                       | Revisão | -                                                                                                                                                                         | Concluído |
+| 20/10 | Análise das rotas de admin/administration               | Revisão | -                                                                                                                                                                         | Concluído |
+| 21/10 | Correção das rotas duplicadas em admin e administration | Código  | [Issue #60](https://gitlab.com/gces-ej/ej-application/-/issues/60), [Commit](https://gitlab.com/gces-ej/ej-application/-/commit/8c8e78371162be6470f66ee4e4a942312678946f) | Concluído |
+
+### Maiores Avanços
+
+* Estudo do Django e identificação de rotas duplicadas.
+* Identificação e correção de rotas duplicadas no módulo admin.
+
+### Maiores Dificuldades
+
+* Identificação e correção de rotas duplicadas no módulo admin.
+* Varrer o código para encontrar as rotas duplicadas.
+
+### Aprendizados
+
+* Aprofundamento no funcionamento do Django REST Framework e da organização de rotas.
+* Melhor compreensão do funcionamento e integração do módulo Admin com o restante da aplicação.
+
+### Plano Pessoal para a Próxima Sprint
+
+* [ ] Finalizar a análise das rotas de boards.
+* [ ] Finalizar a análise das rotas de clusterizations.
+* [ ] Finalizar a análise das rotas de comments.
