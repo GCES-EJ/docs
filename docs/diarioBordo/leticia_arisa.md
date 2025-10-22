@@ -120,3 +120,37 @@ Nesta sprint, o meu foco foi a validação e correção da documentação autom�
 ### Plano Pessoal para a Próxima Sprint
 
 * [ ] Ajudar na implementação das rotas pendentes.
+
+
+
+## Sprint 3 – \[09/10 – 22/10]
+
+### Resumo da Sprint
+
+Esta sprint foi focada em corrigir a documentação dos endpoints mais críticos da API: autenticação e gerenciamento de usuários. A documentação automática existente no Swagger estava incompleta e não refletia a lógica de negócio customizada (ex: secret_id para update, respostas de login com token), o que dificultava o uso da API. O objetivo foi detalhar todos esses endpoints no ej_users/api.py para garantir que a documentação seja precisa e útil.
+
+### Atividades Realizadas
+
+
+| Data  | Atividade                                               | Tipo    | Link/Referência                                                                                                                                                           | Status    |
+|-------|---------------------------------------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 21/10 | Análise da lógica customizada nos endpoints de ej_users/api.py  | Revisão | -                                                                                                                                                                 | Concluído |
+| 22/10 | Criação de issue e MR para a tarefa de documentação dos endpoints.| Código | [Issue](https://gitlab.com/gces-ej/ej-application/-/issues/61), [MR](https://gitlab.com/gces-ej/ej-application/-/merge_requests/33)                              | Concluído |
+
+### Maiores Avanços
+
+* Estudo do Django e identificação de rotas duplicadas.
+* Identificação e correção de rotas duplicadas no módulo admin.
+
+### Maiores Dificuldades
+
+* Documentação completa e precisa de toda a API de autenticação e gerenciamento de usuários (ej_users), incluindo login, cadastro, logout e os dois fluxos de recuperação de senha.
+* Varrer o código para encontrar as rotas duplicadas.
+
+### Aprendizados
+
+* Como usar o decorador @extend_schema do drf-spectacular para documentar detalhes complexos da API, como parâmetros, request bodies, múltiplas responses e lógicas não-padrão.
+
+### Plano Pessoal para a Próxima Sprint
+
+* [ ] Ajudar o grupo responsável pela issue #51.
