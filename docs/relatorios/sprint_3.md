@@ -29,7 +29,7 @@ TANANA
 
 | Integrante                            | Contribuições                                                                                                                                                               | Links (PRs, Issues, Docs)                                                                                                                                                 | Observações                                                                                                                                                                                                               |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ana Joyce Guedes Amorim da Silva      |                                                                                                                                                                             |                                                                                                                                                                           |                                                                                                                                                                                                                           |
+| Ana Joyce Guedes Amorim da Silva      |  [ej-users] Estender Modelo User para Federação de Identidades    | [Issue 59](https://gitlab.com/gces-ej/ej-application/-/issues/59)    |  Começo da implementação da nova arquitetura de autenticação do EJ, dando seguimneto a proposta do Giovanni    |
 | João Filipe de Oliveira Souza         |                                                                                                                                                                             |                                                                                                                                                                           |                                                                                                                                                                                                                           |
 | Caio Antonio Araújo Garcia de Almeida |                                                                                                                                                                             |                                                                                                                                                                           |                                                                                                                                                                                                                           |
 | Danielle Rodrigues Silva              |                                                                                                                                                                             |                                                                                                                                                                           |                                                                                                                                                                                                                           |
@@ -48,6 +48,7 @@ TANANA
 ## 4. Maiores Avanços
 
 - Correção de rotas duplicadas na documentação do Swagger.
+- Inicio a implementação da nova arquitetura de autenticação do EJ.
 
 ---
 
@@ -65,4 +66,4 @@ TANANA
 
 ## 7. Planejamento para a Próxima Sprint
 
-* [ ] Abertura das issues para implementação da nova arquitetura de autenticação
+* [ ] Continuação da implmentação da nova arquitetura para a autenticação
