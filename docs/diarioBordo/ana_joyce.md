@@ -122,3 +122,36 @@ Durante a Sprint 2, o monitor Giovanni nos apresentou um novo desafio: refatorar
 
 - [ ] Mandar a proposta para aprovação do Giovanni.
 - [ ] Abrir as issue para o novo padrão de autenticação.
+
+## Sprint 3 – [09/10 – 22/10]
+
+### Resumo da Sprint
+
+Na sprint 3 demos continuidade aos estudos da nova autenticação e começamos a implementação da nova arquitetura de autenticação
+
+### Atividades Realizadas
+
+| Data  | Atividade                                   | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                              | Status    |
+|-------|---------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------|-----------|
+| 17/10 | Encaminhamento da nova proposta ao monitor | Outro |  https://gitlab.com/gces-ej/ej-application/-/issues/51  | Concluído |
+| 19/10 | Aprovação da nova arquitetura pelo monitor e sugestão de melhorias | Outro | https://gitlab.com/gces-ej/ej-application/-/issues/51  | Concluído |
+| 20/10 | Abertura de issue para começar implementação  | Outro  | https://gitlab.com/gces-ej/ej-application/-/issues/59 | Concluído |
+| 21/10 | Implemtação da issue | Código | –   | Concluído |
+
+### Maiores Avanços
+
+- Aprovação da nova arquitetura
+- Abertura de issues para a nova arquiteura de autenticação
+- Inicio da implmentação
+
+## Maiores Dificuldades
+
+- Criar um bom novo modelo de arquitetura
+
+### Aprendizados
+
+- autenticação com django 
+
+### Plano Pessoal para a Próxima Sprint
+
+- [ ] Abrir mais issues para dar continuidade a implmentação
