@@ -1,118 +1,133 @@
 # Diário de Bordo – Marco Tulio Soares
 
-
-*Disciplina:* GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE
-
-*Equipe:* Empurrando Juntas
-
-*Comunidade/Projeto de Software Livre:* Empurrando Juntas
+**Disciplina:** GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE  
+**Equipe:** Empurrando Juntas  
+**Comunidade/Projeto de Software Livre:** Empurrando Juntas  
 
 ---
 
-## Sprint 0 – \[25/08 – 10/09]
+## Sprint 0 – [25/08 – 10/09]
 
 ### Resumo da Sprint
-
-Sprint com foco na aprendizagem do projeto e alinhamentos sobre prixmos passos.
+Sprint com foco na aprendizagem do projeto e alinhamentos sobre próximos passos.
 
 ### Atividades Realizadas
 
-| Data  | Atividade                                   | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                              | Status    |
-|-------|---------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------|-----------|
-| 08/08 | Inicialização do ambiente na maquina           | Código                            | –                                                                                            | Concluído |
-| 08/08 |  | Leitura da documentação                           | [Documentação](https://gitlab.com/gces-ej/ej-application/-/tree/develop/docs?ref_type=heads) | Concluído |
-
+| Data  | Atividade | Tipo | Link/Referência | Status |
+|-------|------------|------|-----------------|---------|
+| 08/08 | Inicialização do ambiente na máquina | Código | – | Concluído |
+| 08/08 | Leitura da documentação | Documentação | [Documentação](https://gitlab.com/gces-ej/ej-application/-/tree/develop/docs?ref_type=heads) | Concluído |
 
 ### Maiores Avanços
-
-- Ambiente rodando perfeitamente.
-- Compreensão do escopo do projeto.
-- Comecei a entender mais a fundo com foco na resolução de issues.
+- Ambiente rodando perfeitamente.  
+- Compreensão do escopo do projeto.  
+- Início da familiarização com as issues.  
 
 ### Maiores Dificuldades
-
-- Compreensão da arquitetura.
-- Criação de uma maquina virtual linux para rodar o projeto.
-
+- Entendimento completo da arquitetura.  
+- Criação de máquina virtual Linux para rodar o projeto.  
 
 ### Aprendizados
-
-- Escopo aprendido.
-- Arquitetura parcial do projeto aprendida.
+- Escopo e parte da arquitetura do projeto aprendidos.  
 
 ### Plano Pessoal para a Próxima Sprint
+- [ ] Focar nas issues abertas.  
+- [ ] Conhecimento total da arquitetura do projeto.  
+- [ ] Leitura completa da documentação.  
 
-- [ ] Ter um foco maior nas issues do projeto.
-- [ ] Conhecimento total da aqrquitetura do projeto.
-- [ ] Amplo conhecimento da documentação.
+---
 
-## Sprint 1 – \[11/09 – 25/09]
+## Sprint 1 – [11/09 – 25/09]
 
 ### Resumo da Sprint
-
-Nesta sprint foi implementada a funcionalidade de visualização da senha na tela de login. A melhoria visa facilitar a usabilidade do sistema, permitindo que o usuário confira se digitou corretamente sua senha antes de realizar o login.  
+Implementada a funcionalidade de visualização da senha na tela de login para melhorar a usabilidade e a experiência do usuário.  
 
 ### Atividades Realizadas
 
-| Data  | Atividade                                                      | Tipo    | Link/Referência                                                    | Status    |
-|-------|----------------------------------------------------------------|---------|--------------------------------------------------------------------|-----------|
-| 25/09 | Criação de issue para implementar botão de visualizar senha na tela de login | Issue | https://gitlab.com/gces-ej/ej-application/-/issues/48  | Concluído |
-| 26/09 | Implementação do botão de visualização/ocultação de senha no frontend | Código | - | Concluído |
-| 26/09 | Testes manuais de usabilidade e validação do comportamento em navegadores | Teste  | - | Concluído |
-| 27/09 | Abertura de PR com a implementação da feature | PRs | https://gitlab.com/gces-ej/ej-application/-/issues/48| Concluído |
+| Data  | Atividade | Tipo | Link/Referência | Status |
+|-------|------------|------|-----------------|---------|
+| 25/09 | Criação de issue para implementar botão de visualizar senha | Issue | [#48](https://gitlab.com/gces-ej/ej-application/-/issues/48) | Concluído |
+| 26/09 | Implementação do botão de visualização/ocultação de senha | Código | – | Concluído |
+| 26/09 | Testes manuais de usabilidade | Teste | – | Concluído |
+| 27/09 | Abertura de PR com a implementação | PR | [#48](https://gitlab.com/gces-ej/ej-application/-/issues/48) | Concluído |
 
 ### Maiores Avanços
-
-- [x] Inclusão do botão de visualizar/ocultar senha na tela de login.  
-- [x] Melhoria na experiência do usuário, que agora pode validar a senha digitada.  
-- [x] Uso de ícones dinâmicos (olho aberto/fechado) para indicar o estado do campo.  
+- Inclusão do botão de visualizar/ocultar senha.  
+- Melhoria da UX com ícones dinâmicos.  
 
 ### Maiores Dificuldades
-
-* Ajustar o comportamento do botão mantendo o valor do campo de senha sem recarregar a página.  
-* Garantir compatibilidade do recurso em diferentes navegadores e dispositivos.  
+- Manter o valor do campo sem recarregar a página.  
+- Compatibilidade entre navegadores.  
 
 ### Aprendizados
-
-* Prática em manipulação de formulários no frontend.  
-* Melhor entendimento sobre boas práticas de UX em autenticação.  
+- Manipulação de formulários no frontend.  
+- Boas práticas de UX em autenticação.  
 
 ### Plano Pessoal para a Próxima Sprint
+- [ ] Criar mensagens de erro mais claras.  
+- [ ] Estudar segurança em formulários.  
 
-* [ ] Criar mensagens de erro claras para senhas inválidas.  
-* [ ] Estudar alternativas de segurança para formulários de autenticação.  
+---
 
-## Sprint 2 - [26/09 - 08/10]
+## Sprint 2 – [26/09 – 08/10]
 
 ### Resumo da Sprint
-
-Correcoes na funcionalidade de foto de usuario no perfil. Antes, ao adicionar uma foto de usuario, nao era possivel exclui-la nem altera-la; agora o usuario pode substituir e remover a imagem corretamente.
+Correções na funcionalidade de foto de usuário no perfil, permitindo agora substituir e remover imagens corretamente.  
 
 ### Atividades Realizadas
 
-| Data  | Atividade                                                                 | Tipo    | Link/Referencia                                                                 | Status    |
-|-------|---------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------|-----------|
-| 02/10 | Criacao da issue para permitir excluir/alterar foto de usuario            | Issue   | https://gitlab.com/gces-ej/ej-application/-/issues/56                            | Concluido |
-| 07/10 | Implementacao do fluxo de upload/atualizacao/remocao de foto de perfil    | Codigo  | -                                                                                | Concluido |
-| 07/10 | Ajustes no frontend para substituir e remover a foto                      | Codigo  | -                                                                                | Concluido |
-| 08/10 | Testes manuais e validacao do comportamento                               | Teste   | -                                                                                | Concluido |
+| Data  | Atividade | Tipo | Link/Referência | Status |
+|-------|------------|------|-----------------|---------|
+| 02/10 | Criação da issue para permitir excluir/alterar foto de usuário | Issue | [#56](https://gitlab.com/gces-ej/ej-application/-/issues/56) | Concluído |
+| 07/10 | Implementação do fluxo de upload/atualização/remoção de foto | Código | – | Concluído |
+| 07/10 | Ajustes no frontend para substituir/remover foto | Código | – | Concluído |
+| 08/10 | Testes manuais e validação do comportamento | Teste | – | Concluído |
 
-### Maiores Avancos
-
-- Suporte completo para atualizar e excluir a foto de usuario.
-- Melhorias de UX na tela de perfil com estados claros (com/sem foto).
+### Maiores Avanços
+- Suporte completo para atualizar e excluir a foto de usuário.  
+- Melhorias de UX na tela de perfil com estados claros.  
 
 ### Maiores Dificuldades
-
-- Garantir consistencia entre frontend e backend para o estado sem foto.
-- Tratar cache do navegador ao substituir a imagem enviada.
+- Sincronização entre frontend e backend.  
+- Tratamento de cache do navegador.  
 
 ### Aprendizados
+- Manipulação de arquivos e tratamento de storage.  
+- Padronização de endpoints e regras de autorização.  
 
-- Manipulacao de upload/atualizacao de arquivos e tratamento de storage.
-- Padronizacao de endpoints e regras de autorizacao relacionadas ao perfil.
+### Plano Pessoal para a Próxima Sprint
+- [ ] Documentar endpoints no Swagger.  
+- [ ] Revisar limpeza de arquivos antigos no storage.  
 
-### Plano Pessoal para a Proxima Sprint
+---
 
-- [ ] Documentar os endpoints/fluxos no Swagger.
-- [ ] Revisar limpeza de arquivos antigos no storage.
+## Sprint 3 – [09/10 – 26/10]
+
+### Resumo da Sprint
+Implementado o **modo escuro (dark mode)** na aplicação, ampliando a acessibilidade e oferecendo uma experiência mais agradável em ambientes com pouca luminosidade.  
+
+### Atividades Realizadas
+
+| Data  | Atividade | Tipo | Link/Referência | Status |
+|-------|------------|------|-----------------|---------|
+| 15/10 | Criação da issue para adicionar o modo escuro | Issue | [#62](https://gitlab.com/gces-ej/ej-application/-/issues/62) | Concluído |
+| 18/10 | Implementação do modo escuro com alternância dinâmica (claro/escuro) | Código | – | Concluído |
+| 20/10 | Ajustes de contraste e testes de acessibilidade | Teste | – | Concluído |
+| 21/10 | Abertura de PR e revisão da implementação | PR | [#62](https://gitlab.com/gces-ej/ej-application/-/issues/62) | Concluído |
+
+### Maiores Avanços
+- Adição do modo escuro em toda a interface.  
+- Alternância dinâmica entre temas via botão na interface.  
+- Melhoria da experiência visual e conforto durante uso prolongado.  
+
+### Maiores Dificuldades
+- Ajuste de contraste em componentes do frontend.  
+- Garantir consistência entre estilos claros e escuros.  
+
+### Aprendizados
+- Manipulação avançada de temas e variáveis CSS.  
+- Boas práticas de acessibilidade e contraste em interfaces modernas.  
+
+### Plano Pessoal para a Próxima Sprint
+- [ ] Otimizar persistência do tema no navegador (localStorage).  
+- [ ] Revisar responsividade com o novo tema ativo.  
