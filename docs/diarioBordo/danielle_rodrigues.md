@@ -121,7 +121,7 @@ Nesta sprint, meu foco foi estudar como é feita atualmente a comunicação e au
 * O uso de API Key como autenticação de sistemas é uma alternativa mais segura para integrações service-to-service.
 * A Federação de Identidades permite associar um `external_uuid` de outra aplicação a um `User` interno, sem depender de e-mail ou senha.
 * O UUIDv7 é recomendado por ser único e ordenável no tempo, facilitando auditoria e rastreabilidade.
-* A separação entre autenticação (API Key) e autorização (`ClientPermission`) é fundamental para garantir segurança e controle por cliente.
+* A separação entre autenticação (API Key) e autorização (`ClientPermission`) é fundamental para garantir segurança e controle por cliente..
 
 
 ### Plano Pessoal para a Próxima Sprint
