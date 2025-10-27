@@ -126,6 +126,49 @@ Nesta sprint, meu foco foi estudar como é feita atualmente a comunicação e au
 
 ### Plano Pessoal para a Próxima Sprint
 
-* [ ] Criar issues para implementar essa solução 
-* [ ] Implementar solução.
+* [x] Criar issues para implementar essa solução 
+* [x] Implementar solução.
+
+---
+
+## Sprint 3 – \[09/10 – 22/10]
+
+### Resumo da Sprint
+
+Nesta sprint, foquei na criação da issue e implementação prática da solução de autenticação via API Key proposta na sprint anterior. Desenvolvi o modelo `APIClient` completo com todas as funcionalidades necessárias, incluindo interface administrativa, validações, métodos auxiliares e migrações de banco de dados. 
+
+### Atividades Realizadas
+
+| Data   | Atividade                                                                                     | Tipo     | Link/Referência                                                                 | Status     |
+|--------|-----------------------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------|------------|
+| 15/10  | Criação da Issue #63 para implementação do modelo APIClient                                   | Documento| [Issue #63](https://gitlab.com/gces-ej/ej-application/-/issues/63)              | Concluído  |
+| 16/10  | Implementação do modelo APIClient com todos os campos e métodos necessários                   | Código   | [Issue #63](https://gitlab.com/gces-ej/ej-application/-/issues/63)              | Concluído  |
+| 17/10  | Criação da interface administrativa (APIClientAdmin) com filtros, badges e proteções          | Código   | [Issue #63](https://gitlab.com/gces-ej/ej-application/-/issues/63)              | Concluído  |
+| 20/10  | Geração e aplicação das migrações de banco de dados                     | Código   | [Issue #63](https://gitlab.com/gces-ej/ej-application/-/issues/63)              | Concluído  |
+
+
+### Maiores Avanços
+
+* Implementação completa do modelo `APIClient`.
+* Criação de interface administrativa.
+* Desenvolvimento de métodos auxiliares essenciais: `update_last_used()`, `activate()`, `deactivate()`, `generate_kid()` e validações customizadas.
+* Geração automática de migrações (`idx_kid_active` e `idx_active_used`) para melhor performance.
+
+### Maiores Dificuldades
+
+* Garantir que todas as validações funcionassem corretamente, especialmente a geração automática de `kid` único e a validação de campos obrigatórios.
+* Implementar a interface administrativa com as proteções, evitando criação manual e deleção acidental de clientes API.
+
+### Aprendizados
+
+* Aprofundamento em modelos Django com campos `UUIDField`, `CharField` com validações customizadas e campos de auditoria automáticos.
+* Compreensão sobre criação de índices de banco de dados para otimização de consultas frequentes.
+* Uso de bibliotecas `secrets` para geração segura de API keys e `uuid` para identificadores únicos.
+
+### Plano Pessoal para a Próxima Sprint
+
+* [ ] Implementar middleware de autenticação para validar API Keys.
+* [ ] Criar modelo `ClientPermission` para controle de autorização por cliente.
+* [ ] Desenvolver endpoints de API para gerenciamento de federação de identidades.
+
 ---

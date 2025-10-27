@@ -19,6 +19,7 @@ Esta sprint teve como objetivo principal estabilizar a base de testes do projeto
 - Corrigir problemas de permissões e autenticação nos testes
 - Melhorar a documentação automática da API com Swagger
 - Dar continuidade à implementação da nova arquitetura de autenticação do EJ
+- Implementar o modelo APIClient para autenticação via API Key
 - Aumentar a taxa de sucesso da suíte de testes automatizados
 
 ---
@@ -40,7 +41,7 @@ Esta sprint teve como objetivo principal estabilizar a base de testes do projeto
 | **Ana Joyce Guedes Amorim da Silva**      | [ej-users] Estender Modelo User para Federação de Identidades.                                                                                                              | [Issue #59](https://gitlab.com/gces-ej/ej-application/-/issues/59)                                                                                                        | Início da implementação da nova arquitetura de autenticação do EJ, dando seguimento à proposta do Giovanni.                                                                                                              |
 | **João Filipe de Oliveira Souza**         |                                                                                                                                                                             |                                                                                                                                                                           |                                                                                                                                                                                                                           |
 | **Caio Antonio Araújo Garcia de Almeida** |                                                                                                                                                                             |                                                                                                                                                                           |                                                                                                                                                                                                                           |
-| **Danielle Rodrigues Silva**              |                                                                                                                                                                             |                                                                                                                                                                           |                                                                                                                                                                                                                           |
+| **Danielle Rodrigues Silva**              | Implementação completa do modelo `APIClient` com interface administrativa, validações customizadas, métodos auxiliares e migrações de banco de dados para autenticação via API Key. | [Issue #63](https://gitlab.com/gces-ej/ej-application/-/issues/63)                                                                                                        | Implementação prática da arquitetura de autenticação via API Key proposta na sprint anterior, incluindo geração automática de `kid` único, controle de ativação/desativação e proteções na interface administrativa. |
 | **Felipe Matheus Ribeiro Lopes**          |                                                                                                                                                                             |                                                                                                                                                                           |                                                                                                                                                                                                                           |
 | **João Antonio Ginuino Carvalho**         | Análise e verificação das rotas **profiles**, **conversation** e **admin/administration**, com identificação e correção de endpoints duplicados no módulo *administration*. | [Issue #60](https://gitlab.com/gces-ej/ej-application/-/issues/60), [Commit](https://gitlab.com/gces-ej/ej-application/-/commit/8c8e78371162be6470f66ee4e4a942312678946f) | As demais rotas foram revisadas e não apresentaram inconsistências. O principal entregável da sprint foi a correção do bug de duplicação no módulo *administration*, garantindo maior integridade das rotas da aplicação. |
 | **Leticia Arisa Kobayashi Higa**          | Documentação detalhada (@extend_schema) de todos os endpoints críticos no `ej_users/api.py` (autenticação, cadastro, recuperação de senha).                                | [Issue #61](https://gitlab.com/gces-ej/ej-application/-/issues/61), [MR #33](https://gitlab.com/gces-ej/ej-application/-/merge_requests/33)                              |                                                                                                                                                                                                                           |
@@ -69,6 +70,8 @@ Esta sprint teve como objetivo principal estabilizar a base de testes do projeto
 
 ### Arquitetura e Infraestrutura
 - Início da implementação da nova arquitetura de autenticação federada
+- Implementação completa do modelo APIClient com interface administrativa e validações customizadas
+- Criação de migrações de banco de dados com índices para consultas de API Key
 - Atualização de objetos de teste com 12 novos campos da API
 - Padronização de métodos HTTP em testes (PATCH vs PUT)
 - Melhoria na gestão de timestamps dinâmicos em comparações de testes
@@ -99,6 +102,11 @@ Esta sprint teve como objetivo principal estabilizar a base de testes do projeto
 - **Uso de fixtures**: Fixtures do pytest são preferíveis à criação manual de objetos, garantindo isolamento, reusabilidade e consistência
 - **Exclusão de valores dinâmicos**: Campos com valores não-determinísticos (timestamps, IDs gerados) devem ser excluídos das comparações de igualdade
 
+### Arquitetura de Autenticação
+- **Modelos Django com validações customizadas**: Implementação de campos UUIDField e CharField com validações específicas para garantir integridade dos dados
+- **Interface administrativa robusta**: Criação de interfaces com proteções contra operações perigosas e filtros para facilitar gestão
+- **Otimização de consultas**: Criação de índices compostos para melhorar performance em consultas frequentes de autenticação
+
 ### Conhecimentos Técnicos de API REST
 - **Semântica de status codes HTTP**: 
   - 401 Unauthorized = usuário não autenticado
@@ -110,13 +118,14 @@ Esta sprint teve como objetivo principal estabilizar a base de testes do projeto
 - **Decorators necessários**: Classes de teste que usam ORM do Django precisam do decorator `@pytest.mark.django_db`
 - **Registro de ViewSets**: ViewSets devem ser explicitamente registrados no router para gerar URLs corretas e documentação adequada
 - **Abordagem sistemática**: Correções metódicas e documentadas aceleram a identificação de padrões e problemas similares no projeto
+- **Geração segura de chaves**: Uso de bibliotecas `secrets` para geração de API keys criptograficamente seguras e `uuid` para identificadores únicos
+- **Migrações otimizadas**: Criação automática de índices de banco de dados durante migrações para otimizar consultas de autenticação
 
 ---
 
 ## 7. Planejamento para a Próxima Sprint
 
 ### Prioridade Alta
-* [ ] Continuação da implementação da nova arquitetura de autenticação federada
 * [ ] Corrigir os 43 testes ainda falhando, visando atingir taxa de sucesso de 95%+
 * [ ] Investigar e resolver os 4 errors remanescentes no módulo ej_dataviz (test_api.py)
 
@@ -124,3 +133,5 @@ Esta sprint teve como objetivo principal estabilizar a base de testes do projeto
 * [ ] Documentar padrões identificados de correção de testes para facilitar manutenção futura
 * [ ] Criar guia de boas práticas para escrita de testes no projeto
 * [ ] Estabelecer processo de revisão de testes ao modificar APIs e serializers
+* [ ] Documentar arquitetura de autenticação via API Key para facilitar futuras implementações
+
