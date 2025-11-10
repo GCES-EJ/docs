@@ -178,7 +178,7 @@ Durante a análise, foram identificados erros e duplicações em 6 das 10 rotas 
 
 ---
 
-## Sprint 4 – \[22/10 – 12/11]
+## Sprint 4 – \[23/10 – 12/11]
 
 ### Resumo da Sprint
 
@@ -187,13 +187,15 @@ Durante a validação, foi identificado um **erro nos testes de `administration`
 
 Após uma análise detalhada, as duplicidades foram removidas e as rotas foram unificadas, resultando em uma estrutura mais limpa, estável e coerente com o padrão da EJ.
 
+Sendo assim, além da finalização da issue passada foi finalizado outro MR para as correções dos querysets, deixando o administration com todas as rotas padronizadas e os retornos totalmente corretos conforme os testes.
+
 ### Atividades Realizadas
 
-| Data  | Atividade                                                          | Tipo    | Link/Referência                                                         | Status    |
-|-------|--------------------------------------------------------------------|---------|-------------------------------------------------------------------------|-----------|
-| 09/10 | Finalização da issue da sprint anterior                            | Código  | [MR #36](https://gitlab.com/gces-ej/ej-application/-/merge_requests/36) | Concluído |
-| 09/10 | Identificação e análise de erro nos testes de `administration`     | Revisão | [Issue #65](https://gitlab.com/gces-ej/ej-application/-/issues/65)      | Concluído |
-| 10/10 | Correção da lógica de anotação no queryset (`apply_board_filters`) | Código  | [MR #35](https://gitlab.com/gces-ej/ej-application/-/merge_requests/35) | Concluído |
+| Data  | Atividade                                                                          | Tipo    | Link/Referência                                                         | Status    |
+|-------|------------------------------------------------------------------------------------|---------|-------------------------------------------------------------------------|-----------|
+| 09/11 | Finalização da issue da sprint anterior (verificação de rotas e ajustes em testes) | Código  | [MR #36](https://gitlab.com/gces-ej/ej-application/-/merge_requests/36) | Concluído |
+| 09/11 | Identificação e análise de erro nos testes de `administration`                     | Revisão | [Issue #65](https://gitlab.com/gces-ej/ej-application/-/issues/65)      | Concluído |
+| 09/11 | Correção da lógica de anotação no queryset (`apply_board_filters`)                 | Código  | [MR #35](https://gitlab.com/gces-ej/ej-application/-/merge_requests/35) | Concluído |
 
 ### Maiores Avanços
 
