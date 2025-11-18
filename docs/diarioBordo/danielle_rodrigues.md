@@ -172,3 +172,56 @@ Nesta sprint, foquei na criação da issue e implementação prática da soluç�
 * [ ] Desenvolver endpoints de API para gerenciamento de federação de identidades.
 
 ---
+
+## Sprint 4 – [23/10 – 12/11]
+
+### Resumo da Sprint
+
+Nesta sprint, foquei na continuidade da implementação da arquitetura de Federação de Identidades. Desenvolvi dois componentes principais: o modelo `ClientPermission`, que gerencia permissões entre clientes externos e usuários, e o serviço `ApiKeyService`, responsável pela geração, hash e validação de chaves de API. Ambos foram integrados com uma interface administrativa traduzida para português brasileiro.
+
+### Atividades Realizadas
+
+| Data   | Atividade                                                                                     | Tipo     | Link/Referência                                                                 | Status     |
+|--------|-----------------------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------|------------|
+| 23/10  | Criação da Issue #67 para implementação do modelo ClientPermission                            | Documento| [Issue #67](https://gitlab.com/gces-ej/ej-application/-/issues/67)              | Concluído  |
+| 24/10  | Implementação do modelo ClientPermission com relacionamento APIClient - User                  | Código   | [Issue #67](https://gitlab.com/gces-ej/ej-application/-/issues/67)              | Concluído  |
+| 24/10  | Criação da interface administrativa com ações de revogar/restaurar permissões                 | Código   | [Issue #67](https://gitlab.com/gces-ej/ej-application/-/issues/67)              | Concluído  |
+| 28/10  | Criação da Issue #68 para implementação do ApiKeyService                                      | Documento| [Issue #68](https://gitlab.com/gces-ej/ej-application/-/issues/68)              | Concluído  |
+| 29/10  | Implementação do ApiKeyService com geração SHA-256 e validação de API keys                    | Código   | [Issue #68](https://gitlab.com/gces-ej/ej-application/-/issues/68)              | Concluído  |
+| 30/10  | Criação do management command `create_api_key` para geração de chaves via CLI                 | Código   | [Issue #68](https://gitlab.com/gces-ej/ej-application/-/issues/68)              | Concluído  |
+| 01/11  | Tradução completa das interfaces administrativas para português brasileiro                    | Código   | [Issue #67](https://gitlab.com/gces-ej/ej-application/-/issues/67) e [#68](https://gitlab.com/gces-ej/ej-application/-/issues/68) | Concluído  |
+
+### Maiores Avanços
+
+* Implementação do modelo `ClientPermission` com sistema de revogação e interface administrativa.
+* Desenvolvimento do serviço `ApiKeyService` para gestão de chaves de API.
+
+
+### Maiores Dificuldades
+
+* Garantir a validação de chaves de API em tempo constante para prevenir ataques de timing.
+* Balancear segurança (uso de hash e salt) com performance em consultas frequentes.
+* Implementar um padrão consistente de soft delete para os modelos `ClientPermission` e `ApiKeyService`.
+
+### Aprendizados
+
+* **Segurança Criptográfica:**
+  * Uso de `secrets` para geração de tokens seguros e comparação em tempo constante.
+  * Importância de salt único para prevenir ataques de rainbow table.
+* **Django Admin:**
+  * Customização avançada com badges visuais e ações administrativas traduzidas.
+  * Controle de permissões e proteção contra operações perigosas.
+* **Arquitetura de Segurança:**
+  * Separação clara entre autenticação e autorização.
+  * Implementação de padrões de auditoria com timestamps.
+
+### Plano Pessoal para a Próxima Sprint
+
+* [ ] Implementar middleware de autenticação para interceptar requisições HTTP.
+* [ ] Criar lógica de criação "just-in-time" de usuários via `external_uuid`.
+* [ ] Adicionar campos `provider` e `external_uuid` ao modelo User.
+* [ ] Desenvolver endpoints REST para gerenciamento de chaves.
+* [ ] Implementar testes unitários para o serviço `ApiKeyService`.
+* [ ] Documentar o fluxo completo de autenticação com exemplos de uso.
+
+---
