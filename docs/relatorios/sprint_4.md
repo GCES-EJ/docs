@@ -14,6 +14,8 @@
 
 - Finalizar e melhorar rotas `administration`.
 - Implementar o modelo `ClientPermission` e o serviço `ApiKeyService` para a arquitetura de Federação de Identidades.
+- Corrigir testes falhando relacionados à migração FBV→CBV e padronizar autenticação REST.
+- Garantir que todos os testes unitários estejam funcionando e o pipeline de CI/CD estável.
 
 
 ---
@@ -43,7 +45,7 @@
 | **Marco Tulio Soares de Deus**            |                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                      |                                                                                                                                                                                         |
 | **Uires Carlos de Oliveira**              |  Segunda análise estática completa utilizando SonarQube	                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                      |                                                                                                                                                                                         |
 | **Victor Augusto de Sousa Câmara**        |                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                      |                                                                                                                                                                                         |
-| **Victor Pontual Guedes Arruda Nóbrega**  |                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                      |                                                                                                                                                                                         |
+| **Victor Pontual Guedes Arruda Nóbrega**  | Correção completa de 28 testes falhando relacionados à migração FBV→CBV e padronização de autenticação REST. Implementação do decorator `@can_access_dataviz_api` para retornar códigos HTTP corretos (401/403) ao invés de redirects. Registro dinâmico do namespace `ej_integrations` via `get_app_urls()`. | [Issue #54](https://gitlab.com/gces-ej/ej-application/-/issues/54) | Corrigiu testes em ej_dataviz (12), ej_integrations (14), ej_users (1) e ej_boards (1). Todos os testes unitários agora passam, deixando o pipeline de CI/CD funcional. Padronizou comportamento de autenticação em APIs REST seguindo padrões HTTP corretos. |
 | **Yan Guimarães**                         |                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                      |                                                                                                                                                                                         |
 
 
@@ -54,6 +56,9 @@
 ### Qualidade e Estabilidade dos Testes
 - **Testes de Administration**: Agora a rota além de ter todas as duplicatas removidas passa em todos os casos de teste.
 - **Testes de Federação de Identidades**: Cobertura de testes para os modelos `ClientPermission` e `ApiKeyService`.
+- **Correção de 28 testes**: Testes em ej_dataviz (12), ej_integrations (14), ej_users (1) e ej_boards (1) corrigidos e passando.
+- **Padronização de Autenticação REST**: Implementação de códigos HTTP corretos (401/403) ao invés de redirects (302) em APIs.
+- **Pipeline de CI/CD Funcional**: Todos os testes unitários passando, garantindo estabilidade do pipeline de integração contínua.
 
 ### Arquitetura e Infraestrutura
 - Remoção de rotas duplicadas em Administration, além da verificação das seguintes rotas:
@@ -62,6 +67,8 @@
   * Admin: 10 rotas verificadas
 - Implementação do modelo `ClientPermission` com sistema de revogação e interface administrativa.
 - Desenvolvimento do serviço `ApiKeyService` para gestão de chaves de API com segurança avançada.
+- Criação do decorator `@can_access_dataviz_api` para padronização de respostas REST.
+- Registro dinâmico do namespace `ej_integrations` via método `get_app_urls()`.
 
 ### Autentição
 - Implementação do Middleware de Autenticação e Unificação de Usuários Externos  
@@ -74,6 +81,8 @@
 - Garantir a validação de chaves de API em tempo constante para prevenir ataques de timing.
 - Balancear segurança (uso de hash e salt) com performance em consultas frequentes.
 - Implementar um padrão consistente de soft delete para os modelos `ClientPermission` e `ApiKeyService`.
+- Identificar e corrigir diferenças entre clientes de teste (`logged_client` vs `api_client`) para APIs REST.
+- Garantir compatibilidade entre FBVs e CBVs durante migração, especialmente em métodos `setup()` de views.
 
 ---
 
@@ -82,6 +91,9 @@
 ### Django e Django REST Framework
 - O Django compara objetos Python por **instância**, não por ID, exigindo uso de `owner_id` em anotações do ORM.
 - O uso correto de **Paginators e Querysets anotados** impacta diretamente a ordenação e os resultados exibidos na interface administrativa.
+- Decorators para APIs REST devem retornar códigos HTTP apropriados (401/403/404) ao invés de redirects (302).
+- Uso de `@pytest.mark.django_db` é essencial para testes que acessam o banco de dados.
+- Diferença entre `Client` (sessões) e `APIClient` (tokens/autenticação REST) impacta testes de API.
 ### Segurança Criptográfica
 - Uso de `secrets` para geração de tokens seguros e comparação em tempo constante.
 - Importância de salt único para prevenir ataques de rainbow table.
@@ -92,13 +104,18 @@
 - Separação clara entre autenticação e autorização.
 - Implementação de padrões de auditoria com timestamps detalhados.
 
+### Testes e Qualidade de Código
+- Registro dinâmico de URLs via `get_app_urls()` em AppConfig facilita modularização.
+- Testes devem usar fixtures apropriadas (`api_client`, `board`, `conversation`) para evitar erros de integridade.
+- Importância de manter pipeline de CI/CD funcional para detectar regressões rapidamente.
+- Aplicação consistente de formatadores (Black, Ruff) facilita manutenção e revisão de código.
+
 ---
 
 ## 7. Planejamento para a Próxima Sprint
-
 * [ ] Corrigir os testes ainda falhando, visando atingir taxa de sucesso de 95%+
 * [ ] Finalizar a verificação do restante das rotas
 * [ ] Desenvolver endpoints REST para gerenciamento de chaves
 * [ ] Documentar o fluxo completo de autenticação com exemplos de uso
 * [ ] Finalizar o novo modelo de autenticação
-
+* [ ] Expandir cobertura de testes para novos endpoints criados

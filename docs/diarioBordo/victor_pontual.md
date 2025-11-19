@@ -198,3 +198,83 @@ Esta sprint foi dedicada à correção sistemática de testes que falhavam devid
 * [ ] Documentar padrões identificados de correção de testes para facilitar manutenção futura
 * [ ] Criar guia de boas práticas para escrita de testes no projeto
 * [ ] Investigar e corrigir os 4 errors remanescentes em test_api.py do ej_dataviz
+
+---
+
+## Sprint 4 – *23/10 a 12/11*
+
+### Resumo da Sprint
+
+Esta sprint foi dedicada à correção completa dos testes falhando relacionados à migração de Function-Based Views (FBV) para Class-Based Views (CBV) e à padronização de autenticação em APIs REST. O trabalho envolveu a criação de novos decorators, registro de namespaces de URLs, correção de fixtures de testes e garantia de que o pipeline de CI/CD ficasse totalmente funcional.
+
+### Atividades Executadas
+
+| Data  | Atividade                                                      | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                | Status    |
+| ----- | -------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------ | --------- |
+| 17/11 | Correção de 12 testes TestWordcloudAPI                         | Código                            | Commit: `fix: correção dos testes do TestWordcloudAPI` (898804bd)             | Concluído |
+| 17/11 | Correção ClusterCRUDAPITestCase, TestApiListClusters, TestApiConversationStatistics | Código | Commit: `fix: correção dos testes do ClusterCRUDAPITestCase...` (bd5d5343) | Concluído |
+| 17/11 | Aplicação do linter e style (Black e Ruff)                     | Código                            | Commit: `refactor: aplicação do linter e style` (9343f901)                    | Concluído |
+| 17/11 | Correção de testes TestClassBasedViewsMigration                | Código                            | Commit: `fix: correção dos testes do TestClassBasedViewsMigration` (dd81d87c) | Concluído |
+| 17/11 | Correção TestRoutes, TestRecoverPassword, TestGetBoards       | Código                            | Commit: `fix: correção dos testes do TestRoutes, TestRecoverPassword e TestGetBoards` (17ffa7c3) | Concluído |
+| 17/11 | Correção de 11 testes TestUrlMigration                         | Código                            | Commit: `fix: correção dos testes do TestUrlMigration` (08185333)             | Concluído |
+| 17/11 | Criação de Merge Request da branch 54-remove-k8s-obsolete-tests para develop | Documentação | [Issue #54](https://gitlab.com/gces-ej/ej-application/-/issues/54) | Concluído |
+
+### Principais Conquistas
+
+* **28 testes corrigidos e passando**: Completamente eliminados os testes falhando da Issue #54
+  - ej_dataviz: 12 testes (TestWordcloudAPI, ClusterCRUDAPITestCase, TestApiListClusters, TestApiConversationStatistics)
+  - ej_integrations: 14 testes (TestClassBasedViewsMigration, TestRoutes, TestUrlMigration)
+  - ej_users: 1 teste (test_recover_password_with_valid_email)
+  - ej_boards: 1 teste (test_boards_endpoint_not_authenticated)
+
+* **Pipeline de CI/CD 100% funcional**: Todos os testes unitários agora passam, garantindo estabilidade completa do pipeline
+
+* **Padronização de autenticação REST**:
+  - Criado decorator `@can_access_dataviz_api` que retorna códigos HTTP corretos
+  - Mudança de 302 (Redirect) para 401 (Unauthorized) em requests sem autenticação
+  - Retorna 403 (Forbidden) para usuários autenticados sem permissão
+  - Aplicado em 5 endpoints de API dataviz
+
+* **Registro dinâmico de namespace**:
+  - Implementado método `get_app_urls()` em `EjIntegrationsConfig`
+  - Resolve problemas de `NoReverseMatch` em todos os testes de URL migration
+  - Permite registro automático do namespace `ej_integrations`
+
+* **Melhorias de qualidade de código**:
+  - Black e Ruff aplicados em 26 arquivos modificados
+  - +362 adições, -149 remoções
+  - Código formatado e padronizado
+
+### Obstáculos Encontrados
+
+* **Diferenças entre clientes de teste**: Necessidade de migrar de `logged_client` (sessões) para `api_client` (REST) nos testes de API
+* **Decorators incompatíveis com REST**: Decorator original `@can_access_dataviz` retornava redirects 302 ao invés de códigos HTTP apropriados para APIs
+* **Namespace não registrado**: URLconf do Django não reconhecia namespace `ej_integrations`, causando `NoReverseMatch` em 11 testes
+* **Fixtures desatualizadas**: Testes precisavam de fixtures `board`, `conversation` e `api_client` apropriadamente configuradas
+* **Métodos setup() de CBVs**: Views baseadas em classes requerem kwargs específicos (`board_slug`, `conversation_id`, `slug`) no método `setup()`
+* **Configurações de teste**: Necessidade de `@override_settings` com `FRONTEND_URL`, `SITE_NAME`, `DEFAULT_FROM_EMAIL` para testes de email
+* **Acesso ao banco**: Testes precisavam de `@pytest.mark.django_db` para acesso ao banco de dados
+
+### Lições Aprendidas
+
+* **REST vs Session Authentication**: APIs REST devem usar `APIClient` com tokens, enquanto views tradicionais usam `Client` com sessões
+* **Códigos HTTP corretos**: 
+  - 401 (Unauthorized) para requests sem autenticação
+  - 403 (Forbidden) para usuários autenticados sem permissão
+  - 404 (Not Found) para recursos inexistentes
+  - 302 (Redirect) apenas para views HTML, nunca para APIs REST
+
+* **Registro dinâmico de URLs**: Método `get_app_urls()` em AppConfig permite modularização e registro automático de namespaces no Django
+
+* **Fixtures vs criação manual**: Uso de fixtures do pytest (`api_client`, `board`, `conversation`) é preferível à criação manual de objetos em testes
+
+* **Decorators específicos para contexto**: Necessidade de decorators separados para views HTML (`@can_access_dataviz`) e APIs REST (`@can_access_dataviz_api`)
+
+* **Importância do pipeline estável**: Pipeline funcional permite detectar regressões rapidamente e garante qualidade contínua
+
+* **Formatação consistente**: Aplicação de Black e Ruff facilita revisão de código e reduz discussões sobre estilo
+
+### Metas Pessoais para a Próxima Sprint
+* [ ] Documentar padrões de decorators para APIs REST vs views HTML
+* [ ] Criar guia de migração FBV→CBV para o projeto
+* [ ] Expandir cobertura de testes para novos endpoints criados
