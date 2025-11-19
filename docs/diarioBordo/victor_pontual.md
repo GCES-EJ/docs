@@ -136,3 +136,65 @@ Nesta sprint concentrei meus esforços em estabilizar a base de testes automatiz
 * [ ] Documentar padrões de testes e fixtures usados no projeto.
 * [ ] Apoiar a implementação das mudanças de autenticação propostas (quando aprovadas) para garantir compatibilidade dos testes.
 
+---
+
+## Sprint 3 – *09/10 a 22/10*
+
+### Resumo da Sprint
+
+Esta sprint foi dedicada à correção sistemática de testes que falhavam devido à migração de infraestrutura e remoção de dependências obsoletas do servidor k8s. O trabalho envolveu identificação, análise e correção de múltiplos problemas estruturais nos testes, incluindo permissões, configurações de API, objetos de exemplo desatualizados e problemas de setup em testes de migração.
+
+### Atividades Executadas
+
+| Data  | Atividade                                                           | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                | Status    |
+| ----- | ------------------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------ | --------- |
+| 09/10 | Criação de Issue #54 para remoção de testes com dependências k8s   | Documentação                      | [Issue #54](https://gitlab.com/gces-ej/ej-application/-/issues/54)            | Concluído |
+| 10/10 | Correção de permissões em test_searched_boards_api                  | Código                            | Commit: `fix: corrigir status code esperado em test_searched_boards_api`      | Concluído |
+| 12/10 | Correção de permissões IsAdminUser em testes de API admin          | Código                            | Commit: `fix: Correct API test permissions to use IsAdminUser`                | Concluído |
+| 15/10 | Registro do StereotypeRootViewSet na API principal                  | Código                            | Commit: `fix: Register StereotypeRootViewSet in API router`                   | Concluído |
+| 18/10 | Atualização do objeto CONVERSATION em examples.py                  | Código                            | Commit: `fix: Update CONVERSATION test example to match current API`          | Concluído |
+| 19/10 | Correção de comparações de timestamp em testes de conversação       | Código                            | Commit: `fix: Remove modified field from conversation test comparisons`       | Concluído |
+| 20/10 | Correção de uso de fixture em test_update_conversation              | Código                            | Commit: `fix: Use existing conversation fixture in test_update_conversation`  | Concluído |
+| 21/10 | Correção de método HTTP (PATCH vs PUT) em teste de update          | Código                            | Commit: `fix: Use PATCH instead of PUT in test_update_conversation`           | Concluído |
+| 22/10 | Correção massiva de testes CBV (migration e permissions)           | Código                            | Branch: `54-remove-k8s-obsolete-tests`                                        | Concluído |
+
+### Principais Conquistas
+
+* **Eliminação de 92.5% dos erros**: Reduziu de 53 errors para 4 errors (eliminados 49 AttributeErrors)
+* **Aumento significativo de testes passando**: De 479 para 515 testes passando (+36 testes, aumento de 7.5%)
+* **Melhoria da taxa de sucesso**: De 85.2% para 91.5% (+6.3 pontos percentuais)
+* **Correções sistemáticas aplicadas**:
+  - 3 testes de permissões API admin corrigidos (status codes 401/403)
+  - StereotypeRootViewSet registrado habilitando rotas de API de estereótipos
+  - Objeto CONVERSATION atualizado com 12 campos novos da API
+  - Testes de timestamp corrigidos para não falhar em valores dinâmicos
+  - Método HTTP correto (PATCH) aplicado em testes de update parcial
+  - 49 AttributeErrors eliminados em testes CBV (migration, permissions, url_migration)
+  - 100% dos testes de CBV permissions passando (10/10)
+
+### Obstáculos Encontrados
+
+* **Permissões desalinhadas**: Testes esperavam permissões customizadas mas API usava `IsAdminUser`
+* **API routes não registradas**: `StereotypeRootViewSet` não estava no router principal causando `NoReverseMatch`
+* **Objetos de teste desatualizados**: Estrutura de serializers havia evoluído mas objetos de exemplo não
+* **Timestamps dinâmicos**: Campos `created` e `modified` causavam falhas por valores não-determinísticos
+* **Métodos inexistentes**: Uso de `self.make_user()` que não existe nas classes base de receitas
+* **Acesso ao banco sem decorator**: Testes usando recipes sem `@pytest.mark.django_db`
+* **Método HTTP incorreto**: Uso de PUT com dados parciais causando erro 400 em vez de 403
+
+### Lições Aprendidas
+
+* Importância de manter objetos de teste sincronizados com mudanças na API (serializers)
+* Status codes HTTP têm significados específicos: 401 (não autenticado) vs 403 (sem permissão) vs 400 (validação)
+* PUT vs PATCH: PUT requer todos os campos (partial=False), PATCH permite update parcial
+* Necessidade de decorar classes/métodos com `@pytest.mark.django_db` quando usam ORM do Django
+* Fixtures do pytest são preferíveis a criação manual de objetos em testes
+* ViewSets precisam ser explicitamente registrados no router para gerar URLs corretas
+* Campos dinâmicos (timestamps) devem ser excluídos de comparações de igualdade em testes
+
+### Metas Pessoais para a Próxima Sprint
+
+* [ ] Corrigir os 43 testes ainda falhando para aumentar taxa de sucesso para 95%+
+* [ ] Documentar padrões identificados de correção de testes para facilitar manutenção futura
+* [ ] Criar guia de boas práticas para escrita de testes no projeto
+* [ ] Investigar e corrigir os 4 errors remanescentes em test_api.py do ej_dataviz

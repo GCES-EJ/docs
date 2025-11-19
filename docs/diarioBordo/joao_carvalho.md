@@ -175,3 +175,51 @@ Durante a análise, foram identificados erros e duplicações em 6 das 10 rotas 
 * [ ] Finalizar a análise das rotas de boards.
 * [ ] Finalizar a análise das rotas de clusterizations.
 * [ ] Finalizar a análise das rotas de comments.
+
+---
+
+## Sprint 4 – \[23/10 – 12/11]
+
+### Resumo da Sprint
+
+Durante esta sprint, o foco foi **finalizar o Merge Request pendente da sprint anterior**, garantindo que todas as modificações de rotas e ajustes de views não quebrassem a aplicação ou os testes existentes.  
+Durante a validação, foi identificado um **erro nos testes de `administration`**, causado por inconsistêncis na comparações de usuários dentro dos querysets.
+
+Após uma análise detalhada, as duplicidades foram removidas e as rotas foram unificadas, resultando em uma estrutura mais limpa, estável e coerente com o padrão da EJ.
+
+Sendo assim, além da finalização da issue passada foi finalizado outro MR para as correções dos querysets, deixando o administration com todas as rotas padronizadas e os retornos totalmente corretos conforme os testes.
+
+### Atividades Realizadas
+
+| Data  | Atividade                                                                          | Tipo    | Link/Referência                                                         | Status    |
+|-------|------------------------------------------------------------------------------------|---------|-------------------------------------------------------------------------|-----------|
+| 09/11 | Finalização da issue da sprint anterior (verificação de rotas e ajustes em testes) | Código  | [MR #36](https://gitlab.com/gces-ej/ej-application/-/merge_requests/36) | Concluído |
+| 09/11 | Identificação e análise de erro nos testes de `administration`                     | Revisão | [Issue #65](https://gitlab.com/gces-ej/ej-application/-/issues/65)      | Concluído |
+| 09/11 | Correção da lógica de anotação no queryset (`apply_board_filters`)                 | Código  | [MR #35](https://gitlab.com/gces-ej/ej-application/-/merge_requests/35) | Concluído |
+
+### Maiores Avanços
+
+- Correção completa das **rotas duplicadas** e inconsistências na API administrativa.
+- Revisão profunda da **integração entre Django Views, Templates (Jinja2)** e chamadas AJAX.
+- Compreensão avançada da **estrutura de testes com Pytest** e execução dentro do ambiente Docker.
+- Melhoria da **manutenibilidade e rastreabilidade** do código relacionado a URLs e views.
+
+### Maiores Dificuldades
+
+- Rastrear dependências entre templates Jinja2 e as rotas AJAX que os alimentam.
+- Entender o impacto cruzado de alterações em rotas sobre os testes automatizados.
+- Dificuldade inicial em interpretar as falhas de testes do módulo `administration`, especialmente por conta das comparações de objetos Django (`owner=user` vs `owner_id`).
+
+### Aprendizados
+
+- O Django compara objetos Python por **instância**, não por ID, exigindo uso de `owner_id` em anotações do ORM.
+- A organização adequada das rotas evita duplicidade e inconsistência no Swagger.
+- O uso correto de **Paginators e Querysets anotados** impacta diretamente a ordenação e os resultados exibidos na interface administrativa.
+- Aprimoramento do entendimento de **Jinja2** e sua integração com JavaScript (AJAX).
+
+### Plano Pessoal para a Próxima Sprint
+
+- [ ] Finalizar a análise das rotas de **Boards**.
+- [ ] Iniciar a análise e refatoração das rotas de **Clusterizations**.
+- [ ] Realizar revisão das rotas e testes de **Comments**.
+- [ ] Ampliar cobertura de testes nas views de administração.

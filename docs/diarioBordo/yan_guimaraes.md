@@ -124,8 +124,42 @@ Nesta sprint, o foco foi a análise e correção de falhas em testes automatizad
 
   ### Metas Pessoais para a Próxima Sprint
 
-- [ ] Expandir a cobertura dos testes automatizados para outras rotas da API, garantindo casos completos de autenticação e autorização.
-- [ ] Documentar detalhadamente todas as alterações na API e testes para facilitar futuras manutenções.
-- [ ] Propor melhorias no pipeline CI/CD para automação e monitoramento de testes relacionados a permissões e segurança.
+- [x] Expandir a cobertura dos testes automatizados para outras rotas da API, garantindo casos completos de autenticação e autorização.
+- [x] Documentar detalhadamente todas as alterações na API e testes para facilitar futuras manutenções.
+- [x] Propor melhorias no pipeline CI/CD para automação e monitoramento de testes relacionados a permissões e segurança.
 
+## Sprint 3 – *09/10 a 22/10*
 
+### Resumo da Sprint
+
+Nesta sprint, o foco principal foi corrigir uma falha crítica em um teste automatizado de criação de conversa na API. O teste `test_create_conversation_success` estava falhando devido a um erro de validação no formato do campo de tags enviado, que resultava em uma resposta 400 Bad Request e impedia a criação da conversa no banco de dados. Realizei uma análise detalhada do problema, corrigi o serializador para aceitar tags no formato esperado e atualizei o teste para validar corretamente a resposta da API. Isso garantiu a estabilização do teste e a melhoria da robustez da API na manipulação de formatos flexíveis para o campo de tags.
+
+### Atividades Executada
+| Data   | Atividade                                                              | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                                                   | Status    |
+|--------|------------------------------------------------------------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------|-----------|
+| 10/10  | Análise da falha no teste `test_create_conversation_success`           | Análise/Diagnóstico               | –                                                                                                                 | Concluído |
+| 13/10  | Correção do método `create` do `ConversationSerializer` para tratamento correto de tags | Código                           | [fix tag format validation error](https://gitlab.com/gces-ej/ej-application/-/commit/86372fc38bdcc30b4e6347fbabe4bc5d7b147d79)                                | Concluído |
+| 15/10  | Atualização do teste de criação de conversa para validar corretamente o comportamento da API | Código                           | [fix tag format validation error](https://gitlab.com/gces-ej/ej-application/-/commit/86372fc38bdcc30b4e6347fbabe4bc5d7b147d79)                                 | Concluído |
+| 20/10  | Validação técnica da correção e execução do test suite completo         | Teste/Validação                   | Relatório de testes atualizado                                                                                    | Concluído |
+
+### Principais Conquistas
+- Diagnóstico de que o erro não estava no formato das tags enviadas, mas na ausência de tratamento adequado desse formato pelo ConversationSerializer.
+- Implementação de uma lógica no método create para processar corretamente as tags recebidas, permitindo que tanto listas quanto strings sejam aceitas e tratadas de forma consistente.
+- Atualização do teste automatizado para validar o comportamento correto da API e garantir a criação bem-sucedida da conversa (status 201 Created).
+- Tornar a API mais robusta e resiliente a diferentes formatos de entrada, mantendo compatibilidade com integrações existentes.
+- Confirmação da estabilidade da suíte de testes, com a passagem do teste corrigido e apenas uma falha remanescente não relacionada.
+- Atualmente os testes: 263 passed, 1 failed (unrelated test), 1 skipped
+
+### Obstáculos Encontrados
+- Ausência de tratamento adequado no serializador para processar o formato de tags enviado pela requisição, resultando em erro de validação do campo.
+- Falta de verificação explícita do status da resposta nos testes, o que dificultava a detecção do ponto exato de falha.
+
+### Lições Aprendidas
+- A importância de implementar validações e tratamentos robustos no serializador para lidar com diferentes formatos de dados.
+- Garantir que os testes automatizados validem não apenas os resultados, mas também o comportamento e o status HTTP retornado.
+- Adotar uma abordagem preventiva ao desenvolver APIs, antecipando diferentes formatos e cenários que podem surgir no uso real.
+
+### Metas Pessoais para a Próxima Sprint
+- [ ] Expandir a cobertura dos testes para incluir cenários com diferentes formatos de entrada no campo tags.
+- [ ] Documentar o fluxo de tratamento de tags e boas práticas de serialização na API.
+- [ ] Contribuir na revisão do pipeline CI/CD para capturar mais rapidamente falhas decorrentes de validações incompletas.
