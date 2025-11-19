@@ -126,3 +126,55 @@ Essas melhorias aumentam a usabilidade do formulário, padronizam os dados e seg
 - [ ] Implementar testes automatizados para as validações de data, cidade, país e etnia.
 - [ ] Revisar e refatorar componentes de formulário para melhorar a acessibilidade (WCAG 2.2).
 - [ ] Propor melhorias adicionais na interface de edição de perfil com foco em UX.
+
+---
+
+## Sprint 3 – [09/10 – 22/10]
+
+### Resumo da Sprint
+
+Nesta sprint, foquei na integração do projeto com o **SonarQube** e na análise completa da qualidade do código. A partir dessa análise, identifiquei bugs, *code smells*, duplicações e pontos de alta complexidade. Com base nos resultados, realizei refatorações essenciais e melhorias estruturais que aumentaram a manutenibilidade e a confiabilidade do sistema.
+
+### Atividades Realizadas
+
+| Data   | Atividade                                                                                     | Tipo       | Link/Referência                                                                 | Status      |
+|--------|-----------------------------------------------------------------------------------------------|------------|----------------------------------------------------------------------------------|-------------|
+| 10/10  | Configuração e inicialização do SonarQube localmente (Ubuntu)                                 | Ambiente   | —                                                                                | Concluído   |
+| 11/10  | Execução da primeira análise estática do projeto usando SonarScanner                          | Ferramenta | —                                                                                | Concluído   |
+| 12/10  | Revisão dos relatórios de qualidade: Bugs, Code Smells, Duplicações e Hotspots                | Análise    | —                                                                                | Concluído   |
+| 14/10  | Refatorações gerais no código com base nos pontos críticos apontados pelo SonarQube           | Código     | —                                                                                | Concluído   |
+| 16/10  | Redução de duplicações, simplificação de funções complexas e melhora de legibilidade          | Código     | —                                                                                | Concluído   |
+| 20/10  | Revisão final da qualidade e nova análise para validar as correções                           | Análise    | —                                                                                | Concluído   |
+
+### Maiores Avanços
+
+* Configuração e execução do SonarQube com sucesso no ambiente local.
+* Identificação de métricas críticas que afetavam a qualidade do projeto.
+* Redução significativa de **code smells** e duplicações.
+* Correção dos **bugs** detectados na análise estática.
+* Simplificação de métodos com alta complexidade ciclomática.
+* Melhoria da organização e manutenibilidade do código.
+
+### Maiores Dificuldades
+
+* Ajustar dependências e permissões até o SonarQube rodar corretamente no Ubuntu.
+* Compreender o impacto das métricas e priorizar o que corrigir primeiro.
+* Reduzir duplicações sem quebrar partes importantes do sistema.
+* Refatorar funções complexas mantendo o comportamento original.
+
+### Aprendizados
+
+* Entendimento aprofundado das métricas de qualidade: Bugs, Code Smells, Duplication, Coverage e Complexity.
+* Uso prático do SonarScanner e interpretação dos relatórios gerados.
+* Importância da análise estática para detectar problemas ocultos.
+* Como pequenas refatorações aumentam significativamente a manutenibilidade.
+* Boas práticas de código limpo e sustentável.
+
+### Plano Pessoal para a Próxima Sprint
+
+* [ ] Integrar o SonarQube ao pipeline de CI/CD para análise automática a cada push.
+* [ ] Aumentar a cobertura de testes automatizados.
+* [ ] Tratar os últimos *Security Hotspots* identificados.
+* [ ] Definir e aplicar metas de qualidade contínua (Quality Gate).
+
+---
