@@ -120,6 +120,50 @@ Na Sprint 2, o monitor Giovanni apresentou um novo desafio à equipe: aprimorar 
 - [ ] Enviar a proposta ao Giovanni para validação.
 - [ ] Criar as issues relacionadas à implementação do novo modelo de autenticação.
 
+## Sprint 3 – **[09/10 – 22/10]**
+
+### **Resumo da Sprint**
+
+Durante a Sprint 3, aprofundamos os estudos sobre o novo processo de autenticação e demos início à implementação da arquitetura proposta. O foco foi consolidar o modelo aprovado e preparar a base para as próximas etapas de desenvolvimento.
+
+---
+
+### **Atividades Realizadas**
+
+| Data  | Atividade | Tipo (Código/Doc/Discussão/Outro) | Link/Referência | Status |
+|-------|-----------|------------------------------------|------------------|--------|
+| 17/10 | Envio da nova proposta de arquitetura ao monitor | Outro | https://gitlab.com/gces-ej/ej-application/-/issues/51 | Concluído |
+| 19/10 | Avaliação e aprovação da arquitetura, com feedback de melhorias | Outro | https://gitlab.com/gces-ej/ej-application/-/issues/51 | Concluído |
+| 20/10 | Criação de issue para início da implementação | Outro | https://gitlab.com/gces-ej/ej-application/-/issues/59 | Concluído |
+| 21/10 | Implementação inicial da arquitetura | Código | – | Concluído |
+
+---
+
+### **Maiores Avanços**
+
+- Aprovação oficial da nova arquitetura de autenticação  
+- Criação das primeiras issues para organizar a implementação  
+- Início prático do desenvolvimento da solução proposta  
+
+---
+
+### **Maiores Dificuldades**
+
+- Estruturar um modelo arquitetural sólido, escalável e alinhado ao projeto  
+
+---
+
+### **Aprendizados**
+
+- Conceitos mais avançados sobre autenticação utilizando Django  
+
+---
+
+### **Plano Pessoal para a Próxima Sprint**
+
+- [ ] Criar novas issues para dar continuidade às fases de implementação  
+- [ ] Refinar e detalhar a arquitetura conforme o progresso do desenvolvimento  
+
 ## Sprint 4 – [10/10 – 19/11]
 
 ### Resumo da Sprint
