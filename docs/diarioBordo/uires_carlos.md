@@ -178,3 +178,102 @@ Nesta sprint, foquei na integração do projeto com o **SonarQube** e na anális
 * [ ] Definir e aplicar metas de qualidade contínua (Quality Gate).
 
 ---
+
+## Fase 4 – Análise de Qualidade com SonarQube (Resultados Reais do Projeto EJ-Application)
+
+### Visão Geral
+
+Nesta fase, realizei a análise completa do projeto **ej-application** utilizando o **SonarQube Community**, avaliando as principais características de qualidade: Segurança, Confiabilidade, Manutenibilidade, Cobertura de Testes e Duplicação de Código.  
+A partir do relatório gerado, foi possível identificar problemas críticos, mensurar o estado atual da base de código e definir prioridades de melhoria para as próximas sprints.
+
+---
+
+### Métricas Gerais do Projeto (Overall Code)
+
+| Categoria            | Valor / Status                | Interpretação |
+|---------------------|-------------------------------|---------------|
+| **Security**        | 1 issue aberto • Nota: **—**   | Baixo número de falhas diretas de segurança. |
+| **Security Hotspots** | **140 hotspots** • Nota: **E** | Pontos sensíveis que exigem revisão manual e auditoria contínua. |
+| **Reliability**     | **104 issues** • Nota: **B**   | Boa confiabilidade, mas ainda com problemas lógicos a revisar. |
+| **Maintainability** | **372 issues** • Nota: **E**   | Alto acúmulo de code smells e pontos de manutenção complexa. |
+| **Coverage**        | **0%** (16k linhas a cobrir)   | Ausência de testes automatizados no repositório. |
+| **Duplications**    | **4.1%** (em 51k linhas)       | Nível moderado de duplicação; há espaço para refatoração. |
+
+---
+
+### Análise Detalhada
+
+#### Segurança (Security)
+- Apenas **1 issue direta de segurança**, o que indica que não há vulnerabilidades críticas explícitas.
+- Porém, existem **140 Security Hotspots**, classificados como nota **E**, exigindo revisão manual:
+  - Uso de funções potencialmente inseguras,
+  - Falta de validação explícita em alguns fluxos,
+  - Trechos que podem expor superfícies de ataque se não forem tratados corretamente.
+
+#### Confiabilidade (Reliability)
+- O projeto apresenta **104 issues de confiabilidade**, nota **B**.
+- A maioria envolve:
+  - Possíveis exceções não tratadas,
+  - Falhas de fluxo de controle,
+  - Lógicas duplicadas.
+
+#### Manutenibilidade (Maintainability)
+- O ponto mais crítico do relatório: **372 code smells**, nota **E**.
+- Problemas mais comuns:
+  - Funções muito longas,
+  - Nomes pouco descritivos,
+  - Complexidade ciclomática elevada,
+  - Estruturas condicionais aninhadas,
+  - Duplicação de lógica em múltiplos arquivos.
+
+#### Cobertura de Código (Coverage)
+- Cobertura **0%** em **16.000 linhas analisadas**.
+- Não há testes automatizados detectados.
+- Isso afeta diretamente:
+  - Confiabilidade,
+  - Manutenibilidade,
+  - Qualidade geral do projeto.
+
+#### Duplicação de Código (Duplications)
+- **4.1% de duplicação**, dentro de um nível aceitável.
+- No entanto:
+  - Existem blocos repetidos que aumentam o risco de falhas.
+  - Refatorações podem reduzir complexidade e esforço de manutenção.
+
+---
+
+### Conclusões da Fase 4
+
+A análise indica que o projeto precisa de atenção especialmente em:
+
+1. **Manutenibilidade (nota E)** – ponto mais crítico, com alto volume de code smells.  
+2. **Security Hotspots (nota E)** – pontos sensíveis que exigem auditoria manual.  
+3. **Cobertura de Testes (0%)** – inexistência de testes automatizados.  
+
+Apesar disso, alguns pontos positivos são observados:
+
+✔ Poucas falhas diretas de segurança  
+✔ Duplicação moderada (4.1%)  
+✔ Confiabilidade razoável (nota B)
+
+---
+
+### Ações Recomendadas (Backlog Técnico)
+
+- [ ] Criar primeiro pacote de testes automatizados (unitários e integração).  
+- [ ] Reduzir complexidade ciclomatica em módulos apontados como críticos pelo SonarQube.  
+- [ ] Revisar 30–50 Security Hotspots prioritários.  
+- [ ] Refatorar trechos duplicados (4.1%).  
+- [ ] Introduzir CI/CD com análise automática do Sonar.  
+- [ ] Aplicar padrões de código (PEP8 / Clean Code / Django Best Practices).  
+
+---
+
+### Pontos que devo apresentar na disciplina
+
+- O SonarQube foi usado para medir objetivamente a **qualidade do código**.  
+- Os **números reais** evidenciam onde o projeto deve melhorar (manutenibilidade e segurança).  
+- A análise estática ajuda a definir **prioridades de melhoria nas Sprints seguintes**.  
+- O relatório serve como parte da justificativa técnica para refatorações e criação de testes.
+
+---
