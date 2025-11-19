@@ -155,3 +155,34 @@ Na sprint 3 demos continuidade aos estudos da nova autenticação e começamos a
 ### Plano Pessoal para a Próxima Sprint
 
 - [ ] Abrir mais issues para dar continuidade a implmentação
+
+## Sprint 4 – [10/10 – 19/11]
+
+### Resumo da Sprint
+
+Na sprint 4 demos continuidade a implementação da nova arquitetura de autenticação com a update do middleware de autenticação e unificação de usuários externos
+
+### Atividades Realizadas
+
+| Data  | Atividade                                   | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                              | Status    |
+|-------|---------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------|-----------|
+| 15/10 | Identificação do que já havia sido implmentado e o que estava pendente | Discussão | - | Concluído |
+| 20/10 | Começo dos estudos de como adequadar a arquiteura antiga a nova| Outro | -  | Concluído |
+| 17/11 | Abertura de issue para começar implementação  | Código  | https://gitlab.com/gces-ej/ej-application/-/issues/69 | Concluído |
+| 19/11 | Abertura de Merge Request | Código | https://gitlab.com/gces-ej/ej-application/-/merge_requests/41 | Concluído |
+
+### Maiores Avanços
+
+- Middleware de autenticação e unificação de usuários externos
+
+## Maiores Dificuldades
+
+- Adequar o código antigo ao novo padrão
+
+### Aprendizados
+
+- Middleware
+
+### Plano Pessoal para a Próxima Sprint
+
+- [ ] Finalizar a autenticação
