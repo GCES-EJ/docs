@@ -223,3 +223,40 @@ Sendo assim, além da finalização da issue passada foi finalizado outro MR par
 - [ ] Iniciar a análise e refatoração das rotas de **Clusterizations**.
 - [ ] Realizar revisão das rotas e testes de **Comments**.
 - [ ] Ampliar cobertura de testes nas views de administração.
+
+---
+
+## Sprint 5 – \[13/11 – 01/12]
+
+### Resumo da Sprint
+
+Nesta sprint final, foram revisadas e validadas todas as rotas restantes da aplicação, assegurando o funcionamento completo e correto de 100% da API. Além disso, dediquei-me à análise e aprovação dos merge requests pendentes, bem como à correção de inconsistências no pipeline e de erros provenientes de MRs antigos que impactavam a branch develop.
+
+### Atividades Realizadas
+
+| Data  | Atividade                                                                   | Tipo    | Link/Referência                                                                                                                                                                                                                                                                                                                                                     | Status    |
+|-------|-----------------------------------------------------------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 26/11 | Corrige codigo não executando na develop                                    | Código  | [hotfix: corrigir conflito não resolvido em ej_users/admin.py](https://gitlab.com/gces-ej/ej-application/-/commit/3344f7b05710847ea38055a4808e8c057eeae189)                                                                                                                                                                                                         | Concluído |
+| 26/11 | Padronização da indentação de todo o projeto                                | Código  | [fix: executa black](https://gitlab.com/gces-ej/ej-application/-/commit/b86d71c6aac7831d8dc23fe2acc99520adc12db4)                                                                                                                                                                                                                                                   | Concluído |
+| 26/11 | Ajustes gerais reportados pelo Ruff (imports, warnings e formatação)        | Código  | [chore: ajustar imports e warnings reportados pelo ruff](https://gitlab.com/gces-ej/ej-application/-/commit/1c1dc0645e1ec6cdd494914cc911fd4325df8893)                                                                                                                                                                                                               | Concluído |
+| 26/11 | Correção do pull policy inválido no pipeline, permitindo execução do pytest | Código  | [ci: corrige pull_policy inválido no job pytest](https://gitlab.com/gces-ej/ej-application/-/commit/b3a1957c31aa931a68170eb7bb865a136871bf96)                                                                                                                                                                                                                       | Concluído |
+| 29/11 | Ajustes no pipeline: remoção de builds sem servidor e de testes E2E         | Código  | [ci: corrige pipeline](https://gitlab.com/gces-ej/ej-application/-/commit/83c4517c403c4304355bdd2b35a65dbf429b2cf4), [ci: remove o e2e](https://gitlab.com/gces-ej/ej-application/-/commit/9756f10b48971aaac9fe5a9539d2759264840d40), [ci: remove os stages de build ](https://gitlab.com/gces-ej/ej-application/-/commit/ba9fd13dcd306a0c4f6ffaca4d3fddfb4e89a5b5) | Concluído |
+| 29/11 | Revisão completa das rotas restantes                                        | Revisão |                                                                                                                                                                                                                                                                                                                                                                     | Concluído |
+| 29/11 | Aprovação dos Merge Requests #35 e #36                                      | Revisão | [MR #35](https://gitlab.com/gces-ej/ej-application/-/merge_requests/35), [MR #36](https://gitlab.com/gces-ej/ej-application/-/merge_requests/36)                                                                                                                                                                                                                    | Concluído |
+
+### Maiores Avanços
+
+- Validação integral das rotas da API e do Swagger.
+- Correção de inconsistências na branch develop.
+- Finalização e aprovação dos MRs pendentes.
+- Estabilização do pipeline, garantindo sua execução correta.
+
+### Maiores Dificuldades
+
+- Correção de problemas oriundos de MRs antigos que impactavam o pipeline de forma indireta.
+- Ajustes complexos em etapas do CI/CD que estavam bloqueando execuções.
+
+### Aprendizados
+
+- Aprofundamento no funcionamento do pipeline CI/CD do GitLab.
+- Fortalecimento da habilidade de manutenção de projetos colaborativos.

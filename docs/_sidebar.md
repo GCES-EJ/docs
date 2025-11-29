@@ -23,6 +23,7 @@
   * [Sprint 2](relatorios/sprint_2.md)
   * [Sprint 3](relatorios/sprint_3.md)
   * [Sprint 4](relatorios/sprint_4.md)
+  * [Sprint 5](relatorios/sprint_5.md)
 
 * **Políticas**
   * [Políticas de Contribuição](politicasGCES/politicasGCES.md)
