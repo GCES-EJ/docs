@@ -25,6 +25,9 @@
   * [Sprint 4](relatorios/sprint_4.md)
   * [Sprint 5](relatorios/sprint_5.md)
 
+* **Apresentação Final**
+  * [Relatório Final](apresentacao_final.md)
+
 * **Políticas**
   * [Políticas de Contribuição](politicasGCES/politicasGCES.md)
 
