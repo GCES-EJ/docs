@@ -1,4 +1,4 @@
-# 📝 Relatório Final – GCES 2024.2
+# 📝 Relatório Final – GCES 2025.2
 
 *Disciplina:* GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE
 
@@ -6,7 +6,7 @@
 
 *Comunidade/Projeto de Software Livre:* Empurrando Juntas (EJ)
 
-*Período:* Agosto – Dezembro/2024
+*Período:* Agosto – Dezembro/2025
 
 ---
 
