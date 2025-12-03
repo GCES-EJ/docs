@@ -225,3 +225,39 @@ Nesta sprint, foquei na continuidade da implementação da arquitetura de Federa
 * [ ] Documentar o fluxo completo de autenticação com exemplos de uso.
 
 ---
+
+## Sprint 5 – [13/11 – 03/12]
+
+### Resumo da Sprint
+
+Nesta sprint, foquei na integração final da arquitetura de Federação de Identidades. Implementei o `FederationMiddleware` para autenticação via API Key, atualizei o modelo `User` para suportar usuários externos e desenvolvi o `ExternalUserService`. A segunda metade da sprint foi dedicada à criação de testes de integração e ajustes de configuração.
+
+### Atividades Realizadas
+
+| Data   | Atividade                                                                                     | Tipo     | Link/Referência                                                                 | Status     |
+|--------|-----------------------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------|------------|
+| 14/11  | Atualização do modelo `User` com campos `provider` e `external_uuid`                          | Código   | [Issue #69](https://gitlab.com/gces-ej/ej-application/-/work_items/69), [MR #41](https://gitlab.com/gces-ej/ej-application/-/merge_requests/41) | Concluído  |
+| 18/11  | Implementação do `ExternalUserService` (lógica de `get_or_create` para usuários federados)    | Código   | [Issue #69](https://gitlab.com/gces-ej/ej-application/-/work_items/69), [MR #41](https://gitlab.com/gces-ej/ej-application/-/merge_requests/41) | Concluído  |
+| 20/11  | Desenvolvimento do `FederationMiddleware` para autenticação via API Key e criação de sessão   | Código   | [Issue #69](https://gitlab.com/gces-ej/ej-application/-/work_items/69), [MR #41](https://gitlab.com/gces-ej/ej-application/-/merge_requests/41) | Concluído  |
+| 25/11  | Criação de testes de integração completos (`test_federation_flow.py`) cobrindo todo o fluxo   | Código   | [Issue #81](https://gitlab.com/gces-ej/ej-application/-/issues/81)              | Concluído  |
+| 03/12  | Ajuste de configuração do `coverage` (pyproject.toml) e correção de bug legado em `routes.py` | Config   | [MR #43](https://gitlab.com/gces-ej/ej-application/-/merge_requests/43)         | Concluído  |
+
+### Maiores Avanços
+
+* Implementação completa do `FederationMiddleware` e `ExternalUserService` com criação "just-in-time" de usuários.
+* Criação de 15 testes de integração validando cenários críticos de autenticação, permissões e isolamento entre clientes.
+* Ajustes de configuração do `coverage` e correção de bugs legados no projeto.
+
+
+### Maiores Dificuldades
+
+* Atingir a exigência de 85% de cobertura de testes para aprovação da pipeline.
+* Garantir que os testes cobrem adequadamente o isolamento entre clientes e proteção contra acesso cruzado.
+
+### Aprendizados
+
+* Implementação de middleware customizado no Django para interceptar e autenticar requisições HTTP.
+* Estratégias para criação de testes de integração robustos usando fixtures do pytest.
+* Configuração de ferramentas de qualidade de código (`black`, `ruff`, `coverage`) no pipeline CI/CD.
+
+
