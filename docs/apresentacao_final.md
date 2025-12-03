@@ -64,8 +64,9 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - **Issue de erro sintático** (sem número nos diários, mas criada e corrigida por João Filipe). :contentReference[oaicite:4]{index=4}  
 - **Issue #47 – Validação de senha forte** (criação e implementação da regra de senha forte por Caio). :contentReference[oaicite:5]{index=5}
 - **Issue #45 – Documentar endpoints do ej_users** (documentada por João Carvalho).   
+- **Issue #48 – botão de visualizar senha na tela de login** (Implentado por Marco Tulio Soares).   
 
-➡ **Pelo menos 5 issues trabalhadas na Sprint 1**, sendo 4 numeradas (#44, #45, #47, #50).
+➡ **Pelo menos 5 issues trabalhadas na Sprint 1**, sendo 4 numeradas (#44, #45, #47, #50, #48).
 
 **PRs/MRs Submetidos e Aceitos (mínimo identificado):**
 - **MR #26** – Relacionado à documentação/rotas (Letícia). :contentReference[oaicite:6]{index=6}  
@@ -90,8 +91,8 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - **Issue #51** – Estudo e refino da nova arquitetura de autenticação (citada por Ana Joyce). :contentReference[oaicite:9]{index=9}  
 - **Issue #53** – Registro de endpoints faltantes no router (Letícia). :contentReference[oaicite:10]{index=10}  
 - **Issue #54** – Remoção de testes obsoletos de Kubernetes e correção de 28 testes (Victor Pontual). :contentReference[oaicite:11]{index=11}  
-
-➡ **Pelo menos 4 issues formais (51, 52, 53, 54) trabalhadas na Sprint 2.**
+- **Issue #56** – Implementação CRUD foto de perfil (Marco Tulio Soares).
+➡ **Pelo menos 4 issues formais (51, 52, 53, 54,56) trabalhadas na Sprint 2.**
 
 **PRs/MRs Submetidos e Aceitos (mínimo identificado):**
 - **MR #30** – Registro de endpoints faltantes (Letícia). :contentReference[oaicite:12]{index=12}  
@@ -113,7 +114,8 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - **Issue #54** – Continuação da remoção de testes obsoletos k8s (Victor Pontual)
 - **Issue #59** – Início da implementação da nova autenticação (aberta por Ana Joyce). :contentReference[oaicite:13]{index=13}
 - **Issue #60** – Correção de rotas duplicadas em `admin/administration` (João Carvalho). :contentReference[oaicite:21]{index=21}
-- **Issue #61** – Documentação detalhada de endpoints críticos de autenticação e usuários (Letícia). :contentReference[oaicite:14]{index=14}  
+- **Issue #61** – Documentação detalhada de endpoints críticos de autenticação e usuários (Letícia). :contentReference[oaicite:14]{index=14} 
+- **Issue #62** – Implementação do modo escuro  (Marco Tulio Soares).
 
 ➡ **Pelo menos 4 issues formais (54, 59, 60, 61) ligadas à Sprint 3**.
 
@@ -173,8 +175,8 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 | **João Antonio Carvalho** | ≥ 3 (`#45`, `#60`, `#65`)  | ≥ 2 (`MR #35`, `MR #36`) | Correção de rotas, ajustes em testes e estabilização do pipeline. |
 | **João Filipe** | ≥ 2 (issue de erro sintático sem número + `#51,#52,#59,#69`)  | 0 mencionados diretamente | Atuação na concepção da nova autenticação. |
 | **Leticia Arisa** | ≥ 5 (`#46`, `#53`, `#61`, `#66`, `#82`)  | ≥ 5 ( `MR #26`, `MR #30`, `MR #33`, `MR #38`, `MR #45`) | Documentação Swagger, correção de endpoints, otimização de infraestrutura (Docker) e testes unitários. |
-| **Marco Soares** | Issues sem número explícito (dark mode, mostrar senha, foto de perfil) | ≥ 1 MR de front/UX (não numerado nos diários) | Foco em UI/UX. |
-| **Marco Tulio** | Não há issues numeradas explícitas nos trechos analisados | – | Atuação em análises de arquitetura (sem numeração clara em issues). |
+| **Marco Soares** | - | - | - |
+| **Marco Tulio** | ≥ 3 (`#48`, `#56`, `#62`)| ≥ 3 (`#48`, `#56`, `#62`) | (dark mode, mostrar senha, foto de perfil) |
 | **Uires Carlos** | ≥ 2 (`#67`, `#68`) :contentReference[oaicite:37]{index=37} | MRs implícitos ligados às issues, não numerados nos diários | ClientPermission, ApiKeyService, análise SonarQube e refatorações. |
 | **Victor Augusto de Sousa Câmara** | ≥ 2 (`#64`, `#77`)  | MRs ligados a essas issues (links via issue, não por número) | Refatorações avançadas (Service Layer, magic numbers). |
 | **Victor Pontual Guedes Arruda Nóbrega** | ≥ 3 (`#44`, `#54`, `#82`) | ≥ 3 ([`MR #29`](https://gitlab.com/gces-ej/ej-application/-/merge_requests/29), [`MR #37`](https://gitlab.com/gces-ej/ej-application/-/merge_requests/37), [`MR #45`](https://gitlab.com/gces-ej/ej-application/-/merge_requests/45)) | **Sprint 1**: Pipeline CI/CD completo com test-coverage, 58 erros Ruff corrigidos, 29 arquivos formatados. **Sprint 2-3**: Correção de 28 testes (+36 passando, 85.2%→91.5%), eliminação de 92.5% dos erros. **Sprint 4**: 28 testes FBV→CBV, decorator REST, namespace dinâmico. **Sprint 5**: +8% cobertura (67%→75%), 100% em 4 módulos, 710 linhas de testes. |
