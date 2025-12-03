@@ -1,120 +1,4 @@
-<!-- # 📝 Relatório Final – GCES 2025.2
 
-*Disciplina:* GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE
-
-*Equipe:* Empurrando Juntas
-
-*Comunidade/Projeto de Software Livre:* Empurrando Juntas (EJ)
-
-*Período:* Agosto – Dezembro/2025
-
----
-
-## 1. Resumo
-
-Listando, por Sprint, todas as issues planejadas, executadas ou não, destacando os PRs/MRs submetidos e já aceitos.
-
-### Sprint 0 (25/08 – 10/09)
-**Issues Planejadas:**
-- 
-
-**Issues Executadas:**
-- 
-
-**PRs/MRs Submetidos e Aceitos:**
-- 
-
----
-
-### Sprint 1 (11/09 – 24/09)
-**Issues Planejadas:**
-- 
-
-**Issues Executadas:**
-- 
-
-**PRs/MRs Submetidos e Aceitos:**
-- 
-
----
-
-### Sprint 2 (26/09 – 08/10)
-**Issues Planejadas:**
-- 
-
-**Issues Executadas:**
-- 
-
-**PRs/MRs Submetidos e Aceitos:**
-- 
-
----
-
-### Sprint 3 (09/10 – 22/10)
-**Issues Planejadas:**
-- 
-
-**Issues Executadas:**
-- 
-
-**PRs/MRs Submetidos e Aceitos:**
-- 
-
----
-
-### Sprint 4 (23/10 – 12/11)
-**Issues Planejadas:**
-- 
-
-**Issues Executadas:**
-- 
-
-**PRs/MRs Submetidos e Aceitos:**
-- 
-
----
-
-### Sprint 5 (13/11 – 01/12)
-**Issues Planejadas:**
-- 
-
-**Issues Executadas:**
-- 
-
-**PRs/MRs Submetidos e Aceitos:**
-- 
-
----
-## 2. Listagem do Número de Commits e Issues
-
-Individuais e com pareamento por membro da equipe. Identificação de número de PRs/MRs submetidos e aceitos.
-
-| Integrante | Commits Individuais | Commits em Pareamento | Issues Trabalhadas | PRs/MRs Submetidos | PRs/MRs Aceitos |
-|------------|---------------------|----------------------|-------------------|-------------------|----------------|
-| **Ana Joyce Guedes Amorim da Silva** | | | | | |
-| **Caio Antonio Araújo Garcia de Almeida** | | | | | |
-| **Danielle Rodrigues Silva** | | | | | |
-| **Felipe Matheus Ribeiro Lopes** | | | | | |
-| **João Antonio Ginuino Carvalho** | | | | | |
-| **João Filipe de Oliveira Souza** | | | | | |
-| **Leticia Arisa Kobayashi Higa** | | | | | |
-| **Marco Soares de Oliveira** | | | | | |
-| **Marco Tulio Soares de Deus** | | | | | |
-| **Uires Carlos de Oliveira** | | | | | |
-| **Victor Augusto de Sousa Câmara** | | | | | |
-| **Victor Pontual Guedes Arruda Nóbrega** | | | | | |
-| **Yan Guimarães** | | | | | |
-
----
-
-## 3. Relato das Tomadas de Decisão de Organização da Equipe
-
-
-
-
----
-
-## 4. Relato de Eventuais Dificuldades com o Projeto -->
 
 
 # 📝 Relatório Final – GCES 2025.2
@@ -280,7 +164,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 |-----------|-----------------------------|------------------------------|-----------|
 | **Ana Joyce** | ≥ 3 (`#51`, `#59`, `#69`) :contentReference[oaicite:30]{index=30} | ≥ 1 (`MR #41`) | Forte atuação em pipeline e nova arquitetura de autenticação. |
 | **Caio Antonio** | ≥ 1 (`#47`) :contentReference[oaicite:31]{index=31} | ≥ 1 (`MR #27`) | Implementação de validação de senha forte. |
-| **Danielle Rodrigues** | ≥ 1 (`#63`, associada a APIClient) :contentReference[oaicite:32]{index=32} | ≥ 1 (MR de APIClient, ligado à issue #63) | Foco em APIKey e APIClient. |
+| **Danielle Rodrigues** | ≥ 5 (`#51`, `#63`, `#67`, `#68`, `#69`, `#81`) | ≥ 3 (`MR #41`, `MR #43`, MR relacionado a #63) | Arquitetura completa de Federação de Identidades especialmente na parte de APIClient, ClientPermission, ApiKeyService, FederationMiddleware, ExternalUserService e testes de integração. |
 | **Felipe Matheus** | ≥ 1 (`#50`) :contentReference[oaicite:33]{index=33} | 0 mencionados diretamente | Diagnóstico da falha do pipeline em par com Yan. |
 | **João Antonio Carvalho** | ≥ 3 (`#45`, `#60`, `#65`)  | ≥ 2 (`MR #35`, `MR #36`) | Correção de rotas, ajustes em testes e estabilização do pipeline. |
 | **João Filipe** | ≥ 2 (issue de erro sintático sem número + `#51,#52,#59,#69`)  | 0 mencionados diretamente | Atuação na concepção da nova autenticação. |
