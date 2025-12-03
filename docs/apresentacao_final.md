@@ -283,7 +283,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 | **Danielle Rodrigues** | ≥ 1 (`#63`, associada a APIClient) :contentReference[oaicite:32]{index=32} | ≥ 1 (MR de APIClient, ligado à issue #63) | Foco em APIKey e APIClient. |
 | **Felipe Matheus** | ≥ 1 (`#50`) :contentReference[oaicite:33]{index=33} | 0 mencionados diretamente | Diagnóstico da falha do pipeline em par com Yan. |
 | **João Antonio Carvalho** | ≥ 3 (`#45`, `#60`, `#65`)  | ≥ 2 (`MR #35`, `MR #36`) | Correção de rotas, ajustes em testes e estabilização do pipeline. |
-| **João Filipe** | ≥ 2 (issue de erro sintático sem número + `#51,#52, #69`)  | 0 mencionados diretamente | Atuação na concepção da nova autenticação. |
+| **João Filipe** | ≥ 2 (issue de erro sintático sem número + `#51,#52,#59,#69`)  | 0 mencionados diretamente | Atuação na concepção da nova autenticação. |
 | **Leticia Arisa** | ≥ 2 (`#53`, `#61`)  | ≥ 2 (`MR #30`, `MR #33`) | Documentação Swagger e correção/registro de endpoints. |
 | **Marco Soares** | Issues sem número explícito (dark mode, mostrar senha, foto de perfil) | ≥ 1 MR de front/UX (não numerado nos diários) | Foco em UI/UX. |
 | **Marco Tulio** | Não há issues numeradas explícitas nos trechos analisados | – | Atuação em análises de arquitetura (sem numeração clara em issues). |
