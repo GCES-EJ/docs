@@ -21,8 +21,8 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
     - `#44`, `#45`, `#47`, `#48`, `#50`, `#51`, `#52`, `#53`, `#54`, `#56`, `#59`, `#60`, `#61`, `#62`, `#64`, `#65`, `#67`, `#68`, `#69`, `#77`, `#79`, `#80`, `#82`.
 
 - **Merge Requests (MRs) mencionados diretamente nos diários:**
-  - Pelo menos **9 MRs** com número/link explícito:  
-    - `MR #26`, `MR #27`, `MR #30`, `MR #33`, `MR #35`, `MR #36`, `MR #41`, `MR #42`, `MR #44`.   
+  - Pelo menos **11 MRs** com número/link explícito:  
+    - `MR #26`, `MR #27`, `MR #29`, `MR #30`, `MR #33`, `MR #35`, `MR #36`, `MR #37`, `MR #41`, `MR #42`, `MR #44`.   
 
 > Essas quantidades são **mínimas**, pois muitos commits e revisões não aparecem com número detalhado nos diários. Ou seja: a equipe provavelmente fez **mais issues/MRs** do que as listadas aqui — mas estamos usando apenas o que está documentado oficialmente nos arquivos `.md`.
 
@@ -60,7 +60,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 
 **Issues Executadas (mínimo identificado):**
 - **Issue #44 - Quality gate de cobertura no MR (job test-coverage, mínimo 85%)** – Implementação de cobertura de testes no pipeline (Victor Pontual)
-- **Issue #50 – Falha no pipeline de CI/CD** (diagnosticada e detalhada por Yan e Felipe).   
+- **Issue #50 – Falha no pipeline de CI/CD** (diagnosticada e detalhada por Yan Guimarães e Felipe Matheus).   
 - **Issue de erro sintático** (sem número nos diários, mas criada e corrigida por João Filipe). :contentReference[oaicite:4]{index=4}  
 - **Issue #47 – Validação de senha forte** (implementação da regra de senha forte por Caio). :contentReference[oaicite:5]{index=5}
 - **Issue #45 – Documentar endpoints do ej_users** (documentada por João Carvalho).   
@@ -142,7 +142,8 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 
 **PRs/MRs Submetidos e Aceitos (mínimo identificado):**
 - **MR #35** – Correção de queryset em `apply_board_filters` (João Carvalho). :contentReference[oaicite:23]{index=23}  
-- **MR #36** – Finalização da issue de rotas e ajustes em testes (João Carvalho). :contentReference[oaicite:24]{index=24}  
+- **MR #36** – Finalização da issue de rotas e ajustes em testes (João Carvalho). :contentReference[oaicite:24]{index=24}
+- **[MR #37](https://gitlab.com/gces-ej/ej-application/-/merge_requests/37)** – fix: correção completa de todos os testes do projeto (Victor Pontual e Yan Guimarães)
 - **MR #41** – Merge da nova arquitetura de autenticação (Ana Joyce / equipe de auth).   
 - **MR #42** – Implementação da ordenação das conversas por data de criação (Caio Antonio).
 
@@ -176,7 +177,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 | **Ana Joyce** | ≥ 4 (`#51`, `#59`, `#69`, `#80`) | ≥ 1 (`MR #41`) | Forte atuação em pipeline e nova arquitetura de autenticação. |
 | **Caio Antonio** | ≥ 3 (`#47`, `#79`, `#83`) | ≥ 4 (`#27`, `#31`, `#42`, `#44`) | Melhorias gerais em diferentes áreas do projeto.
 | **Danielle Rodrigues** | ≥ 6 (`#51`, `#63`, `#67`, `#68`, `#69`, `#81`) | ≥ 2 (`MR #41`, `MR #43`) | Liderou a concepção e implementação da nova arquitetura de Federação de Identidades (APIClient, ClientPermission, ApiKeyService, FederationMiddleware) e testes de integração. |
-| **Felipe Matheus** | ≥ 1 (`#50`) :contentReference[oaicite:33]{index=33} | 0 mencionados diretamente | Diagnóstico da falha do pipeline em par com Yan. |
+| **Felipe Matheus** | ≥ 1 (`#50`) :contentReference[oaicite:33]{index=33} | 0 mencionados diretamente | Diagnóstico da falha do pipeline em par com Yan Guimarães. |
 | **João Antonio Carvalho** | ≥ 3 (`#45`, `#60`, `#65`)  | ≥ 2 (`MR #35`, `MR #36`) | Correção de rotas, ajustes em testes e estabilização do pipeline. |
 | **João Filipe** | ≥ 2 (issue de erro sintático sem número + `#51,#52,#59,#69`)  | 0 mencionados diretamente | Atuação na concepção da nova autenticação. |
 | **Leticia Arisa** | ≥ 5 (`#46`, `#53`, `#61`, `#66`, `#82`)  | ≥ 5 ( `MR #26`, `MR #30`, `MR #33`, `MR #38`, `MR #45`) | Documentação Swagger, correção de endpoints, otimização de infraestrutura (Docker) e testes unitários. |
@@ -185,7 +186,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 | **Uires Carlos** | ≥ 2 (`#67`, `#68`) :contentReference[oaicite:37]{index=37} | MRs implícitos ligados às issues, não numerados nos diários | ClientPermission, ApiKeyService, análise SonarQube e refatorações. |
 | **Victor Augusto de Sousa Câmara** | ≥ 2 (`#64`, `#77`)  | MRs ligados a essas issues (links via issue, não por número) | Refatorações avançadas (Service Layer, magic numbers). |
 | **Victor Pontual Guedes Arruda Nóbrega** | ≥ 3 (`#44`, `#54`, `#82`) | ≥ 3 (`MR #29`, `MR #37`, `MR #45`) | Atuação crucial na estabilização do pipeline CI/CD, correção massiva de testes, formatação de código e aumento da cobertura de testes do projeto. |
-| **Yan Guimarães** | ≥ 1 (`#50`, em parceria com Felipe) :contentReference[oaicite:40]{index=40} | 0 MRs numerados nos diários | Diagnóstico de pipeline e apoio em testes. |
+| **Yan Guimarães** | `#50` | `MR #37` | Atuação técnica em Pipeline e Backend, incluindo coautoria na estabilização do CI/CD. Realizei o refinamento das Regras de Segurança (ViewSets/Permissions) e do tratamento de dados da API. |
 
 > Se a professora pedir **números exatos de commits**, esses dados podem ser obtidos facilmente com `git shortlog` rodando localmente, mas aqui optamos por usar apenas o que está registrado formalmente nos diários de bordo.
 
@@ -243,7 +244,7 @@ Principais dificuldades relatadas nos diários:
 
 Mesmo considerando apenas os dados documentados nos diários:
 
-- Foram trabalhadas **pelo menos 23 issues formais** e **9 MRs numerados**, abrangendo:
+- Foram trabalhadas **pelo menos 23 issues formais** e **11 MRs numerados**, abrangendo:
   - Autenticação completa,
   - Documentação Swagger,
   - Correção de rotas e testes,
