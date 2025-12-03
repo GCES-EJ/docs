@@ -3,7 +3,7 @@
 
 # 📝 Relatório Final – GCES 2025.2
 
-**Disciplina:** Gerência de Configuração e Evolução de Software  
+**Disciplina:** Gerência de Configuração e Evolução de Software
 **Equipe:** Empurrando Juntas  
 **Comunidade/Projeto de Software Livre:** Empurrando Juntas (EJ)  
 **Período:** Agosto – Dezembro/2025
@@ -17,8 +17,8 @@
 Com base **exclusivamente nos diários de bordo individuais da equipe**, foi possível identificar, ao longo das sprints:
 
 - **Issues formais mencionadas com número:**  
-  - Pelo menos **16 issues distintas**:  
-    - `#45`, `#47`, `#50`, `#51`, `#52`, `#53`, `#54`, `#59`, `#60`, `#61`, `#64`, `#65`, `#67`, `#68`, `#69`, `#77`.   
+  - Pelo menos **23 issues distintas**:
+    - `#44`, `#45`, `#47`, `#48`, `#50`, `#51`, `#52`, `#53`, `#54`, `#56`, `#59`, `#60`, `#61`, `#62`, `#64`, `#65`, `#67`, `#68`, `#69`, `#77`, `#79`, `#80`, `#82`.
 
 - **Merge Requests (MRs) mencionados diretamente nos diários:**
   - Pelo menos **9 MRs** com número/link explícito:  
@@ -66,7 +66,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - **Issue #45 – Documentar endpoints do ej_users** (documentada por João Carvalho).   
 - **Issue #48 – botão de visualizar senha na tela de login** (Implentado por Marco Tulio Soares).   
 
-➡ **Pelo menos 5 issues trabalhadas na Sprint 1**, sendo 4 numeradas (#44, #45, #47, #50, #48).
+➡ **Pelo menos 5 issues trabalhadas na Sprint 1**, sendo 5 numeradas (`#44`, `#45`, `#47`, `#48`, `#50`).
 
 **PRs/MRs Submetidos e Aceitos (mínimo identificado):**
 - **MR #26** – Relacionado à documentação/rotas (Letícia). :contentReference[oaicite:6]{index=6}  
@@ -92,7 +92,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - **Issue #53** – Registro de endpoints faltantes no router (Letícia). :contentReference[oaicite:10]{index=10}  
 - **Issue #54** – Remoção de testes obsoletos de Kubernetes e correção de 28 testes (Victor Pontual). :contentReference[oaicite:11]{index=11}  
 - **Issue #56** – Implementação CRUD foto de perfil (Marco Tulio Soares).
-➡ **Pelo menos 4 issues formais (51, 52, 53, 54,56) trabalhadas na Sprint 2.**
+➡ **Pelo menos 5 issues formais (`#51`, `#52`, `#53`, `#54`, `#56`) trabalhadas na Sprint 2.**
 
 **PRs/MRs Submetidos e Aceitos (mínimo identificado):**
 - **MR #30** – Registro de endpoints faltantes (Letícia). :contentReference[oaicite:12]{index=12}  
@@ -117,7 +117,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - **Issue #61** – Documentação detalhada de endpoints críticos de autenticação e usuários (Letícia). :contentReference[oaicite:14]{index=14} 
 - **Issue #62** – Implementação do modo escuro  (Marco Tulio Soares).
 
-➡ **Pelo menos 4 issues formais (54, 59, 60, 61) ligadas à Sprint 3**.
+➡ **Pelo menos 5 issues formais (`#54`, `#59`, `#60`, `#61`, `#62`) ligadas à Sprint 3**.
 
 **PRs/MRs Submetidos e Aceitos:**
 - **MR #33** – Documentação dos endpoints de autenticação/usuarios (Letícia). :contentReference[oaicite:15]{index=15}  
@@ -138,7 +138,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - **Issue #79** – Adicionar ordenação à listagem de conversas por data de criação (Caio Antonio).
 
 
-➡ **Pelo menos 6 issues formais (64, 65, 67, 68, 69, 77) aparecem associadas à Sprint 4.**
+➡ **Pelo menos 7 issues formais (`#64`, `#65`, `#67`, `#68`, `#69`, `#77`, `#79`) aparecem associadas à Sprint 4.**
 
 **PRs/MRs Submetidos e Aceitos (mínimo identificado):**
 - **MR #35** – Correção de queryset em `apply_board_filters` (João Carvalho). :contentReference[oaicite:23]{index=23}  
@@ -156,6 +156,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 
 **Issues Executadas (mínimo identificado):**
 - **Issue #82** – Aumento de cobertura de código do projeto (Victor Pontual, Leticia Arisa)
+- **Issue #80** – Atualização da documentação da nova arquitetura de autenticação (Ana Joyce).
 - Revisão e validação de 100% das rotas da API. :contentReference[oaicite:26]{index=26}  
 - Correção de inconsistências na branch `develop` causadas por MRs antigos. :contentReference[oaicite:27]{index=27}  
 
@@ -172,18 +173,18 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 
 | Integrante | Issues trabalhadas (mínimo) | PRs/MRs mencionados (mínimo) | Observação |
 |-----------|-----------------------------|------------------------------|-----------|
-| **Ana Joyce** | ≥ 3 (`#51`, `#59`, `#69`) :contentReference[oaicite:30]{index=30} | ≥ 1 (`MR #41`) | Forte atuação em pipeline e nova arquitetura de autenticação. |
-| **Caio Antonio** | ≥ 1 (`#47`, `#79`, `#83`) | ≥ 2 (`MR #44`, `MR #42`, `MR #31`, `MR #27`) | Melhorias gerais em diferentes áreas do projeto.
-| **Danielle Rodrigues** | ≥ 5 (`#51`, `#63`, `#67`, `#68`, `#69`, `#81`) | ≥ 3 (`MR #41`, `MR #43`, MR relacionado a #63) | Arquitetura completa de Federação de Identidades especialmente na parte de APIClient, ClientPermission, ApiKeyService, FederationMiddleware, ExternalUserService e testes de integração. |
+| **Ana Joyce** | ≥ 4 (`#51`, `#59`, `#69`, `#80`) | ≥ 1 (`MR #41`) | Forte atuação em pipeline e nova arquitetura de autenticação. |
+| **Caio Antonio** | ≥ 3 (`#47`, `#79`, `#83`) | ≥ 4 (`#27`, `#31`, `#42`, `#44`) | Melhorias gerais em diferentes áreas do projeto.
+| **Danielle Rodrigues** | ≥ 6 (`#51`, `#63`, `#67`, `#68`, `#69`, `#81`) | ≥ 2 (`MR #41`, `MR #43`) | Liderou a concepção e implementação da nova arquitetura de Federação de Identidades (APIClient, ClientPermission, ApiKeyService, FederationMiddleware) e testes de integração. |
 | **Felipe Matheus** | ≥ 1 (`#50`) :contentReference[oaicite:33]{index=33} | 0 mencionados diretamente | Diagnóstico da falha do pipeline em par com Yan. |
 | **João Antonio Carvalho** | ≥ 3 (`#45`, `#60`, `#65`)  | ≥ 2 (`MR #35`, `MR #36`) | Correção de rotas, ajustes em testes e estabilização do pipeline. |
 | **João Filipe** | ≥ 2 (issue de erro sintático sem número + `#51,#52,#59,#69`)  | 0 mencionados diretamente | Atuação na concepção da nova autenticação. |
 | **Leticia Arisa** | ≥ 5 (`#46`, `#53`, `#61`, `#66`, `#82`)  | ≥ 5 ( `MR #26`, `MR #30`, `MR #33`, `MR #38`, `MR #45`) | Documentação Swagger, correção de endpoints, otimização de infraestrutura (Docker) e testes unitários. |
-| **Marco Soares** | - | - | - |
+| **Marco Soares** | - | - | *Contribuições não detalhadas nos diários analisados.* |
 | **Marco Tulio** | ≥ 3 (`#48`, `#56`, `#62`)| ≥ 3 (`#48`, `#56`, `#62`) | (dark mode, mostrar senha, foto de perfil) |
 | **Uires Carlos** | ≥ 2 (`#67`, `#68`) :contentReference[oaicite:37]{index=37} | MRs implícitos ligados às issues, não numerados nos diários | ClientPermission, ApiKeyService, análise SonarQube e refatorações. |
 | **Victor Augusto de Sousa Câmara** | ≥ 2 (`#64`, `#77`)  | MRs ligados a essas issues (links via issue, não por número) | Refatorações avançadas (Service Layer, magic numbers). |
-| **Victor Pontual Guedes Arruda Nóbrega** | ≥ 3 (`#44`, `#54`, `#82`) | ≥ 3 ([`MR #29`](https://gitlab.com/gces-ej/ej-application/-/merge_requests/29), [`MR #37`](https://gitlab.com/gces-ej/ej-application/-/merge_requests/37), [`MR #45`](https://gitlab.com/gces-ej/ej-application/-/merge_requests/45)) | **Sprint 1**: Pipeline CI/CD completo com test-coverage, 58 erros Ruff corrigidos, 29 arquivos formatados. **Sprint 2-3**: Correção de 28 testes (+36 passando, 85.2%→91.5%), eliminação de 92.5% dos erros. **Sprint 4**: 28 testes FBV→CBV, decorator REST, namespace dinâmico. **Sprint 5**: +8% cobertura (67%→75%), 100% em 4 módulos, 710 linhas de testes. |
+| **Victor Pontual Guedes Arruda Nóbrega** | ≥ 3 (`#44`, `#54`, `#82`) | ≥ 3 (`MR #29`, `MR #37`, `MR #45`) | Atuação crucial na estabilização do pipeline CI/CD, correção massiva de testes, formatação de código e aumento da cobertura de testes do projeto. |
 | **Yan Guimarães** | ≥ 1 (`#50`, em parceria com Felipe) :contentReference[oaicite:40]{index=40} | 0 MRs numerados nos diários | Diagnóstico de pipeline e apoio em testes. |
 
 > Se a professora pedir **números exatos de commits**, esses dados podem ser obtidos facilmente com `git shortlog` rodando localmente, mas aqui optamos por usar apenas o que está registrado formalmente nos diários de bordo.
@@ -242,7 +243,7 @@ Principais dificuldades relatadas nos diários:
 
 Mesmo considerando apenas os dados documentados nos diários:
 
-- Foram trabalhadas **pelo menos 16 issues formais** e **9 MRs numerados**, abrangendo:
+- Foram trabalhadas **pelo menos 23 issues formais** e **9 MRs numerados**, abrangendo:
   - Autenticação completa,
   - Documentação Swagger,
   - Correção de rotas e testes,

@@ -186,3 +186,28 @@ Na sprint 4 demos continuidade a implementação da nova arquitetura de autentic
 ### Plano Pessoal para a Próxima Sprint
 
 - [ ] Finalizar a autenticação
+
+## Sprint 5 – [20/11 – 03/12]
+
+### Resumo da Sprint
+
+Na sprint 5 finalizamos a implementação da nova arquitetura de autenticação com a ataulização da documentação
+
+### Atividades Realizadas
+
+| Data  | Atividade                                   | Tipo (Código/Doc/Discussão/Outro) | Link/Referência                                                                              | Status    |
+|-------|---------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------------------|-----------|
+| 02/12 | Abertura da Issue | Doc | https://gitlab.com/gces-ej/ej-application/-/issues/80 | Concluído |
+| 03/12 | Upadate da documentação | Código | -  | Concluído |
+
+### Maiores Avanços
+
+- Finalização do novo modelo de autenticação.
+
+## Maiores Dificuldades
+
+- Nenhum já que a implmentação havia sido finalizada
+
+### Aprendizados
+
+- Sistema d edocumentação do docker
