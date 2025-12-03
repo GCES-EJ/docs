@@ -133,14 +133,14 @@ Individuais e com pareamento por membro da equipe. Identificação de número de
 Com base **exclusivamente nos diários de bordo individuais da equipe**, foi possível identificar, ao longo das sprints:
 
 - **Issues formais mencionadas com número:**  
-  - Pelo menos **15 issues distintas**:  
-    - `#47`, `#50`, `#51`, `#52`, `#53`, `#54`, `#59`, `#60`, `#61`, `#64`, `#65`, `#67`, `#68`, `#69`, `#77`.   
+  - Pelo menos **16 issues distintas**:  
+    - `#45`, `#47`, `#50`, `#51`, `#52`, `#53`, `#54`, `#59`, `#60`, `#61`, `#64`, `#65`, `#67`, `#68`, `#69`, `#77`.   
 
 - **Merge Requests (MRs) mencionados diretamente nos diários:**
   - Pelo menos **7 MRs** com número/link explícito:  
     - `MR #26`, `MR #27`, `MR #30`, `MR #33`, `MR #35`, `MR #36`, `MR #41`.   
 
-> ⚠️ Essas quantidades são **mínimas**, pois muitos commits e revisões não aparecem com número detalhado nos diários. Ou seja: a equipe provavelmente fez **mais issues/MRs** do que as listadas aqui — mas estamos usando apenas o que está documentado oficialmente nos arquivos `.md`.
+> Essas quantidades são **mínimas**, pois muitos commits e revisões não aparecem com número detalhado nos diários. Ou seja: a equipe provavelmente fez **mais issues/MRs** do que as listadas aqui — mas estamos usando apenas o que está documentado oficialmente nos arquivos `.md`.
 
 ---
 
@@ -168,7 +168,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 
 ### Sprint 1 (11/09 – 24/09)
 
-**Foco:** Pipeline, primeiras contribuições e estabilização do projeto.
+**Foco:** Pipeline, primeiras contribuições, estabilização do projeto e documentação das rotas de users.
 
 **Issues Planejadas:**
 - Investigar e corrigir a falha do pipeline de CI/CD.
@@ -177,9 +177,10 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 **Issues Executadas (mínimo identificado):**
 - **Issue #50 – Falha no pipeline de CI/CD** (diagnosticada e detalhada por Yan e Felipe).   
 - **Issue de erro sintático** (sem número nos diários, mas criada e corrigida por João Filipe). :contentReference[oaicite:4]{index=4}  
-- **Issue #47 – Validação de senha forte** (criação e implementação da regra de senha forte por Caio). :contentReference[oaicite:5]{index=5}  
+- **Issue #47 – Validação de senha forte** (criação e implementação da regra de senha forte por Caio). :contentReference[oaicite:5]{index=5}
+- **Issue #45 – Documentar endpoints do ej_users** (documentada por João Carvalho).   
 
-➡ **Pelo menos 3 issues trabalhadas na Sprint 1**, sendo 2 numeradas (#47 e #50).
+➡ **Pelo menos 4 issues trabalhadas na Sprint 1**, sendo 3 numeradas (#45, #47, #50).
 
 **PRs/MRs Submetidos e Aceitos (mínimo identificado):**
 - **MR #26** – Relacionado à documentação/rotas (Letícia). :contentReference[oaicite:6]{index=6}  
@@ -215,7 +216,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 
 ### Sprint 3 (09/10 – 22/10)
 
-**Foco:** Definição da nova arquitetura de autenticação, CI/CD e início da federação de identidades.
+**Foco:** Definição da nova arquitetura de autenticação, CI/CD, início da federação de identidades e correção de rotas administrativas.
 
 **Issues Planejadas:**
 - Formalização da nova arquitetura de autenticação.
@@ -223,10 +224,11 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - Evolução da cobertura e estabilidade do pipeline.
 
 **Issues Executadas (mínimo identificado):**
-- **Issue #59** – Início da implementação da nova autenticação (aberta por Ana Joyce). :contentReference[oaicite:13]{index=13}  
+- **Issue #59** – Início da implementação da nova autenticação (aberta por Ana Joyce). :contentReference[oaicite:13]{index=13}
+- **Issue #60** – Correção de rotas duplicadas em `admin/administration` (João Carvalho). :contentReference[oaicite:21]{index=21}
 - **Issue #61** – Documentação detalhada de endpoints críticos de autenticação e usuários (Letícia). :contentReference[oaicite:14]{index=14}  
 
-➡ **Pelo menos 2 issues formais (59, 61) ligadas à Sprint 3**.
+➡ **Pelo menos 3 issues formais (59, 60, 61) ligadas à Sprint 3**.
 
 **PRs/MRs Submetidos e Aceitos:**
 - **MR #33** – Documentação dos endpoints de autenticação/usuarios (Letícia). :contentReference[oaicite:15]{index=15}  
@@ -243,10 +245,9 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - **Issue #64** – Refatoração da lógica de clusterização com remoção de "magic numbers" (Victor Câmara). :contentReference[oaicite:18]{index=18}  
 - **Issue #77** – Criação do `UserRegistrationService` e redução de “Fat Views” (Victor Câmara). :contentReference[oaicite:19]{index=19}  
 - **Issue #69** – Continuidade da autenticação com middleware e unificação de usuários externos (citada em mais de um diário: Ana Joyce e João Filipe).   
-- **Issue #60** – Correção de rotas duplicadas em `admin/administration` (João Carvalho). :contentReference[oaicite:21]{index=21}  
 - **Issue #65** – Correções de testes de `administration` ligadas às rotas (João Carvalho). :contentReference[oaicite:22]{index=22}  
 
-➡ **Pelo menos 7 issues formais (60, 64, 65, 67, 68, 69, 77) aparecem associadas à Sprint 4.**
+➡ **Pelo menos 6 issues formais (64, 65, 67, 68, 69, 77) aparecem associadas à Sprint 4.**
 
 **PRs/MRs Submetidos e Aceitos (mínimo identificado):**
 - **MR #35** – Correção de queryset em `apply_board_filters` (João Carvalho). :contentReference[oaicite:23]{index=23}  
@@ -281,7 +282,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 | **Caio Antonio** | ≥ 1 (`#47`) :contentReference[oaicite:31]{index=31} | ≥ 1 (`MR #27`) | Implementação de validação de senha forte. |
 | **Danielle Rodrigues** | ≥ 1 (`#63`, associada a APIClient) :contentReference[oaicite:32]{index=32} | ≥ 1 (MR de APIClient, ligado à issue #63) | Foco em APIKey e APIClient. |
 | **Felipe Matheus** | ≥ 1 (`#50`) :contentReference[oaicite:33]{index=33} | 0 mencionados diretamente | Diagnóstico da falha do pipeline em par com Yan. |
-| **João Antonio Carvalho** | ≥ 3 (`#60`, `#65`, rotas pendentes)  | ≥ 2 (`MR #35`, `MR #36`) | Correção de rotas, ajustes em tests e estabilização do pipeline. |
+| **João Antonio Carvalho** | ≥ 3 (`#45`, `#60`, `#65`)  | ≥ 2 (`MR #35`, `MR #36`) | Correção de rotas, ajustes em testes e estabilização do pipeline. |
 | **João Filipe** | ≥ 2 (issue de erro sintático sem número + `#52`)  | 0 mencionados diretamente | Atuação na concepção da nova autenticação. |
 | **Leticia Arisa** | ≥ 2 (`#53`, `#61`)  | ≥ 2 (`MR #30`, `MR #33`) | Documentação Swagger e correção/registro de endpoints. |
 | **Marco Soares** | Issues sem número explícito (dark mode, mostrar senha, foto de perfil) | ≥ 1 MR de front/UX (não numerado nos diários) | Foco em UI/UX. |
@@ -347,7 +348,7 @@ Principais dificuldades relatadas nos diários:
 
 Mesmo considerando apenas os dados documentados nos diários:
 
-- Foram trabalhadas **pelo menos 15 issues formais** e **7 MRs numerados**, abrangendo:
+- Foram trabalhadas **pelo menos 16 issues formais** e **7 MRs numerados**, abrangendo:
   - Autenticação completa,
   - Documentação Swagger,
   - Correção de rotas e testes,
