@@ -59,18 +59,20 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - Identificar primeiros pontos de contribuição (bugs simples, erros sintáticos, etc.).
 
 **Issues Executadas (mínimo identificado):**
+- **Issue #44 - Quality gate de cobertura no MR (job test-coverage, mínimo 85%)** – Implementação de cobertura de testes no pipeline (Victor Pontual)
 - **Issue #50 – Falha no pipeline de CI/CD** (diagnosticada e detalhada por Yan e Felipe).   
 - **Issue de erro sintático** (sem número nos diários, mas criada e corrigida por João Filipe). :contentReference[oaicite:4]{index=4}  
 - **Issue #47 – Validação de senha forte** (criação e implementação da regra de senha forte por Caio). :contentReference[oaicite:5]{index=5}
 - **Issue #45 – Documentar endpoints do ej_users** (documentada por João Carvalho).   
 
-➡ **Pelo menos 4 issues trabalhadas na Sprint 1**, sendo 3 numeradas (#45, #47, #50).
+➡ **Pelo menos 5 issues trabalhadas na Sprint 1**, sendo 4 numeradas (#44, #45, #47, #50).
 
 **PRs/MRs Submetidos e Aceitos (mínimo identificado):**
 - **MR #26** – Relacionado à documentação/rotas (Letícia). :contentReference[oaicite:6]{index=6}  
-- **MR #27** – Implementação da validação de senha forte (Caio). :contentReference[oaicite:7]{index=7}  
+- **MR #27** – Implementação da validação de senha forte (Caio). :contentReference[oaicite:7]{index=7}
+- **[MR #29](https://gitlab.com/gces-ej/ej-application/-/merge_requests/29)** – Implementação de test-coverage e correções de CI/CD (Victor Pontual)
 
-➡ **Pelo menos 2 MRs aceitos na Sprint 1**.
+➡ **Pelo menos 3 MRs aceitos na Sprint 1**.
 
 ---
 
@@ -108,11 +110,12 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 - Evolução da cobertura e estabilidade do pipeline.
 
 **Issues Executadas (mínimo identificado):**
+- **Issue #54** – Continuação da remoção de testes obsoletos k8s (Victor Pontual)
 - **Issue #59** – Início da implementação da nova autenticação (aberta por Ana Joyce). :contentReference[oaicite:13]{index=13}
 - **Issue #60** – Correção de rotas duplicadas em `admin/administration` (João Carvalho). :contentReference[oaicite:21]{index=21}
 - **Issue #61** – Documentação detalhada de endpoints críticos de autenticação e usuários (Letícia). :contentReference[oaicite:14]{index=14}  
 
-➡ **Pelo menos 3 issues formais (59, 60, 61) ligadas à Sprint 3**.
+➡ **Pelo menos 4 issues formais (54, 59, 60, 61) ligadas à Sprint 3**.
 
 **PRs/MRs Submetidos e Aceitos:**
 - **MR #33** – Documentação dos endpoints de autenticação/usuarios (Letícia). :contentReference[oaicite:15]{index=15}  
@@ -142,11 +145,12 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 
 ---
 
-### Sprint 5 (13/11 – 01/12)
+### Sprint 5 (13/11 – 03/12)
 
-**Foco:** Consolidação, estabilização final do develop, correção de pipeline e fechamento de MRs pendentes.
+**Foco:** Consolidação, estabilização final do develop, correção de pipeline e fechamento de MRs pendentes. Aumento de cobertura de testes.
 
 **Issues Executadas (mínimo identificado):**
+- **Issue #82** – Aumento de cobertura de código do projeto (Victor Pontual, Leticia Arisa)
 - Revisão e validação de 100% das rotas da API. :contentReference[oaicite:26]{index=26}  
 - Correção de inconsistências na branch `develop` causadas por MRs antigos. :contentReference[oaicite:27]{index=27}  
 
@@ -173,7 +177,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 | **Marco Tulio** | Não há issues numeradas explícitas nos trechos analisados | – | Atuação em análises de arquitetura (sem numeração clara em issues). |
 | **Uires Carlos** | ≥ 2 (`#67`, `#68`) :contentReference[oaicite:37]{index=37} | MRs implícitos ligados às issues, não numerados nos diários | ClientPermission, ApiKeyService, análise SonarQube e refatorações. |
 | **Victor Augusto de Sousa Câmara** | ≥ 2 (`#64`, `#77`)  | MRs ligados a essas issues (links via issue, não por número) | Refatorações avançadas (Service Layer, magic numbers). |
-| **Victor Pontual Guedes Arruda Nóbrega** | ≥ 1 (`#54`) :contentReference[oaicite:39]{index=39} | ≥ 1 MR da branch `54-remove-k8s-obsolete-tests` | Correção de 28 testes, padronização CI/CD, linting. |
+| **Victor Pontual Guedes Arruda Nóbrega** | ≥ 3 (`#44`, `#54`, `#82`) | ≥ 3 ([`MR #29`](https://gitlab.com/gces-ej/ej-application/-/merge_requests/29), [`MR #37`](https://gitlab.com/gces-ej/ej-application/-/merge_requests/37), [`MR #45`](https://gitlab.com/gces-ej/ej-application/-/merge_requests/45)) | **Sprint 1**: Pipeline CI/CD completo com test-coverage, 58 erros Ruff corrigidos, 29 arquivos formatados. **Sprint 2-3**: Correção de 28 testes (+36 passando, 85.2%→91.5%), eliminação de 92.5% dos erros. **Sprint 4**: 28 testes FBV→CBV, decorator REST, namespace dinâmico. **Sprint 5**: +8% cobertura (67%→75%), 100% em 4 módulos, 710 linhas de testes. |
 | **Yan Guimarães** | ≥ 1 (`#50`, em parceria com Felipe) :contentReference[oaicite:40]{index=40} | 0 MRs numerados nos diários | Diagnóstico de pipeline e apoio em testes. |
 
 > Se a professora pedir **números exatos de commits**, esses dados podem ser obtidos facilmente com `git shortlog` rodando localmente, mas aqui optamos por usar apenas o que está registrado formalmente nos diários de bordo.
