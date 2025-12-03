@@ -188,3 +188,33 @@ O resultado foi uma redução no tempo de *rebuild* incremental, garantindo que 
 * A ordem das instruções no Dockerfile é crítica: arquivos que mudam muito devem ser copiados por último.
 * O **Poetry** possui arquivos de bloqueio (`poetry.lock`) que devem ser copiados isoladamente antes do código para garantir a integridade e performance do build.
 * Otimização de infraestrutura é tão importante quanto features, pois economiza tempo de computação e espera da equipe.
+
+## Sprint 5 – \[13/11 – 01/12]
+
+### Resumo da Sprint
+
+Nessa reta final, meu foco total foi garantir a qualidade do código através da Issue #82. Trabalhei para aumentar a cobertura de testes nos módulos principais do sistema (ej, ej_boards e ej_clusters), que estavam com cobertura crítica. O grande desafio foi criar testes unitários isolados para lógicas complexas de permissões e regras de negócio, simulando o banco de dados (mocks) para não deixar o pipeline lento.
+
+### Atividades Realizadas
+
+| Data  | Atividade                                                                                   | Tipo    | Link/Referência                                                                                                                                                                                                                                                                                                                                                     | Status    |
+|-------|---------------------------------------------------------------------------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 02/11 | Criação dos testes para src/ej/utils/title.py                                               | Código  | [feat: aumento de cobertura para ej.utils.title](https://gitlab.com/gces-ej/ej-application/-/commit/38ec7cf3d05ab17c70463ee45369037a4433b558)                                                                                                                                                                                                                       | Concluído |
+| 02/11 | Implementação de testes para src/ej_boards/utils.py e correção do bug no make_view          | Código  | [feat: aumento de cobertura para ej_boards.utils](https://gitlab.com/gces-ej/ej-application/-/commit/0bc76ad2eb8e0a53ad4d3ddf3941e8504176bc73)                                                                                                                                                                                                                      | Concluído |
+| 02/11 | Testes de integridade em src/ej_clusters/enums.py e ajuste na lógica de normalização        | Código  | [feat: aumento de cobertura para ej_clusters.enums](https://gitlab.com/gces-ej/ej-application/-/commit/ebb06d3c013812af60b85cc51460b16f74b11d23)                                                                                                                                                                                                                    | Concluído |
+| 02/11 | Testes complexos de regras de negócio em src/ej_clusters/rules.py                           | Código  | [feat: aumento de cobertura para ej_clusters.rules](https://gitlab.com/gces-ej/ej-application/-/commit/7f8bfb81ba25ac58b548a1696ce996cc3304958b)                                                                                                                                                                                                                    | Concluído |
+
+### Maiores Avanços
+
+- Enquanto escrevia os testes, acabei encontrando e corrigindo erros reais que passavam despercebidos, como um problema na função make_view e uma falha de lógica nos Enums.
+- Consegui fazer tudo usando mocks em vez de criar dados reais no banco, o que deixa a execução dos testes muito mais rápida e leve.
+
+### Maiores Dificuldades
+
+- Foi bem difícil "enganar" o código para simular as queries encadeadas do Django (tipo tabela.filter().count()). Tive que montar estruturas de mocks uns dentro dos outros para funcionar.
+- Perdi um bom tempo tentando entender por que o teste de data falhava, até descobrir que precisava aplicar o patch do timezone no lugar onde ele era importado, e não na origem.
+
+### Aprendizados
+
+- Aprendi na prática como usar o unittest.mock (especialmente side_effect) para testar comportamentos complexos sem depender de infraestrutura externa.
+- Ficou claro que escrever testes não é só burocracia; o processo me obrigou a ler o código com tanta atenção que acabei achando erros de lógica que ninguém tinha visto antes.
