@@ -160,6 +160,27 @@ Nesta sprint, o foco principal foi corrigir uma falha crítica em um teste autom
 - Adotar uma abordagem preventiva ao desenvolver APIs, antecipando diferentes formatos e cenários que podem surgir no uso real.
 
 ### Metas Pessoais para a Próxima Sprint
-- [ ] Expandir a cobertura dos testes para incluir cenários com diferentes formatos de entrada no campo tags.
-- [ ] Documentar o fluxo de tratamento de tags e boas práticas de serialização na API.
-- [ ] Contribuir na revisão do pipeline CI/CD para capturar mais rapidamente falhas decorrentes de validações incompletas.
+- [x] Expandir a cobertura dos testes para incluir cenários com diferentes formatos de entrada no campo tags.
+- [x] Documentar o fluxo de tratamento de tags e boas práticas de serialização na API.
+- [x] Contribuir na revisão do pipeline CI/CD para capturar mais rapidamente falhas decorrentes de validações incompletas.
+
+## Sprints 4 e 5 – [23/10 a 03/12]
+
+### Resumo da Sprint
+Nesta fase final, minha atuação foi voltada para a **Estabilização do Pipeline e Recuperação de Débito Técnico** em larga escala. Trabalhei em regime de *Pair Programming* com **Victor Pontual** para resolver inconsistências estruturais que impediam o merge da branch `develop`. Realizamos uma força-tarefa que resultou na correção de 28 testes e na padronização da autenticação REST do projeto.
+
+### Atividades Executadas
+
+| Data  | Atividade                                                                 | Tipo (Código/Infra)   | Link/Referência | Status    |
+|-------|---------------------------------------------------------------------------|-----------------------|-----------------|-----------|
+| Nov   | **Co-autoria no MR #37**: Correção massiva de testes e pipeline           | Pair Programming      | [MR #37](https://gitlab.com/gces-ej/ej-application/-/merge_requests/37) | Concluído |
+| Nov   | Padronização de respostas HTTP (302 -> 401/403) em toda a API             | Refatoração           | [MR #37](https://gitlab.com/gces-ej/ej-application/-/merge_requests/37) | Concluído |
+
+### Principais Conquistas (Co-autoria com Victor Pontual)
+- **Padronização REST:** Substituição de comportamentos legados (redirect 302) por respostas semânticas corretas (401 Unauthorized / 403 Forbidden).
+- **Pipeline Verde:** A intervenção foi decisiva para garantir que o pipeline de CI/CD passasse com sucesso na entrega final.
+
+### Lições Aprendidas
+- Trabalhar em *Pair Programming* acelerou drasticamente a resolução de problemas complexos de infraestrutura e testes legados.
+
+---
