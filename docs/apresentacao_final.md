@@ -274,7 +274,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 
 ## 2. Listagem de Commits, Issues e PRs/MRs por Integrante
 
-> ⚠️ Como não utilizamos comandos Git para contagem exata, os números abaixo são **mínimos**, baseados no que aparece explicitamente nos diários (issues citadas, MRs citados e atividades em par). Os commits não foram contados numericamente nos diários, então a coluna de commits é qualitativa.
+> Como não utilizamos comandos Git para contagem exata, os números abaixo são **mínimos**, baseados no que aparece explicitamente nos diários (issues citadas, MRs citados e atividades em par). Os commits não foram contados numericamente nos diários, então a coluna de commits é qualitativa.
 
 | Integrante | Issues trabalhadas (mínimo) | PRs/MRs mencionados (mínimo) | Observação |
 |-----------|-----------------------------|------------------------------|-----------|
