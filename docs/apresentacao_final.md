@@ -172,7 +172,7 @@ Com base **exclusivamente nos diários de bordo individuais da equipe**, foi pos
 | **Felipe Matheus** | ≥ 1 (`#50`) :contentReference[oaicite:33]{index=33} | 0 mencionados diretamente | Diagnóstico da falha do pipeline em par com Yan. |
 | **João Antonio Carvalho** | ≥ 3 (`#45`, `#60`, `#65`)  | ≥ 2 (`MR #35`, `MR #36`) | Correção de rotas, ajustes em testes e estabilização do pipeline. |
 | **João Filipe** | ≥ 2 (issue de erro sintático sem número + `#51,#52,#59,#69`)  | 0 mencionados diretamente | Atuação na concepção da nova autenticação. |
-| **Leticia Arisa** | ≥ 2 (`#53`, `#61`)  | ≥ 2 (`MR #30`, `MR #33`) | Documentação Swagger e correção/registro de endpoints. |
+| **Leticia Arisa** | ≥ 5 (`#46`, `#53`, `#61`, `#66`, `#82`)  | ≥ 5 ( `MR #26`, `MR #30`, `MR #33`, `MR #38`, `MR #45`) | Documentação Swagger, correção de endpoints, otimização de infraestrutura (Docker) e testes unitários. |
 | **Marco Soares** | Issues sem número explícito (dark mode, mostrar senha, foto de perfil) | ≥ 1 MR de front/UX (não numerado nos diários) | Foco em UI/UX. |
 | **Marco Tulio** | Não há issues numeradas explícitas nos trechos analisados | – | Atuação em análises de arquitetura (sem numeração clara em issues). |
 | **Uires Carlos** | ≥ 2 (`#67`, `#68`) :contentReference[oaicite:37]{index=37} | MRs implícitos ligados às issues, não numerados nos diários | ClientPermission, ApiKeyService, análise SonarQube e refatorações. |
